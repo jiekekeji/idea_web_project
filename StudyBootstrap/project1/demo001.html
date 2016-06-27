@@ -11,9 +11,9 @@
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="../js/jquery-3.0.0.js"></script>
+    <script src="../js/jquery-1.11.1.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
     <!--自个的css-->
     <link rel="stylesheet" href="./css/demo001.css">
 </head>
@@ -30,21 +30,53 @@
 </nav>
 <!--end 顶部导航栏-->
 <!--start 侧边导航栏-->
-<div class="navbar-default" >
-<ul class="nav">
-    <li>
-        <a href="#sub1">系统功能</a>
-        <ul id="sub1" class="nav collapse">
-            <li><a href="#">系统消息</a></li>
-            <li><a href="#">系统消息</a></li>
-            <li><a href="#">系统消息</a></li>
-            <li><a href="#">系统消息</a></li>
-        </ul>
-    </li>
-    <li></li>
-</ul>
-</div>
+<div style="width: 150px">
+    <ul class="nav navbar">
+        <!--一级菜单之系统功能-->
+        <li>
+            <a href="#sub1" data-toggle="collapse">
+                系统功能
+                <span class="glyphicon glyphicon-chevron-right navbar-right">
+               </span>
+            </a>
+            <ul id="sub1" class="collapse nav navbar">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </li>
+        <!--一级菜单之用户功能-->
+        <li>
+            <a href="#sub2" data-toggle="collapse">
+                用户功能
+                <span class="glyphicon glyphicon-chevron-right navbar-right">
+               </span>
+            </a>
+            <ul id="sub2" class="collapse">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </li>
+        <!--一级菜单之业务功能-->
+        <li>
+            <a href="#sub3" data-toggle="collapse">
+                业务功能
+                <span class="glyphicon glyphicon-chevron-right navbar-right">
+               </span>
+            </a>
 
+            <ul id="sub3" class="collapse">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </li>
+    </ul>
+</div>
 <!--end 侧边导航栏-->
 
 </body>
