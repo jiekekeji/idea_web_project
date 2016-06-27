@@ -30,7 +30,7 @@
 </nav>
 <!--end 顶部导航栏-->
 <!--start 侧边导航栏-->
-<div style="width: 150px">
+<div id="left_menu">
     <ul class="nav navbar">
         <!--一级菜单之系统功能-->
         <li>
@@ -40,10 +40,10 @@
                </span>
             </a>
             <ul id="sub1" class="collapse nav navbar">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp系统功能1</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp系统功能2</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp系统功能3</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp系统功能4</a></li>
             </ul>
         </li>
         <!--一级菜单之用户功能-->
@@ -53,11 +53,11 @@
                 <span class="glyphicon glyphicon-chevron-right navbar-right">
                </span>
             </a>
-            <ul id="sub2" class="collapse">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+            <ul id="sub2" class="collapse nav navbar">
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp用户功能1</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp用户功能2</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp用户功能3</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp用户功能4</a></li>
             </ul>
         </li>
         <!--一级菜单之业务功能-->
@@ -68,16 +68,67 @@
                </span>
             </a>
 
-            <ul id="sub3" class="collapse">
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
+            <ul id="sub3" class="collapse nav navbar">
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp业务功能1</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp业务功能2</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp业务功能3</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp业务功能4</a></li>
             </ul>
         </li>
     </ul>
 </div>
 <!--end 侧边导航栏-->
+<!--start 主区域-->
+<div class="pager_main">
+    <!--面包线导航-->
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li class="active">Data</li>
+    </ol>
 
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">最新订单</div>
+                <div class="panel-body table-responsive">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>订单号</th>
+                            <th>名称</th>
+                            <th>金额</th>
+                            <th>品名</th>
+                            <th>大小</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+
+        </div>
+    </div>
+
+
+</div>
+<!--end 主区域-->
 </body>
 </html>
