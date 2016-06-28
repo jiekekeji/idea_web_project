@@ -1,6 +1,17 @@
-.mynav {
-    background: wheat;
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px ){
+    #left_menu{
+        width: 150px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .pager_main{
+        margin-left: 160px;
+    }
 }
-.mynavul{
-    float: right;
-}
+
+
+
+
+
