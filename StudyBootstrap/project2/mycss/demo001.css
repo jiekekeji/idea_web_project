@@ -1,0 +1,24 @@
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+    .left-menu {
+        width: 160px;
+        height: 500px;
+    }
+
+    .main{
+        height: 500px;
+    }
+}
+
+.left-menu {
+    z-index: 1;
+    position: absolute;
+    height: 500px;
+    background: wheat;
+}
+
+.main{
+    height: 500px;
+    background: whitesmoke;
+}
+
