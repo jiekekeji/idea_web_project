@@ -1,6 +1,6 @@
 <!--bootstrap 基本模板--->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8">
     <!--如果需要禁用掉响应式的布局可去掉该行-->
@@ -9,10 +9,7 @@
     <title>Bootstrap 101 Template</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-    <script src="../js/jquery-1.11.1.min.js"></script>
-    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
-    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/demo001.css">
 </head>
 <body>
 <!--导航栏部分--->
@@ -31,14 +28,38 @@
         <!--右侧导航--->
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li>首页</li>
-                <li>Java开发</li>
-                <li>Android开发</li>
-                <li>IOS开发</li>
-                <li>PHP开发</li>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">Java开发</a></li>
+                <li><a href="#">Android开发</a></li>
+                <li><a href="#">IOS开发</a></li>
+                <li><a href="#">PHP开发</a></li>
             </ul>
         </div>
     </div>
 </nav>
+<!--主区域-->
+<section id="home">
+    <div class="lvjing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <h1>bootstrap实战课程等你来战！</h1>
+                    <p>
+                        本套课程适用于：1.WEB开发人员；2.网站维护人员、管理人员</br>
+                        培训技能的目标：使用bootstrap框架快速构建响应式网页，颠覆传统WEB前端！
+                    </p>
+                    <img src="img/php.jpg" class="img-responsive" alt="php">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../js/jquery-1.11.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
