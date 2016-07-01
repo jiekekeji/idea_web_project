@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--如果需要禁用掉响应式的布局可去掉该行-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>后台首页</title>
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="" class="navbar-brand">MaiZiAdmin</a>
+        </div>
+        <ul class="navbar-nav nav">
+            <li class="active"><a href="demo200.html"><span class="glyphicon glyphicon-home"></span>&nbsp后台首页</a></li>
+            <li><a href="demo201.html"><span class="glyphicon glyphicon-user"></span>&nbsp用户管理</a></li>
+            <li><a href="demo202.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp内容管理</a></li>
+            <li><a href="demo203.html"><span class="glyphicon glyphicon-tags"></span>&nbsp标签管理</a></li>
+        </ul>
+        <ul class="navbar-nav nav navbar-right">
+            <li class="dropdown">
+                <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Admin&nbsp
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="#"><span class="glyphicon glyphicon-asterisk"></span>&nbsp;&nbsp前台首页</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp个人主页</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-scissors"></span>&nbsp;&nbsp个人设置</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-euro"></span>&nbsp;&nbsp账户中心</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp我的收藏</a></li>
+                </ul>
+            </li>
+            <li><a><span class="glyphicon glyphicon-off"></span>&nbsp退出</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../js/jquery-1.11.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
