@@ -1,3 +1,10 @@
-.mg0{
-   margin: 0px;
+.mg0 {
+    margin: 0px;
+}
+
+.fromsty {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-top: none;
+
 }
