@@ -1,0 +1,15 @@
+.bottom_line {
+    border-bottom: 1px solid beige;
+}
+
+.mrtop {
+    margin-top: 15px;
+}
+
+/*tag*/
+.taglist{
+    padding-top: 15px;
+}
+.taglist .alert{
+    margin: 0 15px 15px 0;
+}
