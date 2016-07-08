@@ -1,0 +1,17 @@
+.wh64{
+    width: 64px;
+    height: 64px;
+    border-radius:50% ;
+}
+
+.mg0{
+    margin: 0px;
+}
+
+.mrtop{
+    margin-top: 15px;
+}
+
+.btnsty{
+    float: right;
+}

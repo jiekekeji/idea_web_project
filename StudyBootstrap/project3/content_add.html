@@ -9,7 +9,7 @@
     <title>内容管理</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/demo202.css">
+    <link rel="stylesheet" href="css/content_add.css">
 </head>
 <body>
 <!--导航-->
@@ -21,7 +21,11 @@
         <ul class="navbar-nav nav">
             <li><a href="demo200.html"><span class="glyphicon glyphicon-home"></span>&nbsp后台首页</a></li>
             <li><a href="demo201.html"><span class="glyphicon glyphicon-user"></span>&nbsp用户管理</a></li>
-            <li class="active"><a href="demo202.html"><span class="glyphicon glyphicon-list-alt"></span>&nbsp内容管理</a>
+            <li class="active">
+                <a href="demo202.html">
+                    <span class="glyphicon glyphicon-list-alt"></span>
+                    &nbsp内容管理
+                </a>
             </li>
             <li><a href="demo203.html"><span class="glyphicon glyphicon-tags"></span>&nbsp标签管理</a></li>
         </ul>
@@ -48,55 +52,53 @@
     <div class="row">
         <div class="col-md-2">
             <div class="list-group">
-                <a href="#" class="list-group-item">内容管理</a>
+                <a href="demo202.html" class="list-group-item">内容管理</a>
                 <a href="#" class="list-group-item active">添加内容</a>
             </div>
         </div>
         <div class="col-md-10">
-            <div class="panel">
+            <div class="panel ">
                 <div class="panel-heading">内容管理</div>
                 <ul class="nav nav-tabs">
-                    <li role="presentation"><a href="#">内容管理</a></li>
-                    <li role="presentation" class="active">><a href="#">添加内容</a></li>
+                    <li role="presentation"><a href="demo202.html">内容管理</a></li>
+                    <li role="presentation" class="active"><a href="#">添加内容</a></li>
                 </ul>
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <td>文章标题</td>
-                        <td>作者</td>
-                        <td>发布时间</td>
-                        <td>操作</td>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>泛Mooc职业教育， 效果和就业为王</td>
-                        <td>朱朝兵</td>
-                        <td>2015/08/08</td>
-                        <td>
-                            <div class="btn-group">
-                                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                    操作 <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">编辑</a></li>
-                                    <li><a href="#">删除</a></li>
-                                    <li><a href="#">锁定</a></li>
-                                    <li><a href="#">修改密码</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                        </ul>
-                    </tr>
-                    </tbody>
-                </table>
+                <form class="mrtop">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">标题</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入标题">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">文章内容</label>
+                        <textarea class="form-control" rows="10" placeholder="请输入文章正文部分"></textarea>
+                    </div>
+                    <div>
+                        <div class="checkbox-inline">
+                            <label>
+                                <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                全局置顶
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-default btnsty">发布文章</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
 
-
+<!--底部导航--->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p align="center">
+                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;&nbsp;www.maiziedu.com&nbsp;&nbsp;蜀ICP备13014270号-4
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
 <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
 <script src="../js/jquery-1.11.1.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
