@@ -42,4 +42,26 @@ public class UserService {
         map.put("desc", "用户不存在");
         return map;
     }
+
+    /**
+     * 用户登录
+     * @param username
+     * @return
+     */
+    public Map login(String username,String password){
+        User user=dao.findUserByUsername(username);
+        Map map=new HashMap();
+        if (null==user){
+            map.put("code","4000");
+            map.put("desc","登录失败");
+            return map;
+        }
+
+        if (null!=password&&password.equals(user.getPassword())){
+            map.put("code","2000");
+            map.put("desc","登录成功");
+            return map;
+        }
+        return map;
+    }
 }

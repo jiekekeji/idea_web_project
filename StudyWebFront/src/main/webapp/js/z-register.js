@@ -31,10 +31,8 @@ $(document).ready(function () {
         //发送注册请求
         $.get("/sdyweb/user/checkUserIsExit?username="+username, function(result){
             console.log("用户名检测结果:"+result.code);
-
-
             //实现页面跳转
-            window.location.href="login.html?username="+result.desc;
+            window.location.href=encodeURI("login.html?username="+username);
         });
     });
     
