@@ -3,6 +3,7 @@ package com.mx.fm.mapper;
 import com.mx.fm.model.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
@@ -19,6 +20,9 @@ public interface UserMapper {
             "values(#{username},#{nickname},#{password},#{phonenum},#{email},#{gender})")
     int addUser(User user);
 
-    @Select("SELECT (id,username,nickname,password,phonenum,email,gender) FROM sdyweb_user LIMIT #{page},#{rows}")
-    List<User> findAllUsers(String page,String rows);
+    @Select("SELECT * FROM sdyweb_user LIMIT #{0},#{1}")
+    List<User> findAllUsers(int page,int rows);
+
+    @Update("UPDATE sdyweb_user t SET t.password=#{0} WHERE t.username=#{1} AND t.password=#{2}")
+    int updatePassword(String username,String oldpassword,String newpasswrod);
 }

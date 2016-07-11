@@ -60,9 +60,10 @@ public class UserDao {
      * @return
      */
     public List<User> findAllUsers(int page, int rows) {
-//        return mapper.findAllUsers(page, rows);
-        return  null;
+        return mapper.findAllUsers(page, rows);
     }
+
+
 
     public static void main(String[] arg) {
 //        User user = new User();
@@ -71,7 +72,7 @@ public class UserDao {
 //        System.out.println(new UserDao().addUser(user));
 //        System.out.println("00000");
         UserDao dao=new UserDao();
-        System.out.println(dao.mapper.findAllUsers("0","3"));
+        System.out.println(dao.mapper.findAllUsers(0,3));
     }
 
 
