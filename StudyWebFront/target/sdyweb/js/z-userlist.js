@@ -4,10 +4,12 @@
 $(document).ready(function () {
 
     //*******start静态页面加载完成开始加载数据***********//
-    for (i = 0; i < 20; i++) {
-        $("#tb-body").html(
+    console.log("页面加载完成开始加载数据");
+    for (var i=0;i<15;i++) {
+        console.log("填充数据");
+        $("#tb-body").append(
             "<tr>" +
-            "<td>ID</td>" +
+            "<td>"+i+"</td>" +
             "<td>用户名</td>" +
             "<td>昵称</td>" +
             "<td>手机号</td>" +

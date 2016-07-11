@@ -1,3 +1,7 @@
 .btn-right{
     float: right;
 }
+
+#panel-title{
+    display: inline;
+}
