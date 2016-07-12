@@ -2,9 +2,12 @@ package com.mx.fm.service;
 
 import com.mx.fm.dao.UserDao;
 import com.mx.fm.model.User;
+import com.mx.fm.utils.TextUtils;
 import org.apache.log4j.Logger;
 
+import javax.jws.soap.SOAPBinding;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -45,23 +48,93 @@ public class UserService {
 
     /**
      * 用户登录
+     *
      * @param username
      * @return
      */
-    public Map login(String username,String password){
-        User user=dao.findUserByUsername(username);
-        Map map=new HashMap();
-        if (null==user){
-            map.put("code","4000");
-            map.put("desc","登录失败");
+    public Map login(String username, String password) {
+        User user = dao.findUserByUsername(username);
+        Map map = new HashMap();
+        if (null == user) {
+            map.put("code", "4000");
+            map.put("desc", "登录失败");
             return map;
         }
 
-        if (null!=password&&password.equals(user.getPassword())){
-            map.put("code","2000");
-            map.put("desc","登录成功");
+        if (null != password && password.equals(user.getPassword())) {
+            map.put("code", "2000");
+            map.put("desc", "登录成功");
+            map.put("user", user);
             return map;
         }
         return map;
     }
+
+    /**
+     * 添加用户
+     *
+     * @param user
+     * @return
+     */
+    public Map register(User user) {
+        Map map = new HashMap();
+        if (null == user || TextUtils.isEmpty(user.getUsername()) || TextUtils.isEmpty(user.getPassword())) {
+            map.put("code", "4000");
+            map.put("desc", "注册失败，信息不完整");
+            return map;
+        }
+
+        int code = dao.addUser(user);
+        if (code == 0) {
+            map.put("code", "4000");
+            map.put("desc", "注册失败");
+            return map;
+        }
+
+        return map;
+    }
+
+
+    /**
+     * 获取用户信息
+     *
+     * @param username
+     * @return
+     */
+    public Map getUserInfo(String username) {
+        Map map = new HashMap();
+        User user = dao.findUserByUsername(username);
+        map.put("map", map);
+        return map;
+    }
+
+
+    /**
+     * 获取普通用户
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    public Map findOrdinaryUsers(int page, int rows) {
+        Map map = new HashMap();
+        List<User> users = dao.findAllUsers(page, rows);
+        map.put("users", users);
+        return map;
+    }
+
+    /**
+     * 获取管理员
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    public Map findAdmins(int page, int rows) {
+        Map map = new HashMap();
+        List<User> users = dao.findAdmins(page, rows);
+        map.put("users", users);
+        return map;
+    }
+
 }

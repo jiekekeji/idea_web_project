@@ -2,6 +2,7 @@ package com.mx.fm.dao;
 
 import com.mx.fm.mapper.UserMapper;
 import com.mx.fm.model.User;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -63,6 +64,16 @@ public class UserDao {
         return mapper.findAllUsers(page, rows);
     }
 
+    /**
+     * 获取管理员
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    public List<User> findAdmins(int page, int rows) {
+        return mapper.findAdmins(page, rows);
+    }
 
 
     public static void main(String[] arg) {
@@ -71,8 +82,8 @@ public class UserDao {
 //        user.setPassword("123456");
 //        System.out.println(new UserDao().addUser(user));
 //        System.out.println("00000");
-        UserDao dao=new UserDao();
-        System.out.println(dao.mapper.findAllUsers(0,3));
+        UserDao dao = new UserDao();
+        System.out.println(dao.mapper.findAllUsers(0, 3));
     }
 
 

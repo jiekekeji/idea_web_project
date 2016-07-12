@@ -51,7 +51,7 @@ public class UserController {
         Map map = service.login(username, password);
         if (null != map && "2000".equals(map.get("code"))) {
             //登录成功
-            request.getSession().setAttribute("username", username);
+            request.getSession().setAttribute("user", map.remove("user"));
         }
         return service.login(username, password);
     }
@@ -71,24 +71,44 @@ public class UserController {
         return map;
     }
 
-
+    /**
+     * 用户注册
+     * @param user
+     * @return
+     */
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     @ResponseBody
     public Map register(User user) {
-        logger.debug("register");
-        Map map = new HashMap();
-        map.put("key", "123");
-
-        User user1 = new User();
-        user.setNickname("nickname");
-        map.put("nickname", user1);
-        List list = new ArrayList();
-        list.add(user1);
-
-        map.put("list", list);
-
-        return map;
+        logger.debug("register="+user);
+        return service.register(user);
     }
 
+    /**
+     * 获取普通用户
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    @RequestMapping(value = "/findOrdinaryUsers", method = RequestMethod.POST)
+    @ResponseBody
+    public Map findOrdinaryUsers(int page, int rows) {
+        logger.debug("findOrdinaryUsers:"+"page="+page+" rows"+rows);
+        return service.findOrdinaryUsers(page, rows);
+    }
+
+    /**
+     * 获取管理员
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    @RequestMapping(value = "/findAdmins", method = RequestMethod.POST)
+    @ResponseBody
+    public Map findAdmins(int page, int rows) {
+        logger.debug("findAdmins:"+"page="+page+" rows"+rows);
+        return service.findAdmins(page, rows);
+    }
 
 }

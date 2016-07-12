@@ -12,6 +12,7 @@ public class User {
     private String phonenum;
     private String email;
     private String gender;
+    private int role;//角色
 
 
     public long getId() {
@@ -70,6 +71,14 @@ public class User {
         this.gender = gender;
     }
 
+    public int getRole() {
+        return role;
+    }
+
+    public void setRole(int role) {
+        this.role = role;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -80,8 +89,7 @@ public class User {
                 ", phonenum='" + phonenum + '\'' +
                 ", email='" + email + '\'' +
                 ", gender='" + gender + '\'' +
+                ", role=" + role +
                 '}';
     }
-
-
 }

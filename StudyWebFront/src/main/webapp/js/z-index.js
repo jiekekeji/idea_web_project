@@ -2,17 +2,42 @@
  * Created by jack on 16/7/10.
  */
 $(document).ready(function () {
-    
-    $("#menu1").click(function () {
-    });
 
     /*****start 页面加载完成，获取登录的用户名，填在表单中****/
-    var username = getUrlParam("username");
-    // username=decodeURI(username);
-    console.log("地址中url参数username=" + username);
-    $("#usernameinput").val(username);
+    getDatas(0, 15);
 
     /*****end 页面加载完成，获取登录的用户名，填在表单中****/
+
+
+    /**
+     * 发送请求获取数据并填充页面
+     * @param username
+     * @param page
+     * @param rows
+     */
+    function getDatas(page, rows) {
+        $.post("/sdyweb/user/findAdmins",
+            {page: page, rows: rows},
+            function (data) {
+                console.log("获取数据结果:" + data.users);
+                for (var i = 0; i < 15; i++) {
+                    console.log("填充数据");
+                    $("#tb-body").append(
+                        "<tr>" +
+                        "<td>" + i + "</td>" +
+                        "<td>用户名</td>" +
+                        "<td>昵称</td>" +
+                        "<td>手机号</td>" +
+                        "<td>邮箱</td>" +
+                        "<td><button class='btn -default'>编辑</button></td>" +
+                        "<td><button class='btn -default'>删除</button></td>" +
+                        "</tr>"
+                    )
+                }
+            },
+            "json");
+    }
+
 
     /*****start 给控件设置监听 ****/
     //登录按钮
@@ -50,42 +75,6 @@ $(document).ready(function () {
         if (r != null) return decodeURI(unescape(r[2]));
         return null;
     }
-
-
-    //给输入框添加焦点事件
-    $("#exampleInputEmail1").focus(function () {
-        console.log("获取焦点");
-    });
-
-    //input失去焦点的事件
-    $("#exampleInputEmail1").blur(function () {
-        console.log("失去焦点");
-        var value = $("#exampleInputEmail1").val();
-        if (null == value || "" == value) {
-            $("#notice").text("请输入用户名");
-            $("#exampleInputEmail1").focus();
-            return;
-        }
-
-        //发送请求检测用户是否可注册
-        $.get("/sdyweb/user/checkUserIsExit?username=" + value, function (result) {
-            console.log("用户名检测结果:" + result.code);
-        });
-
-    });
-
-    $("#rigesterbtn").click(function () {
-        var username = $("#exampleInputEmail1").val();
-        console.log("提交注册:" + username);
-        //发送注册请求
-        $.get("/sdyweb/user/checkUserIsExit?username=" + username, function (result) {
-            console.log("用户名检测结果:" + result.code);
-
-
-            //实现页面跳转
-            window.location.href = "login.html?username=" + result.desc;
-        });
-    });
 
 
 });

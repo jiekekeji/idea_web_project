@@ -16,12 +16,15 @@ public interface UserMapper {
     @Select("SELECT * FROM sdyweb_user WHERE username = #{username}")
     User findUserByUsername(String username);
 
-    @Insert("INSERT INTO sdyweb_user(username,nickname,password,phonenum,email,gender) " +
-            "values(#{username},#{nickname},#{password},#{phonenum},#{email},#{gender})")
+    @Insert("INSERT INTO sdyweb_user(username,nickname,password,phonenum,email,gender,role) " +
+            "values(#{username},#{nickname},#{password},#{phonenum},#{email},#{gender},#{role})")
     int addUser(User user);
 
     @Select("SELECT * FROM sdyweb_user LIMIT #{0},#{1}")
     List<User> findAllUsers(int page,int rows);
+
+    @Select("SELECT * FROM sdyweb_user WHERE role!=0 LIMIT #{0},#{1}")
+    List<User> findAdmins(int page,int rows);
 
     @Update("UPDATE sdyweb_user t SET t.password=#{0} WHERE t.username=#{1} AND t.password=#{2}")
     int updatePassword(String username,String oldpassword,String newpasswrod);
