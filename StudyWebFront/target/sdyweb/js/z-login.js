@@ -12,23 +12,21 @@ $(document).ready(function () {
     /*****end 页面加载完成，获取登录的用户名，填在表单中****/
 
     /*****start 给控件设置监听 ****/
+
     //登录按钮
     $("#loginbtn").click(function () {
         $.post("/sdyweb/user/login",
-            {username: $("#usernameinput").val(), password: $('#exampleInputPassword').val()},
+            {username: $("#usernameinput").val(), password: $('#passwordinput').val()},
             function (data) {
                 if (2000 == data.code) {
                     //登录成功
-                    console.log("登录成功：" + data.code);
-                    window.location.href = "index.html?username=" + $("#usernameinput").val();
+                    window.location.href = "admin-manage.html?username=" + $("#usernameinput").val();
                 } else {
                     //登录失败
-                    console.log("登录失败：" + data.code);
+                    alert("登陆失败");
                 }
-
             },
             "json");//这里返回的类型有：json,html,xml,text
-
     });
 
     /*****end 给控件设置监听 ****/
@@ -47,42 +45,6 @@ $(document).ready(function () {
         if (r != null) return decodeURI(unescape(r[2]));
         return null;
     }
-
-
-    //给输入框添加焦点事件
-    $("#exampleInputEmail1").focus(function () {
-        console.log("获取焦点");
-    });
-
-    //input失去焦点的事件
-    $("#exampleInputEmail1").blur(function () {
-        console.log("失去焦点");
-        var value = $("#exampleInputEmail1").val();
-        if (null == value || "" == value) {
-            $("#notice").text("请输入用户名");
-            $("#exampleInputEmail1").focus();
-            return;
-        }
-
-        //发送请求检测用户是否可注册
-        $.get("/sdyweb/user/checkUserIsExit?username=" + value, function (result) {
-            console.log("用户名检测结果:" + result.code);
-        });
-
-    });
-
-    $("#rigesterbtn").click(function () {
-        var username = $("#exampleInputEmail1").val();
-        console.log("提交注册:" + username);
-        //发送注册请求
-        $.get("/sdyweb/user/checkUserIsExit?username=" + username, function (result) {
-            console.log("用户名检测结果:" + result.code);
-
-
-            //实现页面跳转
-            window.location.href = "login.html?username=" + result.desc;
-        });
-    });
 
 
 });
