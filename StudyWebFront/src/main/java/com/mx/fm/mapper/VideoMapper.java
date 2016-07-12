@@ -27,7 +27,7 @@ public interface VideoMapper {
     List<Video> findVideosByClazzID(int clazzid,int page, int rows);
 
     @Delete("DELETE FROM sdyweb_video WHERE videoid=#{videoid}")
-    int deleteVideoByUsername(int videoid);
+    int deleteVideoByVideoid(int videoid);
 
     @Update("UPDATE sdyweb_video SET title=#{title},url=#{url},imgurl=#{imgurl}," +
             "from=#{from},times=#{times},clazzid=#{clazzid},recommend=#{recommend}," +

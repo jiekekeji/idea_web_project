@@ -15,7 +15,7 @@ import java.util.List;
 public interface VideoClazzMapper {
 
     @Insert("INSERT INTO sdyweb_clazz(name,desc) values(#{name},#{desc})")
-    int addVideoClazz(Comment user);
+    int addVideoClazz(VideoClazz videoClazz);
 
     @Select("SELECT * FROM sdyweb_clazz LIMIT #{0},#{1}")
     List<VideoClazz> findVideoClazzs(int page, int rows);

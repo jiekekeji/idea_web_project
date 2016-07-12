@@ -26,4 +26,7 @@ public interface AdminUserMapper {
 
     @Update("UPDATE sdyweb_admin t SET t.password=#{0} WHERE t.username=#{1} AND t.password=#{2}")
     int updatePassword(String username, String oldpassword, String newpasswrod);
+
+    @Select("DELETE FROM sdyweb_admin WHERE username=#{username}")
+    int deleteUserByUsername(String username);
 }

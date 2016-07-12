@@ -78,4 +78,13 @@ public class AdminUserDao {
     public int updatePassword(String username, String oldpassword, String newpasswrod) {
         return mapper.updatePassword(username, oldpassword, newpasswrod);
     }
+
+    /**
+     * 删除管理员
+     * @param username
+     * @return
+     */
+    public int deleteUserByUsername(String username){
+        return  mapper.deleteUserByUsername(username);
+    }
 }
