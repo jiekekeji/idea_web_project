@@ -46,14 +46,29 @@ public class UserController {
      */
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     @ResponseBody
-    public Map login(HttpServletRequest request,String username, String password) {
+    public Map login(HttpServletRequest request, String username, String password) {
         logger.debug("login=" + username);
-        Map map=service.login(username, password);
-        if (null!=map&&"2000".equals(map.get("code"))){
+        Map map = service.login(username, password);
+        if (null != map && "2000".equals(map.get("code"))) {
             //登录成功
-            request.getSession().setAttribute("username",username);
+            request.getSession().setAttribute("username", username);
         }
         return service.login(username, password);
+    }
+
+    /**
+     * 未登陆的提示信息
+     *
+     * @return
+     */
+    @RequestMapping(value = "/noty2login", method = RequestMethod.GET)
+    @ResponseBody
+    public Map noty2login() {
+        logger.debug("noty2login");
+        Map map = new HashMap();
+        map.put("code", 4000);
+        map.put("desc", "请先登陆");
+        return map;
     }
 
 
