@@ -1,6 +1,7 @@
 package com.mx.fm.model;
 
 /**
+ * 视频信息
  * Created by jack on 16/7/11.
  */
 public class Video {

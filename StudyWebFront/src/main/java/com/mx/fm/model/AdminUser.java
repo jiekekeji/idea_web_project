@@ -1,6 +1,7 @@
 package com.mx.fm.model;
 
 /**
+ * 管理员
  * Created by jack on 16/7/11.
  */
 public class AdminUser {

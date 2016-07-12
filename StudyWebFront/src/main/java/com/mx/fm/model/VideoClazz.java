@@ -1,6 +1,7 @@
 package com.mx.fm.model;
 
 /**
+ * 视频分类信息
  * Created by jack on 16/7/11.
  */
 public class VideoClazz {
@@ -41,7 +42,6 @@ public class VideoClazz {
                 ", desc='" + desc + '\'' +
                 '}';
     }
-
 
 
 }

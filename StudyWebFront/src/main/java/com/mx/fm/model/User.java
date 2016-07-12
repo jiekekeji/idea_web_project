@@ -1,6 +1,7 @@
 package com.mx.fm.model;
 
 /**
+ * 用户信息
  * Created by jack on 16/5/27.
  */
 public class User {

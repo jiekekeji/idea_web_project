@@ -1,6 +1,7 @@
 package com.mx.fm.model;
 
 /**
+ * 用户收藏的视频
  * Created by jack on 16/5/27.
  */
 public class Collection {

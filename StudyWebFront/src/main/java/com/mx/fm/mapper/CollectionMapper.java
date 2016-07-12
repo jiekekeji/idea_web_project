@@ -16,15 +16,15 @@ import java.util.List;
 public interface CollectionMapper {
 
     @Select("SELECT * FROM sdyweb_collection WHERE username = #{username}")
-    Collection findUserByUsername(String username);
+    Collection findCollectionByUsername(String username);
 
     @Insert("INSERT INTO sdyweb_collection(username,videoid) values(#{username},#{videoid})")
-    int addUser(Collection collection);
+    int addCollection(Collection collection);
 
     @Delete("DELETE FROM sdyweb_collection WHERE videoid=#{videoid}")
-    int addUser(long videoid);
+    int deleteCollection(long videoid);
 
     @Select("SELECT * FROM sdyweb_collection LIMIT #{0},#{1}")
-    List<Collection> findAllUsers(int page, int rows);
+    List<Collection> findCollections(int page, int rows);
 
 }
