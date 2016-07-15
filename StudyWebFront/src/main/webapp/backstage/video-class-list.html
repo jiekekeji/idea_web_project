@@ -9,7 +9,7 @@
     <title>后台首页</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/m-userlist.css">
+    <link rel="stylesheet" href="css/m-index.css">
 </head>
 <body>
 <!--导航-->
@@ -34,11 +34,11 @@
         <!--左侧导航栏--->
         <div class="col-md-2">
             <div class="list-group">
-                <a href="admin-manage.html" id="menu1" class="list-group-item">管理员管理</a>
-                <a href="#" id="menu2" class="list-group-item active">用户管理</a>
-                <a href="videoclazz.html" id="menu3" class="list-group-item">视频分类管理</a>
-                <a href="videolist.html" id="menu4" class="list-group-item">视频管理</a>
-                <a href="topvideo.html" id="menu5" class="list-group-item">推荐视频管理</a>
+                <!--<a href="user-role-list.html" id="menu1" class="list-group-item">用户角色管理</a>-->
+                <a href="user-list.html" id="menu2" class="list-group-item">用户列表管理</a>
+                <a href="" id="menu3" class="list-group-item active">视频分类管理</a>
+                <a href="video-list.html" id="menu4" class="list-group-item">视频列表管理</a>
+                <a href="video-top-list.html" id="menu5" class="list-group-item">视频推荐管理</a>
             </div>
         </div>
         <!--左侧内容区域--->
@@ -47,7 +47,7 @@
                 <div class="panel-heading">
                     <div class="row">
                         <div class="col-md-2">
-                            <h4>用户管理</h4>
+                            <h5>视频分类管理</h5>
                         </div>
                         <div class="col-md-4">
                             <input type="text" class="form-control" placeholder="">
@@ -66,7 +66,7 @@
                             <button class="btn btn-default" type="submit">搜索</button>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-right">添加管理员</button>
+                            <a class="btn btn-default" href="add-video-class.html" role="button">添加视频分类</a>
                         </div>
                     </div>
                 </div>
@@ -74,18 +74,19 @@
             <table class="table table-bordered">
                 <thead>
                 <tr>
-                    <td>ID</td>
-                    <td>用户名</td>
-                    <td>昵称</td>
-                    <td>手机号</td>
-                    <td>邮箱</td>
-                    <td>性别</td>
+                    <td>分类ID</td>
+                    <td>分类名称</td>
+                    <td>视频总量</td>
                     <td>编辑</td>
-                    <td>删除</td>
                 </tr>
                 </thead>
-                <tbody id="tb-body">
-
+                <tbody>
+                <tr>
+                    <td>分类ID</td>
+                    <td>分类名称</td>
+                    <td>视频总量</td>
+                    <td>编辑</td>
+                </tr>
                 </tbody>
             </table>
             <!--分页导航--->
@@ -117,6 +118,6 @@
 <script src="../js/jquery-1.11.1.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="../js/bootstrap.min.js"></script>
-<script src="js/z-userlist.js"></script>
+<script src="js/z-videoclazz.js"></script>
 </body>
 </html>

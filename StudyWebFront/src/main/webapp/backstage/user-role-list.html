@@ -6,7 +6,7 @@
     <!--如果需要禁用掉响应式的布局可去掉该行-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>后台首页</title>
+    <title>管理员管理</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="css/m-index.css">
@@ -34,11 +34,11 @@
         <!--左侧导航栏--->
         <div class="col-md-2">
             <div class="list-group">
-                <a href="admin-manage.html" id="menu1" class="list-group-item">管理员管理</a>
-                <a href="userlist.html" id="menu2" class="list-group-item">用户管理</a>
-                <a href="videoclazz.html" id="menu3" class="list-group-item">视频分类管理</a>
-                <a href="videolist.html" id="menu4" class="list-group-item">视频管理</a>
-                <a href="#" id="menu5" class="list-group-item active">推荐视频管理</a>
+                <a href="#" id="menu1" class="list-group-item active">用户角色管理</a>
+                <a href="user-list.html" id="menu2" class="list-group-item">用户列表管理</a>
+                <a href="video-class-list.html" id="menu3" class="list-group-item">视频分类管理</a>
+                <a href="video-list.html" id="menu4" class="list-group-item">视频列表管理</a>
+                <a href="video-top-list.html" id="menu5" class="list-group-item">视频推荐管理</a>
             </div>
         </div>
         <!--左侧内容区域--->
@@ -46,7 +46,7 @@
             <div class="panel">
                 <div class="row">
                     <div class="col-md-2">
-                        <h4>推荐视频管理</h4>
+                        <h4>管理员管理</h4>
                     </div>
                     <div class="col-md-4">
                         <input type="text" class="form-control" placeholder="">
@@ -65,7 +65,7 @@
                         <button class="btn btn-default" type="submit">搜索</button>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-right">添加管理员</button>
+                        <a class="btn btn-default" href="adduser.html" role="button">添加管理员</a>
                     </div>
                 </div>
             </div>
@@ -73,15 +73,16 @@
                 <thead>
                 <tr>
                     <td>ID</td>
-                    <td>标题</td>
-                    <td>分类</td>
-                    <td>来源</td>
-                    <td>评论</td>
-                    <td>详情</td>
+                    <td>用户名</td>
+                    <td>角色</td>
+                    <td>手机号</td>
+                    <td>邮箱</td>
                     <td>编辑</td>
                     <td>删除</td>
                 </tr>
+                <tbody id="tb-body">
 
+                </tbody>
                 </thead>
             </table>
         </div>
