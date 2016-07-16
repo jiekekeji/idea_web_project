@@ -5,6 +5,7 @@ import com.mx.fm.model.User;
 import com.mx.fm.model.UserRole;
 import com.mx.fm.service.UserService;
 import org.apache.log4j.Logger;
+import org.apache.log4j.or.ObjectRenderer;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -38,6 +39,27 @@ public class UserController {
     public Map checkUserIsExit(String username) {
         logger.debug("checkUserIsExit=" + username);
         return service.checkUserIsExit(username);
+    }
+
+    /**
+     * 检测用户名是否已登录
+     *
+     * @param username
+     * @return
+     */
+    @RequestMapping(value = "/checkUserIsLogin", method = RequestMethod.GET)
+    @ResponseBody
+    public Map checkUserIsLogin(HttpServletRequest request,String username) {
+        logger.debug("检测用户是否登陆");
+        Map<String,Object> map=new HashMap<String, Object>();
+        if (null!=request.getSession().getAttribute("user")){
+            map.put("code",2000);
+            map.put("desc","用户已登陆");
+        }else {
+            map.put("code",40000);
+            map.put("desc","用户未登陆");
+        }
+        return map;
     }
 
     /**
@@ -100,52 +122,5 @@ public class UserController {
         return service.findOrdinaryUsers(page, rows);
     }
 
-    /**
-     * 获取管理员
-     *
-     * @param page
-     * @param rows
-     * @return
-     */
-    @RequestMapping(value = "/findAdmins", method = RequestMethod.POST)
-    @ResponseBody
-    public Map findAdmins(int page, int rows) {
-        logger.debug("findAdmins:" + "page=" + page + " rows" + rows);
-        return service.findAdmins(page, rows);
-    }
-
-    /**
-     * 获取用户的角色
-     *
-     * @return
-     */
-    @RequestMapping(value = "/getUserRoles", method = RequestMethod.GET)
-    @ResponseBody
-    public Map getUserRoles() {
-        Map map = new HashMap();
-        List roles = new ArrayList();
-
-        UserRole role1 = new UserRole();
-        role1.setRoleID(UserRoleConstant.ORDINARY_USER);
-        role1.setRoleName("用户");
-
-        UserRole role2 = new UserRole();
-        role2.setRoleID(UserRoleConstant.SUPER_ADMIN);
-        role2.setRoleName("超级管理员");
-
-        UserRole role3 = new UserRole();
-        role3.setRoleID(UserRoleConstant.ORDINARY_ADMIN);
-        role3.setRoleName("普通管理员");
-
-        roles.add(role1);
-        roles.add(role2);
-        roles.add(role3);
-
-        map.put("code",2000);
-        map.put("desc","获取成功");
-        map.put("roles", roles);
-        logger.debug(map);
-        return map;
-    }
 
 }

@@ -17,8 +17,8 @@ import java.util.List;
 public interface VideoMapper {
 
     //添加视频
-    @Insert("INSERT INTO sdyweb_video(title,content,source,duration,uploadtime,language,status,videourl,classid,istop)" +
-            "values(#{title},#{content},#{source},#{duration},#{uploadtime},#{language},#{status},#{videourl},#{classid},#{istop})")
+    @Insert("INSERT INTO sdyweb_video(title,content,source,duration,uploadtime,language,status,videourl,classid,istop,outlineImgUrl)" +
+            "values(#{title},#{content},#{source},#{duration},#{uploadtime},#{language},#{status},#{videourl},#{classid},#{istop},#{outlineImgUrl})")
     int addVideo(Video video);
 
     //添加视频图片
@@ -40,6 +40,10 @@ public interface VideoMapper {
     //删除视频评论
     @Delete("DELETE FROM sdy_comment WHERE videoid=#{videoid}")
     int deleteVideoCommentByVideoid(int videoid);
+
+    //查找分页视频
+    @Select("SELECT * FROM sdyweb_video LIMIT #{0},#{1} ORDER BY id DESC")
+    List<Video> findVideos(int page, int rows);
 
     //查找分类下的分页视频
     @Select("SELECT * FROM sdyweb_video WHERE classid=#{0} LIMIT #{1},#{2} ORDER BY id DESC")

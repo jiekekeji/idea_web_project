@@ -1,12 +1,7 @@
 package com.mx.fm.dao;
 
-import com.mx.fm.mapper.CommentMapper;
 import com.mx.fm.mapper.VideoClazzMapper;
-import com.mx.fm.model.Comment;
 import com.mx.fm.model.VideoClazz;
-import org.apache.ibatis.annotations.Delete;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

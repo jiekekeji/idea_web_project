@@ -19,6 +19,7 @@ public class Video {
     private long istop;//是否是推荐视频
     private String videourl;//播放地址
     private int classid;//视频分类
+    private String outlineImgUrl;//封面图
 
     public long getId() {
         return id;
@@ -108,6 +109,14 @@ public class Video {
         this.classid = classid;
     }
 
+    public String getOutlineImgUrl() {
+        return outlineImgUrl;
+    }
+
+    public void setOutlineImgUrl(String outlineImgUrl) {
+        this.outlineImgUrl = outlineImgUrl;
+    }
+
     @Override
     public String toString() {
         return "Video{" +
@@ -122,6 +131,7 @@ public class Video {
                 ", istop=" + istop +
                 ", videourl='" + videourl + '\'' +
                 ", classid=" + classid +
+                ", outlineImgUrl='" + outlineImgUrl + '\'' +
                 '}';
     }
 }

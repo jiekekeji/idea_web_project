@@ -16,7 +16,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter{
     private static Logger logger = Logger.getLogger(LoginInterceptor.class);
 
     //不执行拦截的URL
-    private static final String[] IGNORE_URI = {"/user/noty2login","/user/login"};
+    private static final String[] IGNORE_URI = {"/user/noty2login","/user/login","/user/checkUserIsLoginURL"};
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {

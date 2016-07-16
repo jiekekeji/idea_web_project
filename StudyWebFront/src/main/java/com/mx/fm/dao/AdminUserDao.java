@@ -1,7 +1,8 @@
 package com.mx.fm.dao;
 
-import com.mx.fm.mapper.AdminUserMapper;
+import com.mx.fm.mapper.UserMapper;
 import com.mx.fm.model.User;
+import org.apache.ibatis.annotations.Update;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -12,14 +13,14 @@ import java.io.Reader;
 import java.util.List;
 
 /**
- * 表:sdyweb_admin
+ * 表:sdy_user   管理员能操作的
  * Created by jack on 16/5/27.
  */
 public class AdminUserDao {
 
     private SqlSessionFactory sessionFactory;
     private SqlSession session;
-    private AdminUserMapper mapper;
+    private UserMapper mapper;
 
     public AdminUserDao() {
         String resource = "conf.xml";
@@ -27,11 +28,32 @@ public class AdminUserDao {
             Reader reader = Resources.getResourceAsReader(resource);
             sessionFactory = new SqlSessionFactoryBuilder().build(reader);
             session = sessionFactory.openSession();
-            mapper = session.getMapper(AdminUserMapper.class);
+            mapper = session.getMapper(UserMapper.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 添加用户
+     *
+     * @param user
+     * @return
+     */
+    public int addUser(User user) {
+        return mapper.addUser(user);
+    }
+
+    /**
+     * 删除用户
+     *
+     * @param username
+     * @return
+     */
+    public int deleteUserByUsername(String username) {
+        return mapper.deleteUserByUsername(username);
+    }
+
 
     /**
      * 根据用户名查找用户
@@ -44,13 +66,13 @@ public class AdminUserDao {
     }
 
     /**
-     * 添加用户
+     * 根据手机号查找用户
      *
-     * @param user
+     * @param phonenum
      * @return
      */
-    public int addUser(User user) {
-        return mapper.addUser(user);
+    public User findUserByPhonenum(String phonenum) {
+        return mapper.findUserByPhonenum(phonenum);
     }
 
     /**
@@ -66,6 +88,7 @@ public class AdminUserDao {
 
     /**
      * 修改密码
+     *
      * @param username
      * @param oldpassword
      * @param newpasswrod
@@ -76,11 +99,14 @@ public class AdminUserDao {
     }
 
     /**
-     * 删除管理员
-     * @param username
+     * 修改 昵称,电话号,QQ号,头像,微信,邮箱,自我介绍
+     *
+     * @param user
      * @return
      */
-    public int deleteUserByUsername(String username){
-        return  mapper.deleteUserByUsername(username);
+    public int updateUser(User user) {
+        return mapper.updateUser(user);
     }
+
+
 }

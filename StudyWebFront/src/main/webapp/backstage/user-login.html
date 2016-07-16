@@ -22,18 +22,19 @@
                     <h3>用户登录</h3>
                 </div>
                 <div class="panel-body">
-                    <form id="loginform" onsubmit="false">
+                    <!--onsubmit="return false"阻止表单自动提交-->
+                    <form id="loginform" action="/sdyweb/user/login" method="post" onsubmit="return false">
                         <div class="form-group">
                             <label for="usernameinput">用户名:</label>
-                            <input type="text" class="form-control" id="usernameinput" placeholder="请输入用户名">
+                            <input type="text" class="form-control" name="username" id="usernameinput" placeholder="请输入用户名">
                         </div>
                         <div class="form-group">
                             <label for="passwordinput">密码:</label>
-                            <input type="password" class="form-control" id="passwordinput" placeholder="请输入密码">
+                            <input type="password" class="form-control" name="password" id="passwordinput" placeholder="请输入密码">
                         </div>
+                        <button type="submit" id="loginbtn" class="btn btn-default">登录</button>
+                        <span id="notice"></span>
                     </form>
-                    <button type="submit" id="loginbtn" class="btn btn-default">登录</button>
-                    <span id="notice"></span>
                 </div>
             </div>
         </div>
@@ -47,6 +48,8 @@
 <script src="../js/jquery-1.11.1.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.form.js"></script>
+<script src="js/base.js"></script>
 <script src="js/z-login.js"></script>
 </body>
 </html>

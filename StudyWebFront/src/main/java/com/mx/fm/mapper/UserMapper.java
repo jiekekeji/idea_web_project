@@ -1,6 +1,7 @@
 package com.mx.fm.mapper;
 
 import com.mx.fm.model.Collection;
+import com.mx.fm.model.Comment;
 import com.mx.fm.model.User;
 import com.mx.fm.model.Video;
 import org.apache.ibatis.annotations.Delete;
@@ -30,6 +31,18 @@ public interface UserMapper {
     @Select("SELECT * FROM sdy_user WHERE username = #{username}")
     User findUserByUsername(String username);
 
+    //查找用户
+    @Select("SELECT * FROM sdy_user WHERE phonenum = #{phonenum}")
+    User findUserByPhonenum(String phonenum);
+
+    //查找用户列表
+    @Select("SELECT * FROM sdy_user LIMIT #{0},#{1}")
+    List<User> findAllUsers(int page, int rows);
+
+    //删除用户
+    @Select("DELETE FROM sdy_user WHERE username=#{username}")
+    int deleteUserByUsername(String username);
+
     //查找用户收藏的视频
     @Select("SELECT tvid.id,tvid.title,tvid.content,tvid.source,tvid.duration,tvid.uploadtime,tvid.language," +
             "tvid.status,tvid.istop,tvid.videourl,tvid.classid FROM sdy_collection_video tcoll LEFT JOIN " +
@@ -37,9 +50,35 @@ public interface UserMapper {
     List<Video> findColleciontVideo(String username,int page, int rows);
 
     //删除收藏
-    @Delete("DELETE FROM sdy_comment WHERE videoid=#{videoid}")
+    @Delete("DELETE FROM sdy_collection_video WHERE videoid=#{videoid}")
     int deleteVideoCommentByVideoid(int videoid);
 
-    @Update("UPDATE sdyweb_user t SET t.password=#{0} WHERE t.username=#{1} AND t.password=#{2}")
+    //查询用户的评论
+    @Select("SELECT * FROM sdy_comment WHERE username = #{0} LIMIT #{1},#{2}")
+    List<Comment> findCommentsByUsername(String username,int page,int rows);
+
+    //用户删除评论
+    @Select("DELETE FROM sdy_comment WHERE username=#{0}")
+    List<Comment> deleteCommentsByUsername(String username);
+
+    //修改密码
+    @Update("UPDATE sdy_user t SET t.password=#{0} WHERE t.username=#{1} AND t.password=#{2}")
     int updatePassword(String username, String oldpassword, String newpasswrod);
+
+    //修改 昵称,电话号,QQ号,头像,微信,邮箱,自我介绍
+    @Update("UPDATE sdy_user t SET t.nickname=#{nickname},t.phonenum=#{phonenum},t.qq=#{qq}," +
+            "t.headerurl=#{headerurl},t.weixin=#{weixin},t.email=#{email},t.introduce=#{introduce}" +
+            "WHERE t.username=#{username}")
+    int updateUser(User user);
+
+    //修改头像
+    @Update("UPDATE sdy_user t SET  t.headerurl=#{0} WHERE t.username=#{1}")
+    int updateUserHeaderurl(String username,String headerurl);
+
+    //修改头像
+    @Update("UPDATE sdy_user t SET  t.introduce=#{0} WHERE t.username=#{1}")
+    int updateUserIntroduce(String username,String introduce);
+
+
+
 }

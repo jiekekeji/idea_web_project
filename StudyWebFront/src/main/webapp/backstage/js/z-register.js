@@ -3,6 +3,9 @@
  */
 $(document).ready(function () {
 
+
+
+
     //给输入框添加焦点事件
     $("#exampleInputEmail1").focus(function () {
         console.log("获取焦点");

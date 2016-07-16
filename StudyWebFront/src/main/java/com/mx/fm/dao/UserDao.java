@@ -1,8 +1,14 @@
 package com.mx.fm.dao;
 
 import com.mx.fm.mapper.UserMapper;
+import com.mx.fm.model.Collection;
+import com.mx.fm.model.Comment;
 import com.mx.fm.model.User;
+import com.mx.fm.model.Video;
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -44,7 +50,17 @@ public class UserDao {
     }
 
     /**
-     * 根据用户名查找用户
+     * 添加收藏
+     *
+     * @param collection
+     * @return
+     */
+    public int addCollection(Collection collection) {
+        return mapper.addCollection(collection);
+    }
+
+    /**
+     * 查找用户
      *
      * @param username
      * @return
@@ -54,36 +70,102 @@ public class UserDao {
     }
 
     /**
-     * 分页查找用户
-     *
-     * @param page
-     * @param rows
+     * 查找用户
+     * @param phonenum
      * @return
      */
-    public List<User> findAllUsers(int page, int rows) {
-        return mapper.findAllUsers(page, rows);
+    public User findUserByPhonenum(String phonenum){
+        return mapper.findUserByPhonenum(phonenum);
     }
 
     /**
-     * 获取管理员
-     *
+     * 查找用户列表
      * @param page
      * @param rows
      * @return
      */
-    public List<User> findAdmins(int page, int rows) {
-        return mapper.findAdmins(page, rows);
+    public List<User> findAllUsers(int page, int rows){
+        return mapper.findAllUsers(page,rows);
     }
 
+    /**
+     * 查找用户收藏的视频
+     * @param username
+     * @param page
+     * @param rows
+     * @return
+     */
+    public List<Video> findColleciontVideo(String username, int page, int rows){
+        return mapper.findColleciontVideo(username,page,rows);
+    }
 
-    public static void main(String[] arg) {
-//        User user = new User();
-//        user.setUsername("jack");
-//        user.setPassword("123456");
-//        System.out.println(new UserDao().addUser(user));
-//        System.out.println("00000");
-        UserDao dao = new UserDao();
-        System.out.println(dao.mapper.findAllUsers(0, 3));
+    /**
+     * 删除收藏
+     * @param videoid
+     * @return
+     */
+    public int deleteVideoCommentByVideoid(int videoid){
+        return mapper.deleteVideoCommentByVideoid(videoid);
+    }
+
+    /**
+     * 查询用户的评论
+     * @param username
+     * @param page
+     * @param rows
+     * @return
+     */
+    public List<Comment> findCommentsByUsername(String username, int page, int rows){
+        return mapper.findCommentsByUsername(username,page,rows);
+    }
+
+    /**
+     * 用户删除评论
+     * @param username
+     * @return
+     */
+    public List<Comment> deleteCommentsByUsername(String username){
+        return mapper.deleteCommentsByUsername(username);
+    }
+
+    /**
+     * 修改密码
+     * @param username
+     * @param oldpassword
+     * @param newpasswrod
+     * @return
+     */
+    public int updatePassword(String username, String oldpassword, String newpasswrod){
+        return mapper.updatePassword(username,oldpassword,newpasswrod);
+    }
+
+    /**
+     * 修改 昵称,电话号,QQ号,头像,微信,邮箱,自我介绍
+     * @param user
+     * @return
+     */
+    public int updateUser(User user){
+        return mapper.updateUser(user);
+    }
+
+    /**
+     * 修改头像
+     * @param username
+     * @param headerurl
+     * @return
+     */
+    public int updateUserHeaderurl(String username, String headerurl){
+        return mapper.updateUserHeaderurl(username,headerurl);
+    }
+
+    /**
+     * 修改自我介绍
+     * @param username
+     * @param introduce
+     * @return
+     */
+    public int updateUserIntroduce(String username, String introduce){
+        return  mapper.updateUserIntroduce(username,introduce);
     }
 
 

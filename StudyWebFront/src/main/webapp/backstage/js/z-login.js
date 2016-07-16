@@ -3,48 +3,62 @@
  */
 $(document).ready(function () {
 
-    /*****start 页面加载完成，获取登录的用户名，填在表单中****/
+    //请求地址
+    var checkUserIsLoginURL = "/sdyweb/user/checkUserIsLogin";
+
+    //start 页面加载完成,检测用户是否已登陆
+    console.log("检测用户是否已登陆");
+    $.get(checkUserIsLoginURL, function (result) {
+        if (2000 == result.code) {
+            window.location.href = encodeURI("backstage/user-list.html");
+        }
+    }, "json");
+
+    //start 如果ULR中包含用户名,说明是注册页面过来的
+    console.log("判断URL中是否有参数username");
     var username = getUrlParam("username");
-    // username=decodeURI(username);
-    console.log("地址中url参数username=" + username);
-    $("#usernameinput").val(username);
-
-    /*****end 页面加载完成，获取登录的用户名，填在表单中****/
-
-    /*****start 给控件设置监听 ****/
-
-    //登录按钮
-    $("#loginbtn").click(function () {
-        $.post("/sdyweb/user/login",
-            {username: $("#usernameinput").val(), password: $('#passwordinput').val()},
-            function (data) {
-                if (2000 == data.code) {
-                    //登录成功
-                    window.location.href = "admin-manage.html?username=" + $("#usernameinput").val();
-                } else {
-                    //登录失败
-                    alert("登陆失败");
-                }
-            },
-            "json");//这里返回的类型有：json,html,xml,text
-    });
-
-    /*****end 给控件设置监听 ****/
-
-    /**
-     * 获取url中的参数值
-     * @param name
-     * @returns {null}
-     */
-    function getUrlParam(name) {
-        //构造一个含有目标参数的正则表达式对象
-        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-        //匹配目标参数
-        var r = window.location.search.substr(1).match(reg);
-        //返回参数值
-        if (r != null) return decodeURI(unescape(r[2]));
-        return null;
+    if (null != username) {
+        $("#usernameinput").val(username);
     }
 
+
+    /*****start 给控件设置监听 ****/
+    //1 登录按钮
+    $("#loginbtn").click(function () {
+        if (!chechInputIsOK()) {
+            return;
+        }
+
+        $("#loginform").submit(function() {
+            $(this).ajaxSubmit(function(data) {
+                console.log("登陆状态:code="+data.code);
+                if (2000 == data.code) {
+                    window.location.href = encodeURI("user-list.html");
+                }else{
+                    $("#notice").text("登陆失败,请修改后重试");
+                }
+            });
+        });
+    });
+
+    /**
+     * 检测输入是否OK
+     */
+    function chechInputIsOK() {
+        console.log("检测输入是否OK");
+        var username = $("#usernameinput").val();
+        if (null == username ||""==username.trim()|| username.length > 16) {
+            $("#notice").text("用户名输入不合法");
+            return false;
+        }
+        var password = $("#passwordinput").val();
+        if (null == password|""==password.trim()) {
+            $("#notice").text("密码未输入");
+            return false;
+        }
+
+        $("#notice").text("登录中....");
+        return true;
+    }
 
 });

@@ -56,13 +56,13 @@ public class UserService {
         User user = dao.findUserByUsername(username);
         Map map = new HashMap();
         if (null == user) {
-            map.put("code", "4000");
+            map.put("code", 4000);
             map.put("desc", "登录失败");
             return map;
         }
 
         if (null != password && password.equals(user.getPassword())) {
-            map.put("code", "2000");
+            map.put("code", 2000);
             map.put("desc", "登录成功");
             map.put("user", user);
             return map;
@@ -123,18 +123,6 @@ public class UserService {
         return map;
     }
 
-    /**
-     * 获取管理员
-     *
-     * @param page
-     * @param rows
-     * @return
-     */
-    public Map findAdmins(int page, int rows) {
-        Map map = new HashMap();
-        List<User> users = dao.findAdmins(page, rows);
-        map.put("users", users);
-        return map;
-    }
+
 
 }
