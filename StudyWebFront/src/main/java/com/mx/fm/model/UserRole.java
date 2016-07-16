@@ -5,30 +5,40 @@ package com.mx.fm.model;
  */
 public class UserRole {
 
-    private int roleID;
-    private String roleName;
+    private int id;
+    private String name;
+    private int roleid;
 
-    public int getRoleID() {
-        return roleID;
+    public int getId() {
+        return id;
     }
 
-    public void setRoleID(int roleID) {
-        this.roleID = roleID;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getRoleName() {
-        return roleName;
+    public String getName() {
+        return name;
     }
 
-    public void setRoleName(String roleName) {
-        this.roleName = roleName;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getRoleid() {
+        return roleid;
+    }
+
+    public void setRoleid(int roleid) {
+        this.roleid = roleid;
     }
 
     @Override
     public String toString() {
         return "UserRole{" +
-                "roleID=" + roleID +
-                ", roleName='" + roleName + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", roleid=" + roleid +
                 '}';
     }
 }

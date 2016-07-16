@@ -8,14 +8,17 @@ public class Video {
 
     private long id;
     private String title;
-    private String url;
-    private String  imgurl;
-    private String  from;
+    private String content;
+    private String source;
+    private long duration;//视频时长
 
-    private long times;
-    private long  clazzid;
-    private int  recommend;
+    private long uploadtime;//上传时间
+    private String language;//语言
+    private int status;
 
+    private long istop;//是否是推荐视频
+    private String videourl;//播放地址
+    private int classid;//视频分类
 
     public long getId() {
         return id;
@@ -33,52 +36,76 @@ public class Video {
         this.title = title;
     }
 
-    public String getUrl() {
-        return url;
+    public String getContent() {
+        return content;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public String getImgurl() {
-        return imgurl;
+    public String getSource() {
+        return source;
     }
 
-    public void setImgurl(String imgurl) {
-        this.imgurl = imgurl;
+    public void setSource(String source) {
+        this.source = source;
     }
 
-    public String getFrom() {
-        return from;
+    public long getDuration() {
+        return duration;
     }
 
-    public void setFrom(String from) {
-        this.from = from;
+    public void setDuration(long duration) {
+        this.duration = duration;
     }
 
-    public long getTimes() {
-        return times;
+    public long getUploadtime() {
+        return uploadtime;
     }
 
-    public void setTimes(long times) {
-        this.times = times;
+    public void setUploadtime(long uploadtime) {
+        this.uploadtime = uploadtime;
     }
 
-    public long getClazzid() {
-        return clazzid;
+    public String getLanguage() {
+        return language;
     }
 
-    public void setClazzid(long clazzid) {
-        this.clazzid = clazzid;
+    public void setLanguage(String language) {
+        this.language = language;
     }
 
-    public int getRecommend() {
-        return recommend;
+    public int getStatus() {
+        return status;
     }
 
-    public void setRecommend(int recommend) {
-        this.recommend = recommend;
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
+    public long getIstop() {
+        return istop;
+    }
+
+    public void setIstop(long istop) {
+        this.istop = istop;
+    }
+
+    public String getVideourl() {
+        return videourl;
+    }
+
+    public void setVideourl(String videourl) {
+        this.videourl = videourl;
+    }
+
+    public int getClassid() {
+        return classid;
+    }
+
+    public void setClassid(int classid) {
+        this.classid = classid;
     }
 
     @Override
@@ -86,13 +113,15 @@ public class Video {
         return "Video{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", url='" + url + '\'' +
-                ", imgurl='" + imgurl + '\'' +
-                ", from='" + from + '\'' +
-                ", times=" + times +
-                ", clazzid=" + clazzid +
-                ", recommend=" + recommend +
+                ", content='" + content + '\'' +
+                ", source='" + source + '\'' +
+                ", duration=" + duration +
+                ", uploadtime=" + uploadtime +
+                ", language='" + language + '\'' +
+                ", status=" + status +
+                ", istop=" + istop +
+                ", videourl='" + videourl + '\'' +
+                ", classid=" + classid +
                 '}';
     }
-
 }

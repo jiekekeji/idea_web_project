@@ -8,7 +8,7 @@ public class VideoClazz {
 
     private long id;
     private String name;
-    private String desc;
+    private String content;
 
     public long getId() {
         return id;
@@ -26,12 +26,12 @@ public class VideoClazz {
         this.name = name;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getContent() {
+        return content;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setContent(String content) {
+        this.content = content;
     }
 
     @Override
@@ -39,9 +39,7 @@ public class VideoClazz {
         return "VideoClazz{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", desc='" + desc + '\'' +
+                ", content='" + content + '\'' +
                 '}';
     }
-
-
 }

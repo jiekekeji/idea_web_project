@@ -7,8 +7,9 @@ package com.mx.fm.model;
 public class Collection {
 
     private long id;
+    private Long time;//收藏的时间
     private String username;
-    private String videoid;
+    private Long videoid;
 
     public long getId() {
         return id;
@@ -16,6 +17,14 @@ public class Collection {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public Long getTime() {
+        return time;
+    }
+
+    public void setTime(Long time) {
+        this.time = time;
     }
 
     public String getUsername() {
@@ -26,25 +35,21 @@ public class Collection {
         this.username = username;
     }
 
-    public String getVideoid() {
+    public Long getVideoid() {
         return videoid;
     }
 
-    public void setVideoid(String videoid) {
+    public void setVideoid(Long videoid) {
         this.videoid = videoid;
     }
-
-
 
     @Override
     public String toString() {
         return "Collection{" +
                 "id=" + id +
+                ", time=" + time +
                 ", username='" + username + '\'' +
-                ", videoid='" + videoid + '\'' +
+                ", videoid=" + videoid +
                 '}';
     }
-
-
-
 }

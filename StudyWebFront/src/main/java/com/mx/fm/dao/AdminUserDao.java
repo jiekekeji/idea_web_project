@@ -1,11 +1,6 @@
 package com.mx.fm.dao;
 
 import com.mx.fm.mapper.AdminUserMapper;
-import com.mx.fm.mapper.UserMapper;
-import com.mx.fm.model.AdminUser;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;

@@ -10,10 +10,13 @@ public class User {
     private String nickname;
     private String password;
     private String phonenum;
+    private String qq;
+    private String headerurl;
+    private long registertime;
+    private String weixin;
+    private int roleid;//角色
     private String email;
-    private String gender;
-    private int role;//角色
-
+    private String introduce;//动态
 
     public long getId() {
         return id;
@@ -55,6 +58,46 @@ public class User {
         this.phonenum = phonenum;
     }
 
+    public String getQq() {
+        return qq;
+    }
+
+    public void setQq(String qq) {
+        this.qq = qq;
+    }
+
+    public String getHeaderurl() {
+        return headerurl;
+    }
+
+    public void setHeaderurl(String headerurl) {
+        this.headerurl = headerurl;
+    }
+
+    public long getRegistertime() {
+        return registertime;
+    }
+
+    public void setRegistertime(long registertime) {
+        this.registertime = registertime;
+    }
+
+    public String getWeixin() {
+        return weixin;
+    }
+
+    public void setWeixin(String weixin) {
+        this.weixin = weixin;
+    }
+
+    public int getRoleid() {
+        return roleid;
+    }
+
+    public void setRoleid(int roleid) {
+        this.roleid = roleid;
+    }
+
     public String getEmail() {
         return email;
     }
@@ -63,20 +106,12 @@ public class User {
         this.email = email;
     }
 
-    public String getGender() {
-        return gender;
+    public String getIntroduce() {
+        return introduce;
     }
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public int getRole() {
-        return role;
-    }
-
-    public void setRole(int role) {
-        this.role = role;
+    public void setIntroduce(String introduce) {
+        this.introduce = introduce;
     }
 
     @Override
@@ -87,9 +122,13 @@ public class User {
                 ", nickname='" + nickname + '\'' +
                 ", password='" + password + '\'' +
                 ", phonenum='" + phonenum + '\'' +
+                ", qq='" + qq + '\'' +
+                ", headerurl='" + headerurl + '\'' +
+                ", registertime=" + registertime +
+                ", weixin='" + weixin + '\'' +
+                ", roleid=" + roleid +
                 ", email='" + email + '\'' +
-                ", gender='" + gender + '\'' +
-                ", role=" + role +
+                ", introduce='" + introduce + '\'' +
                 '}';
     }
 }

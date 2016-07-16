@@ -1,10 +1,10 @@
 package com.mx.fm.model;
 
 /**
- * 视频评论
+ * 评论信息和对应的用户信息
  * Created by jack on 16/7/11.
  */
-public class Comment {
+public class CommentUser {
 
     private long id;
     private String username;//评论的用户名
@@ -13,6 +13,8 @@ public class Comment {
     private long videoid;//视频ID
     private Integer praise;//赞的个数
     private Integer weak;//踩的个数
+    private String nickname;//用户昵称
+    private String headerurl;//用户头像
 
     public long getId() {
         return id;
@@ -70,9 +72,25 @@ public class Comment {
         this.weak = weak;
     }
 
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getHeaderurl() {
+        return headerurl;
+    }
+
+    public void setHeaderurl(String headerurl) {
+        this.headerurl = headerurl;
+    }
+
     @Override
     public String toString() {
-        return "Comment{" +
+        return "CommentUser{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", time=" + time +
@@ -80,6 +98,8 @@ public class Comment {
                 ", videoid=" + videoid +
                 ", praise=" + praise +
                 ", weak=" + weak +
+                ", nickname='" + nickname + '\'' +
+                ", headerurl='" + headerurl + '\'' +
                 '}';
     }
 }

@@ -1,11 +1,9 @@
 package com.mx.fm.mapper;
 
-import com.mx.fm.model.AdminUser;
 import com.mx.fm.model.Comment;
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
 
 import java.util.List;
 
