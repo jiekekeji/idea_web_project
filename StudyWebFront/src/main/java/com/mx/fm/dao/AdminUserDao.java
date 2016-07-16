@@ -1,6 +1,7 @@
 package com.mx.fm.dao;
 
 import com.mx.fm.mapper.AdminUserMapper;
+import com.mx.fm.model.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -38,7 +39,7 @@ public class AdminUserDao {
      * @param username
      * @return
      */
-    public AdminUser findUserByUsername(String username) {
+    public User findUserByUsername(String username) {
         return mapper.findUserByUsername(username);
     }
 
@@ -48,7 +49,7 @@ public class AdminUserDao {
      * @param user
      * @return
      */
-    public int addUser(AdminUser user) {
+    public int addUser(User user) {
         return mapper.addUser(user);
     }
 
@@ -59,7 +60,7 @@ public class AdminUserDao {
      * @param rows
      * @return
      */
-    public List<AdminUser> findAllUsers(int page, int rows) {
+    public List<User> findAllUsers(int page, int rows) {
         return mapper.findAllUsers(page, rows);
     }
 
