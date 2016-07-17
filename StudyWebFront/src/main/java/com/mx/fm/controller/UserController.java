@@ -73,10 +73,11 @@ public class UserController {
     public Map login(HttpServletRequest request, String username, String password) {
         logger.debug("login=" + username);
         Map map = service.login(username, password);
-        if (null != map && "2000".equals(map.get("code"))) {
+        if (null!=map&&2000==((Integer)map.get("code"))) {
             //登录成功
             request.getSession().setAttribute("user", map.remove("user"));
         }
+        logger.debug("登陆用户:"+request.getSession().getAttribute("user"));
         return service.login(username, password);
     }
 
@@ -105,11 +106,36 @@ public class UserController {
     @ResponseBody
     public Map register(User user) {
         logger.debug("register=" + user);
-        return service.register(user);
+        Map map=service.register(user);
+        logger.debug("注册结果:"+map);
+        return map;
     }
 
     /**
-     * 获取普通用户
+     * 获取当前登陆用户
+     * @return
+     */
+    @RequestMapping(value = "/getLoginUser", method = RequestMethod.GET)
+    @ResponseBody
+    public Map getLoginUser(HttpServletRequest request) {
+        logger.debug("获取当前登陆用户");
+        Map<String,Object> map=new HashMap<String, Object>();
+        User user= (User) request.getSession().getAttribute("user");
+        if (null!=user){
+            map.put("code",2000);
+            map.put("desc","获取成功");
+            map.put("user",user);
+        }else {
+            map.put("code",4000);
+            map.put("desc","获取失败");
+        }
+        logger.debug("user="+user);
+        return map;
+    }
+
+
+    /**
+     * 获取普通用户列表
      *
      * @param page
      * @param rows
@@ -119,8 +145,32 @@ public class UserController {
     @ResponseBody
     public Map findOrdinaryUsers(int page, int rows) {
         logger.debug("findOrdinaryUsers:" + "page=" + page + " rows" + rows);
-        return service.findOrdinaryUsers(page, rows);
+        Map map=service.findOrdinaryUsers(page, rows);
+        logger.debug("用户列表获取结果:"+map);
+        return map;
     }
 
+    /**
+     * 根据用户名查询用户信息
+     * @param username
+     * @return
+     */
+    @RequestMapping(value = "/findUserByUsername", method = RequestMethod.GET)
+    @ResponseBody
+    public Map findUserByUsername(String username) {
+        logger.debug("findUserByUsername:" + "username=" + username);
+        Map map=service.findUserByUsername(username);
+        logger.debug("获取用户信息:"+map);
+        return map;
+    }
+
+    @RequestMapping(value = "/updateUser", method = RequestMethod.POST)
+    @ResponseBody
+    public Map updateUser(User user){
+        logger.debug("updateUser:" + "user=" + user);
+        Map map=service.updateUser(user);
+        logger.debug("更新用户信息:"+map);
+        return map;
+    }
 
 }

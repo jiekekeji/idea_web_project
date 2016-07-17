@@ -5,14 +5,23 @@ $(document).ready(function () {
 
     //请求地址
     var checkUserIsLoginURL = "/sdyweb/user/checkUserIsLogin";
-
     //start 页面加载完成,检测用户是否已登陆
     console.log("检测用户是否已登陆");
+    var islogin=true;
     $.get(checkUserIsLoginURL, function (result) {
         if (4000 == result.code) {
             window.location.href = encodeURI("user-login.html");
+            islogin=false;
         }
     });
+
+    if (!islogin){
+        return;
+    }
+
+    //请求数据填充表单
+
+
 
     /*****start 给控件设置监听 ****/
     //1 登录按钮

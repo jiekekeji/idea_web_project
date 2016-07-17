@@ -12,7 +12,7 @@ public class User {
     private String phonenum;
     private String qq;
     private String headerurl;
-    private long registertime;
+    private String registertime;
     private String weixin;
     private int roleid;//角色
     private String email;
@@ -74,11 +74,11 @@ public class User {
         this.headerurl = headerurl;
     }
 
-    public long getRegistertime() {
+    public String getRegistertime() {
         return registertime;
     }
 
-    public void setRegistertime(long registertime) {
+    public void setRegistertime(String registertime) {
         this.registertime = registertime;
     }
 

@@ -10,6 +10,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.annotations.Update;
 import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.javassist.bytecode.stackmap.BasicBlock;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -46,7 +47,15 @@ public class UserDao {
      * @return
      */
     public int addUser(User user) {
-        return mapper.addUser(user);
+        int code = 0;
+        try {
+            code = mapper.addUser(user);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            session.commit();
+        }
+        return code;
     }
 
     /**
@@ -71,101 +80,111 @@ public class UserDao {
 
     /**
      * 查找用户
+     *
      * @param phonenum
      * @return
      */
-    public User findUserByPhonenum(String phonenum){
+    public User findUserByPhonenum(String phonenum) {
         return mapper.findUserByPhonenum(phonenum);
     }
 
     /**
      * 查找用户列表
+     *
      * @param page
      * @param rows
      * @return
      */
-    public List<User> findAllUsers(int page, int rows){
-        return mapper.findAllUsers(page,rows);
+    public List<User> findAllUsers(int page, int rows) {
+        return mapper.findAllUsers(page, rows);
     }
 
     /**
      * 查找用户收藏的视频
+     *
      * @param username
      * @param page
      * @param rows
      * @return
      */
-    public List<Video> findColleciontVideo(String username, int page, int rows){
-        return mapper.findColleciontVideo(username,page,rows);
+    public List<Video> findColleciontVideo(String username, int page, int rows) {
+        return mapper.findColleciontVideo(username, page, rows);
     }
 
     /**
      * 删除收藏
+     *
      * @param videoid
      * @return
      */
-    public int deleteVideoCommentByVideoid(int videoid){
+    public int deleteVideoCommentByVideoid(int videoid) {
         return mapper.deleteVideoCommentByVideoid(videoid);
     }
 
     /**
      * 查询用户的评论
+     *
      * @param username
      * @param page
      * @param rows
      * @return
      */
-    public List<Comment> findCommentsByUsername(String username, int page, int rows){
-        return mapper.findCommentsByUsername(username,page,rows);
+    public List<Comment> findCommentsByUsername(String username, int page, int rows) {
+        return mapper.findCommentsByUsername(username, page, rows);
     }
 
     /**
      * 用户删除评论
+     *
      * @param username
      * @return
      */
-    public List<Comment> deleteCommentsByUsername(String username){
+    public List<Comment> deleteCommentsByUsername(String username) {
         return mapper.deleteCommentsByUsername(username);
     }
 
     /**
      * 修改密码
+     *
      * @param username
      * @param oldpassword
      * @param newpasswrod
      * @return
      */
-    public int updatePassword(String username, String oldpassword, String newpasswrod){
-        return mapper.updatePassword(username,oldpassword,newpasswrod);
+    public int updatePassword(String username, String oldpassword, String newpasswrod) {
+        return mapper.updatePassword(username, oldpassword, newpasswrod);
     }
 
     /**
      * 修改 昵称,电话号,QQ号,头像,微信,邮箱,自我介绍
+     *
      * @param user
      * @return
      */
-    public int updateUser(User user){
+    public int updateUser(User user) {
         return mapper.updateUser(user);
     }
 
     /**
      * 修改头像
+     *
      * @param username
      * @param headerurl
      * @return
      */
-    public int updateUserHeaderurl(String username, String headerurl){
-        return mapper.updateUserHeaderurl(username,headerurl);
+    public int updateUserHeaderurl(String username, String headerurl) {
+        return mapper.updateUserHeaderurl(username, headerurl);
     }
 
     /**
      * 修改自我介绍
+     *
      * @param username
      * @param introduce
      * @return
      */
-    public int updateUserIntroduce(String username, String introduce){
-        return  mapper.updateUserIntroduce(username,introduce);
+    public int updateUserIntroduce(String username, String introduce) {
+        return mapper.updateUserIntroduce(username, introduce);
     }
 
 

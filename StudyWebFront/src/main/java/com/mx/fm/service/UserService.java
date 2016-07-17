@@ -91,7 +91,10 @@ public class UserService {
             return map;
         }
 
+        map.put("code", 2000);
+        map.put("desc", "注册成功");
         return map;
+
     }
 
 
@@ -123,6 +126,43 @@ public class UserService {
         return map;
     }
 
+    /**
+     * 根据用户用查询用户信息
+     *
+     * @param username
+     * @return
+     */
+    public Map findUserByUsername(String username) {
+        Map map=new HashMap();
+        User user=dao.findUserByUsername(username);
+        if (null!=user){
+            map.put("code",2000);
+            map.put("desc","查询成功");
+            map.put("user",user);
+            return  map;
+        }
+        map.put("code",4000);
+        map.put("desc","查询失败");
+        return map;
+    }
+
+    /**
+     * 修改 昵称,电话号,QQ号,头像,微信,邮箱,自我介绍
+     * @param user
+     * @return
+     */
+    public Map updateUser(User user){
+        int code=dao.updateUser(user);
+        Map map=new HashMap();
+        if (code>0){
+            map.put("code",2000);
+            map.put("desc","更新成功");
+            return  map;
+        }
+        map.put("code",4000);
+        map.put("desc","更新失败");
+        return map;
+    }
 
 
 }
