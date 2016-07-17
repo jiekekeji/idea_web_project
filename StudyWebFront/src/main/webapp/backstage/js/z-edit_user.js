@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     //请求地址
     var checkUserIsLoginURL = "/sdyweb/user/checkUserIsLogin";
+
     //start 页面加载完成,检测用户是否已登陆
     console.log("检测用户是否已登陆");
     var islogin=true;
@@ -19,20 +20,44 @@ $(document).ready(function () {
         return;
     }
 
+    var username=getUrlParam("username");
+    if (null==username||""==username){
+        username=sessionStorage.getItem("edit_username");
+    }else{
+        sessionStorage.setItem("edit_username",username);
+    }
+
+
     //请求数据填充表单
-
-
-
-    /*****start 给控件设置监听 ****/
-    //1 登录按钮
-    $("#submitbtn").click(function () {
-        if (!chechInputIsOK()) {
+    $.get("/sdyweb/user/findUserByUsername?username="+username,function (data) {
+        console.log("查询用户信息:"+data.code);
+        if (4000==data.code){
+            $("#notice").text("遇到错误,请重试");
             return;
         }
-         //提交注册
+
+        var user=data.user;
+        $("#username").val(user.username);
+        $("#username").attr("readOnly",true);
+        $("#nickname").val(user.nickname);
+        $("#phonenum").val(user.phonenum);
+        $("#email").val(user.email);
+        $("#introduce").val(user.introduce);
+
+        $("#qq").val(user.qq);
+        $("#headerurl").val(user.headerurl);
+        $("#weixin").val(user.weixin);
+
+
+    });
+
+    /*****start 给控件设置监听 ****/
+    //1提交按钮
+    $("#submitbtn").click(function () {
+         //提交更新
         $("#adduser_form").submit(function () {
             $(this).ajaxSubmit(function (data) {
-                console.log("注册状态:code=" + data.code);
+                console.log("更新状态状态:code=" + data.code);
                 if (2000 == data.code) {
                     window.location.href = encodeURI("./user-list.html");
                 } else {
@@ -43,45 +68,5 @@ $(document).ready(function () {
     });
 
 
-    /**
-     * 检测输入是否OK
-     */
-    function chechInputIsOK() {
-        console.log("检测输入是否OK");
-        var username = $("#username").val();
-        if (null == username || "" == username.trim() || username.length > 16) {
-            $("#notice").text("用户名输入不合法");
-            return false;
-        }
-        var password0 = $("#password0").val();
-        if (null == password0 | "" == password0.trim()) {
-            $("#notice").text("密码未输入");
-            return false;
-        }
 
-        var password1 = $("#password1").val();
-        if (null == password1 | "" == password1.trim()) {
-            $("#notice").text("密码未输入");
-            return false;
-        }
-
-        if (password1 != password0) {
-            $("#notice").text("两次密码输入不一致");
-            return false;
-        }
-        var phonenum = $("#phonenum").val();
-        if (null == phonenum | "" == phonenum.trim()) {
-            $("#notice").text("手机号未输入");
-            return false;
-        }
-
-        var email = $("#email").val();
-        if (null == email | "" == email.trim()) {
-            $("#notice").text("邮箱未输入");
-            return false;
-        }
-
-        $("#notice").text("注册中....");
-        return true;
-    }
 });

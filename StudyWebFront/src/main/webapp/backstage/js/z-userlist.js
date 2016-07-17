@@ -60,8 +60,8 @@ $(document).ready(function () {
                 "<td>" + user.phonenum + "</td>" +
                 "<td>" + user.registertime + "</td>" +
                 "<td>" + user.roleid + "</td>" +
-                "<td><button class='btn -default'>编辑</button></td>" +
-                "<td><button class='btn -default'>删除</button></td>" +
+                "<td><a href="+"'"+"/sdyweb/backstage/edit-user.html?username="+user.username+"'"+">编辑</a></td>" +
+                "<td><a >删除</a></td>" +
                 "</tr>"
             )
         }
