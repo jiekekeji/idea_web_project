@@ -49,7 +49,7 @@ $(document).ready(function () {
                 "<td>" + video.uploadtime + "</td>" +
                 "<td>" + video.duration + "</td>" +
                 "<td>" + video.status + "</td>" +
-                "<td><a href=" + "'" + "/sdyweb/backstage/edit-user.html?username=" + user.username + "'" + ">编辑</a></td>" +
+                "<td><a href=" + "'" + "/sdyweb/backstage/edit-user.html?username=" + video.id + "'" + ">编辑</a></td>" +
                 "<td><a href='#'>暂不支持该功能</a></td>" +
                 "</tr>"
             )
