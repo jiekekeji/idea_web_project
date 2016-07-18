@@ -67,6 +67,32 @@ public class VideoService {
         map.put("code", 4000);
         map.put("desc", "添加失败");
         return map;
+    }
 
+    /**
+     * 查找分页视频
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    public Map findVideos(int page, int rows) {
+        Map map = new HashMap();
+        map.put("videos", dao.findVideos(page, rows));
+        return map;
+    }
+
+    /**
+     * 查找分类下的分页视频
+     *
+     * @param classid
+     * @param page
+     * @param rows
+     * @return
+     */
+    public Map findVideosByClassID(int classid, int page, int rows) {
+        Map map = new HashMap();
+        map.put("videos", dao.findVideosByClassID(classid, page, rows));
+        return map;
     }
 }

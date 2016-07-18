@@ -42,7 +42,7 @@ public interface VideoMapper {
     int deleteVideoCommentByVideoid(int videoid);
 
     //查找分页视频
-    @Select("SELECT * FROM sdy_video LIMIT #{0},#{1} ORDER BY id DESC")
+    @Select("SELECT * FROM sdy_video LIMIT #{0},#{1}")
     List<Video> findVideos(int page, int rows);
 
     //查找分类下的分页视频

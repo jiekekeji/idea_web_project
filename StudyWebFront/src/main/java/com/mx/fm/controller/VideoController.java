@@ -67,6 +67,13 @@ public class VideoController {
         return map;
     }
 
+    /**
+     * 添加网络视频
+     *
+     * @param file
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "/addNetVideo", method = RequestMethod.POST)
     @ResponseBody
     public Map addNetVideo(@RequestParam("image") MultipartFile file, HttpServletRequest request) {
@@ -127,5 +134,39 @@ public class VideoController {
             //不用关流，貌似里面自己关了
         }
         return null;
+    }
+
+
+    /**
+     * 查找分页视频
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    @RequestMapping(value = "/findVideos", method = RequestMethod.GET)
+    @ResponseBody
+    public Map findVideos(int page, int rows) {
+        logger.debug("findVideos:" + "page=" + page + " rows=" + rows);
+        Map map = service.findVideos(page, rows);
+        logger.debug("findVideos:" + map);
+        return map;
+    }
+
+    /**
+     * 查找分类下的分页视频
+     *
+     * @param classid
+     * @param page
+     * @param rows
+     * @return
+     */
+    @RequestMapping(value = "/findVideosByClassID", method = RequestMethod.GET)
+    @ResponseBody
+    public Map findVideosByClassID(int classid, int page, int rows) {
+        logger.debug("findVideosByClassID:" + "classid=" + classid + " page=" + page + " rows=" + rows);
+        Map map = service.findVideosByClassID(classid, page, rows);
+        logger.debug("findVideosByClassID:" + map);
+        return map;
     }
 }
