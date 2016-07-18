@@ -20,6 +20,9 @@ public interface VideoClazzMapper {
     @Select("SELECT * FROM sdy_video_class LIMIT #{0},#{1}")
     List<VideoClazz> findVideoClazzs(int page, int rows);
 
+    @Select("SELECT * FROM sdy_video_class")
+    List<VideoClazz> findAllVideoClazzs();
+
     @Select("SELECT * FROM sdy_video_class WHERE name =#{0}")
     VideoClazz findCommentByName(String name);
 

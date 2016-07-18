@@ -2,6 +2,7 @@ package com.mx.fm.dao;
 
 import com.mx.fm.mapper.VideoClazzMapper;
 import com.mx.fm.model.VideoClazz;
+import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -50,6 +51,15 @@ public class VideoClazzDao {
      */
     public List<VideoClazz> findVideoClazzs(int page, int rows) {
         return mapper.findVideoClazzs(page, rows);
+    }
+
+    /**
+     * 查询所有的分类
+     *
+     * @return
+     */
+    public List<VideoClazz> findAllVideoClazzs() {
+        return mapper.findAllVideoClazzs();
     }
 
     /**

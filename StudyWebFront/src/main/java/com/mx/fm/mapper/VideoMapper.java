@@ -17,7 +17,7 @@ import java.util.List;
 public interface VideoMapper {
 
     //添加视频
-    @Insert("INSERT INTO sdyweb_video(title,content,source,duration,uploadtime,language,status,videourl,classid,istop,outlineImgUrl)" +
+    @Insert("INSERT INTO sdy_video(title,content,source,duration,uploadtime,language,status,videourl,classid,istop,outlineImgUrl)" +
             "values(#{title},#{content},#{source},#{duration},#{uploadtime},#{language},#{status},#{videourl},#{classid},#{istop},#{outlineImgUrl})")
     int addVideo(Video video);
 
@@ -30,7 +30,7 @@ public interface VideoMapper {
     int addVideoComment(Comment img);
 
     //删除视频
-    @Delete("DELETE FROM sdyweb_video WHERE id=#{videoid}")
+    @Delete("DELETE FROM sdy_video WHERE id=#{videoid}")
     int deleteVideoByVideoid(int videoid);
 
     //删除视频图片
@@ -42,11 +42,11 @@ public interface VideoMapper {
     int deleteVideoCommentByVideoid(int videoid);
 
     //查找分页视频
-    @Select("SELECT * FROM sdyweb_video LIMIT #{0},#{1} ORDER BY id DESC")
+    @Select("SELECT * FROM sdy_video LIMIT #{0},#{1} ORDER BY id DESC")
     List<Video> findVideos(int page, int rows);
 
     //查找分类下的分页视频
-    @Select("SELECT * FROM sdyweb_video WHERE classid=#{0} LIMIT #{1},#{2} ORDER BY id DESC")
+    @Select("SELECT * FROM sdy_video WHERE classid=#{0} LIMIT #{1},#{2} ORDER BY id DESC")
     List<Video> findVideosByClassID(int classid, int page, int rows);
 
     //根据视频ID查找对应的图片
@@ -57,5 +57,16 @@ public interface VideoMapper {
     @Select("SELECT t1.id,t1.time,t1.username,t1.content,t1.videoid,t1.praise,t1.weak,t2.nickname,t2.headerurl " +
             "FROM sdy_comment t1 RIGHT JOIN sdy_user t2 ON t1.username=t2.username WHERE videoid=#{0} LIMIT #{1},#{2}")
     List<CommentUser> findVideoCommentByVideoID(int videoid, int page, int rows);
+
+    //查询视频分类信息及该分类下的视频总数
+    @Select("SELECT clz.id,clz.`name`,clz.content,COUNT(video.id) AS totalCount FROM sdy_video video " +
+            "LEFT JOIN sdy_video_class clz ON video.classid=clz.id GROUP BY clz.id LIMIT #{0},#{1}")
+    List<VideoClazz> findVideoClazz(int page, int rows);
+
+    //根据分类名称查询视频分类信息及该分类下的视频总数
+    @Select("SELECT clz.id,clz.`name`,clz.content,COUNT(video.id) AS totalCount FROM sdy_video video LEFT JOIN sdy_video_class clz ON video.classid=clz.id WHERE clz.`name`=#{0} GROUP BY clz.id LIMIT #{1},#{2}")
+    List<VideoClazz> findVideoClazzByName(String name,int page, int rows);
+
+
 
 }

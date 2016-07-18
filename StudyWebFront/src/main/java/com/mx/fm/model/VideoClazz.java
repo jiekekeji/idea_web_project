@@ -9,6 +9,7 @@ public class VideoClazz {
     private long id;
     private String name;
     private String content;
+    private long totalCount;//该分类下的总数
 
     public long getId() {
         return id;
@@ -34,12 +35,21 @@ public class VideoClazz {
         this.content = content;
     }
 
+    public long getTotalCount() {
+        return totalCount;
+    }
+
+    public void setTotalCount(long totalCount) {
+        this.totalCount = totalCount;
+    }
+
     @Override
     public String toString() {
         return "VideoClazz{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", content='" + content + '\'' +
+                ", totalCount=" + totalCount +
                 '}';
     }
 }

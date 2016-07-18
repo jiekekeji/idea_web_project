@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta charset="utf-8">
     <!--如果需要禁用掉响应式的布局可去掉该行-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>后台首页</title>
+    <title>视频分类列表</title>
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="css/m-index.css">
@@ -50,23 +49,17 @@
                             <h5>视频分类管理</h5>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="">
+                            <input id="keyword" type="text" class="form-control" placeholder="">
                         </div>
                         <div class="col-md-2">
                             <select class="form-control">
-                                <option>ID</option>
-                                <option>用户名</option>
-                                <option>昵称</option>
-                                <option>手机号</option>
-                                <option>邮箱</option>
-                                <option>性别</option>
+                                <option>名称</option>
                             </select>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-default" type="submit">搜索</button>
+                            <button id="search_btn" class="btn btn-default" type="submit">搜索</button>
                         </div>
                         <div class="col-md-2">
-                            <a class="btn btn-default" href="add-video-class.html" role="button">添加视频分类</a>
                         </div>
                     </div>
                 </div>
@@ -77,15 +70,13 @@
                     <td>分类ID</td>
                     <td>分类名称</td>
                     <td>视频总量</td>
-                    <td>编辑</td>
                 </tr>
                 </thead>
-                <tbody>
+                <tbody id="tb-body">
                 <tr>
                     <td>分类ID</td>
                     <td>分类名称</td>
                     <td>视频总量</td>
-                    <td>编辑</td>
                 </tr>
                 </tbody>
             </table>

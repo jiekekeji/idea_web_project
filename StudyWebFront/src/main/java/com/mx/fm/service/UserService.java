@@ -174,7 +174,6 @@ public class UserService {
     public Map findUserByPhonenum(String phonenum, int page, int rows) {
         Map map = new HashMap();
         List<User> users = dao.findUserByPhonenum(phonenum, page, rows);
-        ;
         map.put("users", users);
         return map;
     }

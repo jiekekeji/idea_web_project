@@ -10,9 +10,9 @@ public class Video {
     private String title;
     private String content;
     private String source;
-    private long duration;//视频时长
+    private String duration;//视频时长
 
-    private long uploadtime;//上传时间
+    private String uploadtime;//上传时间
     private String language;//语言
     private int status;
 
@@ -53,22 +53,13 @@ public class Video {
         this.source = source;
     }
 
-    public long getDuration() {
-        return duration;
-    }
-
-    public void setDuration(long duration) {
+    public void setDuration(String duration) {
         this.duration = duration;
     }
 
-    public long getUploadtime() {
-        return uploadtime;
-    }
-
-    public void setUploadtime(long uploadtime) {
+    public void setUploadtime(String uploadtime) {
         this.uploadtime = uploadtime;
     }
-
     public String getLanguage() {
         return language;
     }
