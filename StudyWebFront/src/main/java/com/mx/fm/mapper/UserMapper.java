@@ -32,8 +32,12 @@ public interface UserMapper {
     User findUserByUsername(String username);
 
     //查找用户
-    @Select("SELECT * FROM sdy_user WHERE phonenum = #{phonenum}")
-    User findUserByPhonenum(String phonenum);
+    @Select("SELECT * FROM sdy_user WHERE username = #{0} LIMIT #{1},#{2}")
+    List<User> findUsersByUsername(String username,int page, int rows);
+
+    //查找用户
+    @Select("SELECT * FROM sdy_user WHERE phonenum = #{0} LIMIT #{1},#{2}")
+    List<User> findUserByPhonenum(String phonenum,int page, int rows);
 
     //查找用户列表
     @Select("SELECT * FROM sdy_user LIMIT #{0},#{1}")

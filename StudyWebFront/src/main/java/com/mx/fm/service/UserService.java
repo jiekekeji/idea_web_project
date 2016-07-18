@@ -133,34 +133,64 @@ public class UserService {
      * @return
      */
     public Map findUserByUsername(String username) {
-        Map map=new HashMap();
-        User user=dao.findUserByUsername(username);
-        if (null!=user){
-            map.put("code",2000);
-            map.put("desc","查询成功");
-            map.put("user",user);
-            return  map;
+        Map map = new HashMap();
+        User user = dao.findUserByUsername(username);
+        if (null != user) {
+            map.put("code", 2000);
+            map.put("desc", "查询成功");
+            map.put("user", user);
+            return map;
         }
-        map.put("code",4000);
-        map.put("desc","查询失败");
+        map.put("code", 4000);
+        map.put("desc", "查询失败");
         return map;
     }
 
     /**
      * 修改 昵称,电话号,QQ号,头像,微信,邮箱,自我介绍
+     *
      * @param user
      * @return
      */
-    public Map updateUser(User user){
-        int code=dao.updateUser(user);
-        Map map=new HashMap();
-        if (code>0){
-            map.put("code",2000);
-            map.put("desc","更新成功");
-            return  map;
+    public Map updateUser(User user) {
+        int code = dao.updateUser(user);
+        Map map = new HashMap();
+        if (code > 0) {
+            map.put("code", 2000);
+            map.put("desc", "更新成功");
+            return map;
         }
-        map.put("code",4000);
-        map.put("desc","更新失败");
+        map.put("code", 4000);
+        map.put("desc", "更新失败");
+        return map;
+    }
+
+    /**
+     * 查找用户
+     *
+     * @param phonenum
+     * @return
+     */
+    public Map findUserByPhonenum(String phonenum, int page, int rows) {
+        Map map = new HashMap();
+        List<User> users = dao.findUserByPhonenum(phonenum, page, rows);
+        ;
+        map.put("users", users);
+        return map;
+    }
+
+    /**
+     * 查找用户
+     *
+     * @param username
+     * @param page
+     * @param rows
+     * @return
+     */
+    public Map findUsersByUsername(String username, int page, int rows) {
+        Map map = new HashMap();
+        List<User> users = dao.findUsersByUsername(username, page, rows);
+        map.put("users", users);
         return map;
     }
 

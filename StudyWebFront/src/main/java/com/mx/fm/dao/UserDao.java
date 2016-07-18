@@ -84,8 +84,20 @@ public class UserDao {
      * @param phonenum
      * @return
      */
-    public User findUserByPhonenum(String phonenum) {
-        return mapper.findUserByPhonenum(phonenum);
+    public List<User> findUserByPhonenum(String phonenum, int page, int rows) {
+        return mapper.findUserByPhonenum(phonenum, page, rows);
+    }
+
+    /**
+     * 查找用户
+     *
+     * @param username
+     * @param page
+     * @param rows
+     * @return
+     */
+    public List<User> findUsersByUsername(String username, int page, int rows) {
+        return mapper.findUsersByUsername(username, page, rows);
     }
 
     /**

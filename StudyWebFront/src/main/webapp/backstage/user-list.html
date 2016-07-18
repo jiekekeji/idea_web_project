@@ -24,7 +24,7 @@
                     Admin&nbsp
                 </a>
             </li>
-            <li><a><span class="glyphicon glyphicon-off"></span>&nbsp退出</a></li>
+            <li><a>&nbsp退出</a></li>
         </ul>
     </div>
 </nav>
@@ -50,20 +50,16 @@
                             <h4>用户管理</h4>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control" placeholder="">
+                            <input id="search_key" type="text" class="form-control" placeholder="">
                         </div>
                         <div class="col-md-2">
-                            <select class="form-control">
-                                <option>ID</option>
+                            <select class="form-control" id="search_type">
                                 <option>用户名</option>
-                                <option>昵称</option>
                                 <option>手机号</option>
-                                <option>注册时间</option>
-                                <option>用户角色</option>
                             </select>
                         </div>
                         <div class="col-md-2">
-                            <button class="btn btn-default" type="submit">搜索</button>
+                            <button id="search_btn" class="btn btn-default" type="submit">搜索</button>
                         </div>
                         <div class="col-md-2">
                             <a class="btn btn-default" href="add-user.html" role="button">添加用户</a>

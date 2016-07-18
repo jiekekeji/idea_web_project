@@ -49,15 +49,15 @@ public class UserController {
      */
     @RequestMapping(value = "/checkUserIsLogin", method = RequestMethod.GET)
     @ResponseBody
-    public Map checkUserIsLogin(HttpServletRequest request,String username) {
+    public Map checkUserIsLogin(HttpServletRequest request, String username) {
         logger.debug("检测用户是否登陆");
-        Map<String,Object> map=new HashMap<String, Object>();
-        if (null!=request.getSession().getAttribute("user")){
-            map.put("code",2000);
-            map.put("desc","用户已登陆");
-        }else {
-            map.put("code",40000);
-            map.put("desc","用户未登陆");
+        Map<String, Object> map = new HashMap<String, Object>();
+        if (null != request.getSession().getAttribute("user")) {
+            map.put("code", 2000);
+            map.put("desc", "用户已登陆");
+        } else {
+            map.put("code", 40000);
+            map.put("desc", "用户未登陆");
         }
         return map;
     }
@@ -73,11 +73,11 @@ public class UserController {
     public Map login(HttpServletRequest request, String username, String password) {
         logger.debug("login=" + username);
         Map map = service.login(username, password);
-        if (null!=map&&2000==((Integer)map.get("code"))) {
+        if (null != map && 2000 == ((Integer) map.get("code"))) {
             //登录成功
             request.getSession().setAttribute("user", map.remove("user"));
         }
-        logger.debug("登陆用户:"+request.getSession().getAttribute("user"));
+        logger.debug("登陆用户:" + request.getSession().getAttribute("user"));
         return service.login(username, password);
     }
 
@@ -106,30 +106,31 @@ public class UserController {
     @ResponseBody
     public Map register(User user) {
         logger.debug("register=" + user);
-        Map map=service.register(user);
-        logger.debug("注册结果:"+map);
+        Map map = service.register(user);
+        logger.debug("注册结果:" + map);
         return map;
     }
 
     /**
      * 获取当前登陆用户
+     *
      * @return
      */
     @RequestMapping(value = "/getLoginUser", method = RequestMethod.GET)
     @ResponseBody
     public Map getLoginUser(HttpServletRequest request) {
         logger.debug("获取当前登陆用户");
-        Map<String,Object> map=new HashMap<String, Object>();
-        User user= (User) request.getSession().getAttribute("user");
-        if (null!=user){
-            map.put("code",2000);
-            map.put("desc","获取成功");
-            map.put("user",user);
-        }else {
-            map.put("code",4000);
-            map.put("desc","获取失败");
+        Map<String, Object> map = new HashMap<String, Object>();
+        User user = (User) request.getSession().getAttribute("user");
+        if (null != user) {
+            map.put("code", 2000);
+            map.put("desc", "获取成功");
+            map.put("user", user);
+        } else {
+            map.put("code", 4000);
+            map.put("desc", "获取失败");
         }
-        logger.debug("user="+user);
+        logger.debug("user=" + user);
         return map;
     }
 
@@ -145,13 +146,14 @@ public class UserController {
     @ResponseBody
     public Map findOrdinaryUsers(int page, int rows) {
         logger.debug("findOrdinaryUsers:" + "page=" + page + " rows" + rows);
-        Map map=service.findOrdinaryUsers(page, rows);
-        logger.debug("用户列表获取结果:"+map);
+        Map map = service.findOrdinaryUsers(page, rows);
+        logger.debug("用户列表获取结果:" + map);
         return map;
     }
 
     /**
      * 根据用户名查询用户信息
+     *
      * @param username
      * @return
      */
@@ -159,17 +161,49 @@ public class UserController {
     @ResponseBody
     public Map findUserByUsername(String username) {
         logger.debug("findUserByUsername:" + "username=" + username);
-        Map map=service.findUserByUsername(username);
-        logger.debug("获取用户信息:"+map);
+        Map map = service.findUserByUsername(username);
+        logger.debug("获取用户信息:" + map);
         return map;
     }
 
     @RequestMapping(value = "/updateUser", method = RequestMethod.POST)
     @ResponseBody
-    public Map updateUser(User user){
+    public Map updateUser(User user) {
         logger.debug("updateUser:" + "user=" + user);
-        Map map=service.updateUser(user);
-        logger.debug("更新用户信息:"+map);
+        Map map = service.updateUser(user);
+        logger.debug("更新用户信息:" + map);
+        return map;
+    }
+
+    /**
+     * 查找用户
+     *
+     * @param phonenum
+     * @return
+     */
+    @RequestMapping(value = "/findUserByPhonenum", method = RequestMethod.GET)
+    @ResponseBody
+    public Map findUserByPhonenum(String phonenum, int page, int rows) {
+        logger.debug("findUserByPhonenum:" + "phonenum=" + phonenum + " page=" + page + " rows=" + rows);
+        Map map = service.findUserByPhonenum(phonenum, page, rows);
+        logger.debug("findUserByPhonenum:" + map);
+        return map;
+    }
+
+    /**
+     * 查找用户
+     *
+     * @param username
+     * @param page
+     * @param rows
+     * @return
+     */
+    @RequestMapping(value = "/findUsersByUsername", method = RequestMethod.GET)
+    @ResponseBody
+    public Map findUsersByUsername(String username, int page, int rows) {
+        logger.debug("findUsersByUsername:" + "username=" + username + " page=" + page + " rows=" + rows);
+        Map map = service.findUsersByUsername(username, page, rows);
+        logger.debug("findUsersByUsername:" + map);
         return map;
     }
 

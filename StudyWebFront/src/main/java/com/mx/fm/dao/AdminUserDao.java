@@ -71,8 +71,8 @@ public class AdminUserDao {
      * @param phonenum
      * @return
      */
-    public User findUserByPhonenum(String phonenum) {
-        return mapper.findUserByPhonenum(phonenum);
+    public List<User> findUserByPhonenum(String phonenum,int page, int rows) {
+        return mapper.findUserByPhonenum(phonenum,page,rows);
     }
 
     /**
