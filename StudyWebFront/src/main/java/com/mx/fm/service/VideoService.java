@@ -135,4 +135,24 @@ public class VideoService {
         map.put("desc", "更新失败");
         return map;
     }
+
+    /**
+     * 更新视频图片
+     *
+     * @param id
+     * @param outlineImgUrl
+     * @return
+     */
+    public Map updateImgByID(long id, String outlineImgUrl) {
+        Map map = new HashMap();
+        int code = dao.updateImgByID(id,outlineImgUrl);
+        if (code > 0) {
+            map.put("code", 2000);
+            map.put("desc", "更新成功");
+            return map;
+        }
+        map.put("code", 4000);
+        map.put("desc", "更新失败");
+        return map;
+    }
 }

@@ -234,4 +234,44 @@ public class VideoController {
         return null;
     }
 
+    /**
+     * 更新视频图片
+     *
+     * @param file
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/updateImgByID", method = RequestMethod.POST)
+    @ResponseBody
+    public Map updateImgByID(@RequestParam("image") MultipartFile file, HttpServletRequest request) {
+        logger.debug("updateImgByID:" + file);
+        String id = request.getParameter("id");
+        if (TextUtils.isEmpty(id) || null == file) {
+            Map map = new HashMap();
+            map.put("code", 4000);
+            map.put("desc", "参数不正确");
+            logger.debug("updateImgByID:" + map);
+            return map;
+        }
+
+        //获取文件的后缀
+        String suffix = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf("."));
+        String fileName = System.currentTimeMillis() + suffix;
+        try {
+            String filePath = PathConstant.UPLOAD_IMAGES + File.separator + fileName;
+            FileCopyUtils.copy(IOUtils.toByteArray(file.getInputStream()), new File(filePath));
+            Map map = service.updateImgByID(Long.valueOf(id), fileName);
+            logger.debug("updateImgByID:" + map);
+            return map;
+        } catch (IOException e) {
+            e.printStackTrace();
+            Map map = new HashMap();
+            map.put("code", 4000);
+            map.put("desc", "异常了" + e.getMessage());
+            logger.debug("updateImgByID:" + map);
+        } finally {
+            //不用关流，貌似里面自己关了
+        }
+        return null;
+    }
 }

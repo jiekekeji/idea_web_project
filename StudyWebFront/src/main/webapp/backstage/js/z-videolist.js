@@ -51,7 +51,8 @@ $(document).ready(function () {
                 "<td>" + video.status + "</td>" +
                 "<td>" + video.classid + "</td>" +
                 "<td><a href=" + "'" + "/sdyweb/backstage/edit-video.html?id=" + video.id + "'" + ">编辑</a></td>" +
-                "<td><a href='#'>暂不支持该功能</a></td>" +
+                "<td><a href=" + "'" + "/sdyweb/backstage/edit-video-img.html?id=" + video.id + "&outlineImgUrl=" + video.outlineImgUrl + "'" + ">修改图片</a></td>" +
+                "<td><a href='#'>删除</a></td>" +
                 "</tr>"
             )
         }

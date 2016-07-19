@@ -197,4 +197,22 @@ public class VideoDao {
         }
         return code;
     }
+
+    /**
+     * 更新视频图片
+     * @param id
+     * @param outlineImgUrl
+     * @return
+     */
+    public int updateImgByID(long id,String outlineImgUrl){
+        int code = 0;
+        try {
+            code = mapper.updateImgByID(id,outlineImgUrl);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            session.commit();
+        }
+        return code;
+    }
 }
