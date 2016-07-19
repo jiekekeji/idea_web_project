@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="sdyanjs:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="StudyAngularJS.war">
+    <root id="archive" name="anjs.war">
       <element id="artifact" artifact-name="sdyanjs:war exploded" />
     </root>
   </artifact>
