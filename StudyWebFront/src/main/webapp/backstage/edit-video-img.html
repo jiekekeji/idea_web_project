@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>用户注册</title>
+    <title>修改图片</title>
     <!--如果需要禁用掉响应式的布局可去掉该行-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
@@ -10,11 +10,43 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 <body>
-<!--导航栏-->
-<div class="navbar nav-pills"></div>
-<!--主体内容-->
+<!--导航-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="" class="navbar-brand">修改图片</a>
+        </div>
+        <ul class="navbar navbar-nav nav navbar-right">
+            <li class="dropdown">
+                <a id="dLabel" type="button">
+                    Admin&nbsp
+                </a>
+            </li>
+            <li><a><span class="glyphicon glyphicon-off"></span>&nbsp退出</a></li>
+        </ul>
+    </div>
+</nav>
+<!--内容区域-->
 <div class="container">
-  
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <div>原图片</div>
+                <img id="outlineImgUrl" src="" height="100" width="100" />
+            </div>
+            <form action="/sdyweb/video/updateImgByID" method="post" enctype="multipart/form-data"
+                  onsubmit="return false" id="add_net_video_form">
+                <input type="hidden" id="id" name="id"/>
+                <div class="form-group" style="margin-top: 15px">
+                    <label>视频图片</label>
+                    <div>
+                        <input type="file" id="image" name="image" multiple="multiple"/>
+                    </div>
+                </div>
+                <button id="submitbtn" type="submit" class="btn btn-default">提交</button>
+                <span id="notice"><font size="5" face="arial" color="red"></font></span>
+            </form>
+        </div>
     </div>
 </div>
 
@@ -23,5 +55,8 @@
 <script src="../js/jquery-1.11.1.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.form.js"></script>
+<script src="js/base.js"></script>
+<script src="js/z-edit-img.js"></script>
 </body>
 </html>

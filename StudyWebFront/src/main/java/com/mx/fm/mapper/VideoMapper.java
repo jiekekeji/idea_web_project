@@ -77,7 +77,7 @@ public interface VideoMapper {
             " WHERE t.id=#{id}")
     int updateVideoByID(Video video);
 
-    @Update("UPDATE sdy_video t SET t.outlineImgUrl=#{outlineImgUrl} WHERE t.id=#{id}")
+    @Update("UPDATE sdy_video t SET t.outlineImgUrl=#{1} WHERE t.id=#{0}")
     int updateImgByID(long id,String outlineImgUrl);
 
 
