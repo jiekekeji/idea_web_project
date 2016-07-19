@@ -274,4 +274,52 @@ public class VideoController {
         }
         return null;
     }
+
+    /**
+     * 根据ID删除
+     *
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "/deleteVideoByVideoid", method = RequestMethod.GET)
+    @ResponseBody
+    public Map deleteVideoByVideoid(long id) {
+        logger.debug("deleteVideoByVideoid:" + "id=" + id);
+        Map map = service.deleteVideoByVideoid(id);
+        logger.debug("deleteVideoByVideoid:" + map);
+        return map;
+    }
+
+    /**
+     * 查找推荐置顶视频
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    @RequestMapping(value = "/findVideosByIsTop", method = RequestMethod.GET)
+    @ResponseBody
+    public Map findVideosByIsTop(int page, int rows) {
+        logger.debug("findVideosByIsTop:" + "page=" + page + " rows=" + rows);
+        Map map = service.findVideosByIsTop(page, rows);
+        logger.debug("findVideosByIsTop:" + map);
+        return map;
+    }
+
+    /**
+     * 查找审核中的视频
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    @RequestMapping(value = "/findVideosByStatus", method = RequestMethod.GET)
+    @ResponseBody
+    public Map findVideosByStatus(int page, int rows) {
+        logger.debug("findVideosByStatus:" + "page=" + page + " rows=" + rows);
+        Map map = service.findVideosByStatus(page, rows);
+        logger.debug("findVideosByStatus:" + map);
+        return map;
+    }
+
 }

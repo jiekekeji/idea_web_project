@@ -14,9 +14,9 @@ public class Video {
 
     private String uploadtime;//上传时间
     private String language;//语言
-    private int status;
+    private int status;//0正在发布的，1审核中
 
-    private long istop;//是否是推荐视频
+    private long istop;//0 非置顶推荐视频，1置顶推荐
     private String videourl;//播放地址
     private int classid;//视频分类
     private String outlineImgUrl;//封面图

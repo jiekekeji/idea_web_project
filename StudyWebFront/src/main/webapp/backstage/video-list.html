@@ -51,17 +51,14 @@
                         <input type="text" class="form-control" placeholder="">
                     </div>
                     <div class="col-md-2">
-                        <select class="form-control">
-                            <option>ID</option>
-                            <option>用户名</option>
-                            <option>昵称</option>
-                            <option>手机号</option>
-                            <option>邮箱</option>
-                            <option>性别</option>
+                        <select class="form-control" id="search_type">
+                            <option>&nbsp;&nbsp;</option>
+                            <option>审核中</option>
+                            <option>推荐</option>
                         </select>
                     </div>
                     <div class="col-md-2">
-                        <button class="btn btn-default" type="submit">搜索</button>
+                        <button id="search_btn" class="btn btn-default" type="submit">搜索</button>
                     </div>
                     <div class="col-md-2">
                         <a class="btn btn-default" href="add-net-video.html" role="button">添加视频</a>
@@ -98,6 +95,13 @@
                 </tbody>
             </table>
         </div>
+        <!--分页导航-->
+        <nav>
+            <ul class="pager">
+                <li><button id="pre_btn" class="btn-default btn">上一页</button></li>
+                <li><button id="next_btn" class="btn-default btn">下一页</button></li>
+            </ul>
+        </nav>
     </div>
 </div>
 

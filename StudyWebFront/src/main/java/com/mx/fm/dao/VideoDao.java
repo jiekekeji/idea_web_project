@@ -2,6 +2,7 @@ package com.mx.fm.dao;
 
 import com.mx.fm.mapper.VideoMapper;
 import com.mx.fm.model.*;
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Select;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -76,8 +77,16 @@ public class VideoDao {
      * @param videoid
      * @return
      */
-    public int deleteVideoByVideoid(int videoid) {
-        return mapper.deleteVideoByVideoid(videoid);
+    public int deleteVideoByVideoid(long videoid) {
+        int code = 0;
+        try {
+            code = mapper.deleteVideoByVideoid(videoid);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            session.commit();
+        }
+        return code;
     }
 
     /**
@@ -200,14 +209,15 @@ public class VideoDao {
 
     /**
      * 更新视频图片
+     *
      * @param id
      * @param outlineImgUrl
      * @return
      */
-    public int updateImgByID(long id,String outlineImgUrl){
+    public int updateImgByID(long id, String outlineImgUrl) {
         int code = 0;
         try {
-            code = mapper.updateImgByID(id,outlineImgUrl);
+            code = mapper.updateImgByID(id, outlineImgUrl);
         } catch (Exception ex) {
             ex.printStackTrace();
         } finally {
@@ -215,4 +225,28 @@ public class VideoDao {
         }
         return code;
     }
+
+    /**
+     * 查找推荐置顶视频
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    public List<Video> findVideosByIsTop(int page, int rows) {
+        return mapper.findVideosByIsTop(page, rows);
+    }
+
+    /**
+     * 查找审核中的视频
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    public List<Video> findVideosByStatus(int page, int rows) {
+        return mapper.findVideosByStatus(page, rows);
+    }
+
+
 }

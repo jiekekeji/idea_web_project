@@ -31,7 +31,7 @@ public interface VideoMapper {
 
     //删除视频
     @Delete("DELETE FROM sdy_video WHERE id=#{videoid}")
-    int deleteVideoByVideoid(int videoid);
+    int deleteVideoByVideoid(long videoid);
 
     //删除视频图片
     @Delete("DELETE FROM sdy_video_img_url WHERE videoid=#{videoid}")
@@ -44,6 +44,14 @@ public interface VideoMapper {
     //查找分页视频
     @Select("SELECT * FROM sdy_video LIMIT #{0},#{1}")
     List<Video> findVideos(int page, int rows);
+
+    //查找推荐置顶视频
+    @Select("SELECT * FROM sdy_video WHERE istop=1 LIMIT #{0},#{1}")
+    List<Video> findVideosByIsTop(int page, int rows);
+
+    //查找审核中的视频
+    @Select("SELECT * FROM sdy_video WHERE status=1 LIMIT #{0},#{1}")
+    List<Video> findVideosByStatus(int page, int rows);
 
     //查找分类下的分页视频
     @Select("SELECT * FROM sdy_video WHERE classid=#{0} LIMIT #{1},#{2} ORDER BY id DESC")

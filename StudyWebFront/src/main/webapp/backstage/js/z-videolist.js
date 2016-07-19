@@ -14,7 +14,35 @@ $(document).ready(function () {
     var URL_findVideosByClassID = "/sdyweb/user/findVideosByClassID";
     //获取当前登陆的用户
     var getLoginUserURL = "/sdyweb/user/getLoginUser";
+    //查询置顶
+    var URL_findVideosByIsTop = "/sdyweb/video/findVideosByIsTop";
+    //查询审核中
+    var URL_findVideosByIsTop = "/sdyweb/video/findVideosByStatus";
+
+
+    var searchType = "";
+    var page = 0;
     //**************************start 相关方法**************************
+
+    //查询置顶视频
+    function findVideosByIsTop(page, rows) {
+        $.get(URL_findVideosByIsTop + "?page=" + page + "&rows=" + rows, function (data) {
+            if (null == data.videos) {
+                return;
+            }
+            setPageContent(data.videos);
+        });
+    }
+
+    //查询审核中视频
+    function findVideosByStatus(page, rows) {
+        $.get(URL_findVideosByIsTop + "?page=" + page + "&rows=" + rows, function (data) {
+            if (null == data.videos) {
+                return;
+            }
+            setPageContent(data.videos);
+        });
+    }
 
     //根据分类获取视屏列表
     function findVideosByClassID(classid, page, rows) {
@@ -28,7 +56,7 @@ $(document).ready(function () {
 
     //获取视频列表
     function findVideos(page, rows) {
-        $.get(URL_findVideos + "?page=0" + "&rows=15", function (data) {
+        $.get(URL_findVideos + "?page="+page + "&rows="+rows, function (data) {
             if (null == data.videos) {
                 return;
             }
@@ -52,7 +80,7 @@ $(document).ready(function () {
                 "<td>" + video.classid + "</td>" +
                 "<td><a href=" + "'" + "/sdyweb/backstage/edit-video.html?id=" + video.id + "'" + ">编辑</a></td>" +
                 "<td><a href=" + "'" + "/sdyweb/backstage/edit-video-img.html?id=" + video.id + "&outlineImgUrl=" + video.outlineImgUrl + "'" + ">修改图片</a></td>" +
-                "<td><a href='#'>删除</a></td>" +
+                "<td><a href=" + "'" + "/sdyweb/video/deleteVideoByVideoid?id=" + video.id + "'" + "  id='deleteBtn'>删除</a></td>" +
                 "</tr>"
             )
         }
@@ -87,24 +115,46 @@ $(document).ready(function () {
     });
 
     //初始化用户列表数据
-    findVideos(0, 15);
+    findVideos(0, 50);
 
     //搜索监听
     $("#search_btn").click(function () {
-        var keyword = $("#search_key").val();
-        if (null == keyword || "" == keyword) {
-            getUserList(paras);
-            return;
-        }
-
         //开始搜索
-        var searchType = $("#search_type option:selected").text();
-        if ("手机号" == searchType) {
-            getUserListByPhonenum(keyword, 0, 15);
-        } else if ("用户名" == searchType) {
-            getUserListByUsername(keyword, 0, 15);
+        searchType = $("#search_type option:selected").text();
+        if ("审核中" == searchType) {
+            findVideosByStatus(0, 50);
+        } else if ("推荐" == searchType) {
+            findVideosByIsTop(0, 50);
+        } else {
+            findVideos(0, 50);
         }
     });
 
+    //上一页
+    $("#pre_btn").click(function () {
+        if (page==0){
+            return;
+        }
+        page = page - 50;
+        if ("审核中" == searchType) {
+            findVideosByStatus(page, 50);
+        } else if ("推荐" == searchType) {
+            findVideosByIsTop(page, 50);
+        } else {
+            findVideos(page, 50);
+        }
+    });
+
+    //下一页
+    $("#next_btn").click(function () {
+        page = page +50;
+        if ("审核中" == searchType) {
+            findVideosByStatus(page, 50);
+        } else if ("推荐" == searchType) {
+            findVideosByIsTop(page, 50);
+        } else {
+            findVideos(page, 50);
+        }
+    });
 
 });

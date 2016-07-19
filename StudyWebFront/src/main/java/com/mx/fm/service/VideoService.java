@@ -145,7 +145,7 @@ public class VideoService {
      */
     public Map updateImgByID(long id, String outlineImgUrl) {
         Map map = new HashMap();
-        int code = dao.updateImgByID(id,outlineImgUrl);
+        int code = dao.updateImgByID(id, outlineImgUrl);
         if (code > 0) {
             map.put("code", 2000);
             map.put("desc", "更新成功");
@@ -153,6 +153,52 @@ public class VideoService {
         }
         map.put("code", 4000);
         map.put("desc", "更新失败");
+        return map;
+    }
+
+    /**
+     * 删除视频
+     *
+     * @param videoid
+     * @return
+     */
+    public Map deleteVideoByVideoid(long videoid) {
+        Map map = new HashMap();
+        int code = dao.deleteVideoByVideoid(videoid);
+        ;
+        if (code > 0) {
+            map.put("code", 2000);
+            map.put("desc", "更新成功");
+            return map;
+        }
+        map.put("code", 4000);
+        map.put("desc", "更新失败");
+        return map;
+    }
+
+    /**
+     * 查找推荐置顶视频
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    public Map findVideosByIsTop(int page, int rows) {
+        Map map = new HashMap();
+        map.put("videos", dao.findVideosByIsTop(page, rows));
+        return map;
+    }
+
+    /**
+     * 查找审核中的视频
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    public Map findVideosByStatus(int page, int rows) {
+        Map map = new HashMap();
+        map.put("videos", dao.findVideosByStatus(page, rows));
         return map;
     }
 }
