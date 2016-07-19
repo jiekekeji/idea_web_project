@@ -169,4 +169,32 @@ public class VideoDao {
     public List<VideoClazz> findVideoClazzByName(String name, int page, int rows) {
         return mapper.findVideoClazzByName(name, page, rows);
     }
+
+    /**
+     * 根据ID查询视频详情
+     *
+     * @param id
+     * @return
+     */
+    public Video findVideosByID(long id) {
+        return mapper.findVideosByID(id);
+    }
+
+    /**
+     * 根据ID更新视频
+     *
+     * @param video
+     * @return
+     */
+    public int updateVideoByID(Video video) {
+        int code = 0;
+        try {
+            code = mapper.updateVideoByID(video);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            session.commit();
+        }
+        return code;
+    }
 }

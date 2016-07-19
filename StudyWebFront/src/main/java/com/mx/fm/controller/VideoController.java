@@ -68,7 +68,105 @@ public class VideoController {
     }
 
     /**
-     * 添加网络视频
+     * 更新视频
+     *
+     * @param request
+     * @return
+     */
+    @RequestMapping(value = "/updateVideoByID", method = RequestMethod.POST)
+    @ResponseBody
+    public Map updateVideoByID(HttpServletRequest request) {
+        logger.debug("updateVideoByID:" + request);
+        String id = request.getParameter("id");
+        String title = request.getParameter("title");
+        String content = request.getParameter("content");
+        String source = request.getParameter("source");
+        String duration = request.getParameter("duration");
+
+        String language = request.getParameter("language");
+        String status = request.getParameter("status");
+        String istop = request.getParameter("istop");
+
+        String videourl = request.getParameter("videourl");
+        String classid = request.getParameter("classid");
+        String outlineImgUrl = request.getParameter("outlineImgUrl");
+
+        if (TextUtils.isEmpty(title) || TextUtils.isEmpty(source)
+                || TextUtils.isEmpty(duration) || TextUtils.isEmpty(language)
+                || TextUtils.isEmpty(status)
+                || TextUtils.isEmpty(videourl) || TextUtils.isEmpty(classid)
+                || TextUtils.isEmpty(id)) {
+            Map map = new HashMap();
+            map.put("code", 4000);
+            map.put("desc", "参数不正确");
+            logger.debug("updateVideoByID:" + map);
+            return map;
+        }
+
+        Video video = new Video();
+        video.setId(Long.valueOf(id));
+        video.setTitle(title);
+        video.setContent(content);
+        video.setSource(source);
+        video.setDuration(duration);
+
+        video.setUploadtime(TimeUtils.getDateTime(System.currentTimeMillis()));
+        video.setLanguage(language);
+        video.setStatus(Integer.valueOf(status));
+        video.setIstop(Long.valueOf(istop));
+        video.setVideourl(videourl);
+        video.setClassid(Integer.valueOf(classid));
+        video.setOutlineImgUrl(outlineImgUrl);//存文件的名称
+
+        Map map = service.updateVideoByID(video);
+        logger.debug("updateVideoByID:" + map);
+        return map;
+    }
+
+    /**
+     * 查找分页视频
+     *
+     * @param page
+     * @param rows
+     * @return
+     */
+    @RequestMapping(value = "/findVideos", method = RequestMethod.GET)
+    @ResponseBody
+    public Map findVideos(int page, int rows) {
+        logger.debug("findVideos:" + "page=" + page + " rows=" + rows);
+        Map map = service.findVideos(page, rows);
+        logger.debug("findVideos:" + map);
+        return map;
+    }
+
+    /**
+     * 查找分类下的分页视频
+     *
+     * @param classid
+     * @param page
+     * @param rows
+     * @return
+     */
+    @RequestMapping(value = "/findVideosByClassID", method = RequestMethod.GET)
+    @ResponseBody
+    public Map findVideosByClassID(int classid, int page, int rows) {
+        logger.debug("findVideosByClassID:" + "classid=" + classid + " page=" + page + " rows=" + rows);
+        Map map = service.findVideosByClassID(classid, page, rows);
+        logger.debug("findVideosByClassID:" + map);
+        return map;
+    }
+
+    @RequestMapping(value = "/findVideosByID", method = RequestMethod.GET)
+    @ResponseBody
+    public Map findVideosByID(long id) {
+        logger.debug("findVideosByID:" + "id=" + id);
+        Map map = service.findVideosByID(id);
+        logger.debug("findVideosByID:" + map);
+        return map;
+    }
+
+    /**
+     * 添加视频
      *
      * @param file
      * @param request
@@ -136,37 +234,4 @@ public class VideoController {
         return null;
     }
 
-
-    /**
-     * 查找分页视频
-     *
-     * @param page
-     * @param rows
-     * @return
-     */
-    @RequestMapping(value = "/findVideos", method = RequestMethod.GET)
-    @ResponseBody
-    public Map findVideos(int page, int rows) {
-        logger.debug("findVideos:" + "page=" + page + " rows=" + rows);
-        Map map = service.findVideos(page, rows);
-        logger.debug("findVideos:" + map);
-        return map;
-    }
-
-    /**
-     * 查找分类下的分页视频
-     *
-     * @param classid
-     * @param page
-     * @param rows
-     * @return
-     */
-    @RequestMapping(value = "/findVideosByClassID", method = RequestMethod.GET)
-    @ResponseBody
-    public Map findVideosByClassID(int classid, int page, int rows) {
-        logger.debug("findVideosByClassID:" + "classid=" + classid + " page=" + page + " rows=" + rows);
-        Map map = service.findVideosByClassID(classid, page, rows);
-        logger.debug("findVideosByClassID:" + map);
-        return map;
-    }
 }

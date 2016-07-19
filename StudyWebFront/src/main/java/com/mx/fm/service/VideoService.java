@@ -95,4 +95,44 @@ public class VideoService {
         map.put("videos", dao.findVideosByClassID(classid, page, rows));
         return map;
     }
+
+    /**
+     * 根据ID查询视频详情
+     *
+     * @param id
+     * @return
+     */
+    public Map findVideosByID(long id) {
+        Map map = new HashMap();
+        Video video = dao.findVideosByID(id);
+        if (null != video) {
+            map.put("code", 2000);
+            map.put("desc", "查询成功");
+            map.put("video", video);
+            return map;
+        }
+        map.put("code", 4000);
+        map.put("desc", "查询失败");
+        return map;
+    }
+
+    /**
+     * 根据ID更新视频
+     *
+     * @param video
+     * @return
+     */
+    public Map updateVideoByID(Video video) {
+        Map map = new HashMap();
+        int code = dao.updateVideoByID(video);
+        if (code > 0) {
+            map.put("code", 2000);
+            map.put("desc", "更新成功");
+            map.put("video", video);
+            return map;
+        }
+        map.put("code", 4000);
+        map.put("desc", "更新失败");
+        return map;
+    }
 }

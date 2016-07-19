@@ -49,7 +49,8 @@ $(document).ready(function () {
                 "<td>" + video.uploadtime + "</td>" +
                 "<td>" + video.duration + "</td>" +
                 "<td>" + video.status + "</td>" +
-                "<td><a href=" + "'" + "/sdyweb/backstage/edit-user.html?username=" + video.id + "'" + ">编辑</a></td>" +
+                "<td>" + video.classid + "</td>" +
+                "<td><a href=" + "'" + "/sdyweb/backstage/edit-video.html?id=" + video.id + "'" + ">编辑</a></td>" +
                 "<td><a href='#'>暂不支持该功能</a></td>" +
                 "</tr>"
             )
@@ -85,7 +86,7 @@ $(document).ready(function () {
     });
 
     //初始化用户列表数据
-    findVideos(0,15);
+    findVideos(0, 15);
 
     //搜索监听
     $("#search_btn").click(function () {

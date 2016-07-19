@@ -53,13 +53,22 @@ public class Video {
         this.source = source;
     }
 
+    public String getDuration() {
+        return duration;
+    }
+
     public void setDuration(String duration) {
         this.duration = duration;
+    }
+
+    public String getUploadtime() {
+        return uploadtime;
     }
 
     public void setUploadtime(String uploadtime) {
         this.uploadtime = uploadtime;
     }
+
     public String getLanguage() {
         return language;
     }
@@ -115,8 +124,8 @@ public class Video {
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", source='" + source + '\'' +
-                ", duration=" + duration +
-                ", uploadtime=" + uploadtime +
+                ", duration='" + duration + '\'' +
+                ", uploadtime='" + uploadtime + '\'' +
                 ", language='" + language + '\'' +
                 ", status=" + status +
                 ", istop=" + istop +

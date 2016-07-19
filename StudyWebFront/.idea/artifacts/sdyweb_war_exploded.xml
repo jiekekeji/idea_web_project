@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="sdyweb:war exploded">
-    <output-path>$PROJECT_DIR$/target/yueba</output-path>
+    <output-path>$PROJECT_DIR$/target/sdyweb</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
