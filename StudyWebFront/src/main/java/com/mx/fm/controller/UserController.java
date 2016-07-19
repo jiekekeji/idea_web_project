@@ -106,6 +106,9 @@ public class UserController {
     @ResponseBody
     public Map register(User user) {
         logger.debug("register=" + user);
+        if (null!=user){
+            user.setRoleid(0);//只能注册为普通用户
+        }
         Map map = service.register(user);
         logger.debug("注册结果:" + map);
         return map;
