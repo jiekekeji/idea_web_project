@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo006</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="basecss/bootstrap.min.css">
+    <script src="basejs/jquery-1.11.1.min.js"></script>
+    <script src="basejs/bootstrap.min.js"></script>
+    <script src="basejs/angular.js"></script>
+</head>
+<!--一个例子：提交表单后根据返回的参数更新页面-->
+<body ng-app="demo006">
+<div class="container">
+    <div class="row" ng-controller="formCtrl">
+        <div class="col-md-12">
+            <form ng-model="formData">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" ng-model="formData.username" name="username" id="username"
+                           placeholder="username">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" ng-model="formData.email" name="email" id="email"
+                           placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" ng-model="formData.password" name="password"
+                           id="password"
+                           placeholder="password">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="checkbox" name="formData.checkbox"> Check me out
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-default" ng-click="submit()">Submit</button>
+            </form>
+        </div>
+        <!--数据请求成功后显示在这里--->
+        <div class="panel">
+            <div class="panel-heading"></div>
+            <div class="panel-body">
+                <ul ng-init="">
+                    <li ng-repeat="user in users">
+                        {{ user.username+":"+user.phonenum }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var app = angular.module("demo006", []);
+    app.controller("formCtrl", function ($scope, $http) {
+        $scope.submit = function () {
+            console.log("点击了提交按钮");
+            console.log("username=" + $scope.formData.username);
+            console.log("email=" + $scope.formData.email);
+            console.log("password=" + $scope.formData.password);
+            console.log("checkbox=" + $scope.formData.checkbox);
+
+            //提交表单
+            $http({
+                method: 'GET',
+                url: '/sdyanjs/user/register',
+                data: $.param($scope.formData),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+            }).success(function (data) {
+                console.log(data);
+                console.log(data.code);
+                $scope.users = data.users;
+            });
+        };
+
+    });
+
+</script>
+
+</body>
+</html>

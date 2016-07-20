@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>demo001</title>
+    <!--引入js文件-->
+    <script src="./basejs/angular.js"></script>
+</head>
+<body>
+<!--1.一个页面会自动加载第一个ng-app-->
+<!--2.如果想启动其它ng-app，angular.bootstrap(document.getElementById("app2"), ['yourApp']);-->
+<!--此时一共启动了2个ng-app-->
+<!--3.特别注意：angular.bootstrap(document.getElementById("app2"), ['yourApp']);部分一定要放在最后-->
+<!--否则会出错-->
+<!--4.一个ng-app可以有多个controller-->
+<!--5.$scope的范围局限于每一个controller中-->
+
+<!--第一个ng-app-->
+<div id="app1" ng-app="myApp">
+    <!--一个ng-app可以有多个controller-->
+    <span ng-controller="myCtrl">{{ firstName + " " + lastName }}</span>
+    <br>
+    <span ng-controller="yourCtrl">{{ secondName + " " + thirdName + (1 + 2) }}</span>
+</div>
+<br>
+<!--第二个ng-app-->
+<div id="app2" ng-app="yourApp" ng-controller="yourCtrl">
+    {{1 + 2}}
+    {{ secondName + " " + thirdName }}
+</div>
+
+<script>
+    var app = angular.module("myApp", []);
+    //    $scope的范围局限于每一个controller中
+    app.controller("myCtrl", function ($scope) {
+        $scope.firstName = "John";
+        $scope.lastName = "Doe";
+    });
+    //    $scope的范围局限于每一个controller中
+    app.controller("yourCtrl", function ($scope) {
+        $scope.secondName = "xiaoming";
+        $scope.thirdName = "daming";
+    });
+
+    var app1 = angular.module('yourApp', []);
+    //    $scope的范围局限于每一个controller中
+    app1.controller("yourCtrl", function ($scope) {
+        $scope.secondName = "yitianjian";
+        $scope.thirdName = "tulongdao";
+    });
+    // 默认启动第一个ng-ap,第二个需按这种方式启动，这句话要放在最后
+    angular.bootstrap(document.getElementById("app2"), ['yourApp']);
+</script>
+
+</body>
+</html>
