@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/StudyAngularJS.iml" filepath="$PROJECT_DIR$/StudyAngularJS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/StudyAngularJS.iml" filepath="$PROJECT_DIR$/StudyAngularJS.iml" />
       <module fileurl="file://$PROJECT_DIR$/sdyanjs.iml" filepath="$PROJECT_DIR$/sdyanjs.iml" />
     </modules>
   </component>

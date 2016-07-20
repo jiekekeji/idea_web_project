@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="sdyanjs:war exploded">
-    <output-path>$PROJECT_DIR$/target/anjs</output-path>
+    <output-path>$PROJECT_DIR$/target/sdyanjs</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">

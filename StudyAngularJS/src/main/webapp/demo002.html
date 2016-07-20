@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo003</title>
+    <!--引入a js文件-->
+    <script src="./basejs/jquery-1.11.1.min.js"></script>
+    <script src="./basejs/angular.js"></script>
+</head>
+<body>
+<!--示例二-->
+<!--我的理解，以java的理解方式。ng-app="myApp"相当于定义了一个类，-->
+<!--ng-controller="myCtrl" 相当于定义了一个方法-->
+<!--ng-model="firstName"和ng-model="lastName"相当于定义了在ng-app="myApp"范围的成员变量-->
+<div ng-app="myApp" ng-controller="myCtrl">
+    名: <input type="text" ng-model="firstName"><br>
+    姓: <input type="text" ng-model="lastName"><br>
+    <br>
+    姓名: {{firstName + " " + lastName}}
+</div>
+<script>
+    //    上面的元素加载完成后，开始执行下面这段话
+    //   new 出myApp这个类的实例，然后调用myCtrl这个方法，然后在function里面实现这个方法
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function ($scope) {
+        //获取成员变量，然后赋值，改变firstName和lastName的值
+        $scope.firstName = "John";
+        $scope.lastName = "Doe";
+    });
+</script>
+</body>
+</html>
