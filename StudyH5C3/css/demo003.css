@@ -1,0 +1,63 @@
+/*Static 定位*/
+/*HTML元素的默认值，即没有定位，元素出现在正常的流中。*/
+/*静态定位的元素不会受到top, bottom, left, right影响。*/
+#div1 {
+    width: 100px;
+    height: 100px;
+    border: solid 1px;
+}
+
+/*Fixed 定位*/
+/*元素的位置相对于浏览器窗口是固定位置。*/
+/*即使窗口是滚动的它也不会移动：*/
+#div2 {
+    border: solid bisque 2px;
+    position: fixed;
+    top: 20%;
+    right: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+/*Relative 定位*/
+/*在他原本该在的位置，然后在做偏移*/
+/*相对定位元素的定位是相对其正常位置。*/
+#div3 {
+    border: solid royalblue 2px;
+    position: relative;
+    left: -20px;
+    top: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+/*Absolute 定位*/
+/*绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于<html>:*/
+#div4 {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    border: solid cadetblue 2px;
+    width: 100px;
+    height: 100px;
+}
+
+#div5 {
+    position: absolute;
+    left: 200px;
+    top: 30px;
+    border: solid blueviolet 2px;
+    width: 100px;
+    height: 100px;
+}
+
+#div6 {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+    border: solid yellowgreen 2px;
+    width: 100px;
+    height: 100px;
+}
+
+

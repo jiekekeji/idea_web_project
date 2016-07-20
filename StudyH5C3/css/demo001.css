@@ -1,0 +1,15 @@
+#div1{
+    width: 200px;
+    height: 300px;
+    border: solid 1px;
+    border-radius:25px;
+    box-shadow: 10px 10px 1px #888888;
+    border-image:url(../images/huahua.png) 30 30 60 60 round;
+}
+
+#div2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: solid 1px;
+}
