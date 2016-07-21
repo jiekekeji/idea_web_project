@@ -1,5 +1,25 @@
-.column li{
+.column li {
     float: left;
-    margin-left: 5px;
+    margin-left: 3px;
     margin-top: 8px;
+    text-align: center;
 }
+
+.column li div {
+    width: 154px;
+    border: solid 1px;
+}
+
+.imgTitle {
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+    height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+
