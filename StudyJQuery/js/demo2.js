@@ -16,6 +16,10 @@ $(document).ready(function () {
         console.log("浏览暂不支持sessionStorage");
     }
 
+    //localStorage和sessionStorage取数据
+    console.log("第一次打开或刷新页面localStorage取:" + localStorage.getItem("username"));
+    console.log("第一次打开或刷新页面sessionStorage取:" + sessionStorage.getItem("username"));
+
     //localStorage和sessionStorage存数据
     localStorage.setItem("username", "jack");
     sessionStorage.setItem("username", "rose");
@@ -31,5 +35,10 @@ $(document).ready(function () {
     //localStorage和sessionStorage取数据
     console.log("清除后localStorage取:" + localStorage.getItem("username"));
     console.log("清除后sessionStorage取:" + sessionStorage.getItem("username"));
+
+    //localStorage和sessionStorage存数据
+    localStorage.setItem("username", "jack");
+    sessionStorage.setItem("username", "rose");
+
 
 });

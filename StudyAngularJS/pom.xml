@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.jk.anjs</groupId>
-    <artifactId>anjs</artifactId>
+    <groupId>com.jk.sdyweb</groupId>
+    <artifactId>sdyweb</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>anjs Maven Webapp</name>
+    <name>yueba Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
@@ -192,6 +192,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>anjs</finalName>
+        <finalName>yueba</finalName>
     </build>
 </project>

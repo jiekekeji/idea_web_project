@@ -2,170 +2,170 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33be8101-fb00-4631-b648-1d11d12042e7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/constant/PathConstant.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/constant/UserRoleConstant.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/controller/UserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/controller/VideoClsController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/controller/VideoController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/AdminUserDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/UserDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/VideoClazzDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/VideoDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/interceptor/LoginInterceptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/mapper/UserMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/mapper/VideoClazzMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/mapper/VideoMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/Collection.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/Comment.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/CommentRepy.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/CommentUser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/UserRole.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-videoclazz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-userlist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-edit-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../idea_web_project.iml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/Video.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/VideoClazz.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/VideoImg.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/service/UserService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/service/VideoClazzService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/service/VideoService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/utils/TextUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/utils/TimeUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/constant/PathConstant.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/constant/UserRoleConstant.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/controller/UserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/controller/VideoClsController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/controller/VideoController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/AdminUserDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/UserDao.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/VideoClazzDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/VideoDao.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/interceptor/LoginInterceptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/mapper/UserMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/mapper/VideoClazzMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/mapper/VideoMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/Collection.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/Comment.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/CommentRepy.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/CommentUser.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/User.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/UserRole.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/Video.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/VideoClazz.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/VideoImg.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/UserRole.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/edit-video.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/UserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/VideoDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-data-jpa-1.9.4.RELEASE.jar" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/service/UserService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/service/VideoClazzService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/service/VideoService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/utils/TextUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/utils/TimeUtils.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/antlr-2.7.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/aopalliance-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/aspectjrt-1.8.7.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/classmate-1.3.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/commons-fileupload-1.2.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/commons-io-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/commons-logging-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/edit-user.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-entitymanager-5.1.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/constant/PathConstant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/utils/TextUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/constant/UserRoleConstant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-register.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/constant/UserRoleConstant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/VideoImg.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/mapper/VideoMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jackson-databind-2.7.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-videolist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/VideoClazz.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/mapper/VideoMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/mybatis-spring-1.2.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/Collection.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-data-commons-1.11.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jandex-2.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/mapper/VideoClazzMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jstl-1.2.jar" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/dom4j-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/interceptor/LoginInterceptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/jquery-1.11.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-beans-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/commons-io-2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/antlr-2.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-edit_user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/conf.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/service/VideoService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/mybatis-3.3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/javassist-3.20.0-GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/Video.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jackson-annotations-2.7.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/CommentRepy.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/mapper/VideoClazzMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/css/m-userlist.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-orm-4.1.9.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/UserRole.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/controller/UserController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-aop-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/aspectjrt-1.8.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/jsp/nice.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-net-video.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/controller/VideoController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/commons-logging-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-user.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jackson-core-2.7.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/log4j-1.2.17.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/conf.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/jsp/user_register_result.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-tx-4.1.9.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/VideoImg.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/utils/TimeUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/okio-1.4.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/UserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/service/VideoClazzService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/CommentUser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/mapper/UserMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/controller/UserController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-expression-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/service/VideoClazzService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-core-5.1.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jsp-api-2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-webmvc-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/constant/PathConstant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/video-class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-edit-img.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/css/m-register.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/aopalliance-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/VideoDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-add-net-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-core-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/slf4j-api-1.7.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/utils/TextUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/myspring-servlet.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/Collection.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/okhttp-2.7.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/utils/TimeUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jcl-over-slf4j-1.7.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/servlet-api-2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/css/m-index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-video-class.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/AdminUserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-role-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/base.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-jdbc-4.1.9.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/service/UserService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/VideoClazz.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-web-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/classmate-1.3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/CommentRepy.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/commons-fileupload-1.2.2.jar" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/fastjson-1.1.15.jar" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-core-5.1.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-entitymanager-5.1.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jackson-annotations-2.7.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jackson-core-2.7.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jackson-databind-2.7.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jandex-2.0.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/javassist-3.20.0-GA.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jcl-over-slf4j-1.7.13.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/json-20160212.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jsp-api-2.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jstl-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/log4j-1.2.17.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/mybatis-3.3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/mybatis-spring-1.2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/mysql-connector-java-5.1.38.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/okhttp-2.7.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/okio-1.4.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/servlet-api-2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/slf4j-api-1.7.13.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-aop-4.2.5.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-beans-4.2.5.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-context-4.2.5.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-core-4.2.5.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-data-commons-1.11.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-data-jpa-1.9.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-expression-4.2.5.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-jdbc-4.1.9.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-orm-4.1.9.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-tx-4.1.9.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-web-4.2.5.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-webmvc-4.2.5.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/xml-apis-1.0.b2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyJQuery/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/conf.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/conf.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/jsp/nice.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/jsp/user_register_result.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/myspring-servlet.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-net-video.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-upload-video.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-user.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-video-class.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/css/m-index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/css/m-register.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/css/m-userlist.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/edit-user.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/VideoClazzDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/controller/VideoController.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/edit-video-img.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/edit-video.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-add-net-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/mysql-connector-java-5.1.38.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-context-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/Comment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/CommentUser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/service/VideoService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/controller/VideoClsController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/interceptor/LoginInterceptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/Comment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/xml-apis-1.0.b2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/AdminUserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/controller/VideoClsController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-upload-video.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/json-20160212.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/mapper/UserMapper.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-adduser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-edit-img.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-edit-video.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-edit_user.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-register.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-userlist.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-videoclazz.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-videolist.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-register.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-role-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/video-class-list.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/video-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/video-top-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/jquery-1.11.1.min.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/jquery.form.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../idea_web_project.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/video-top-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyJQuery/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/project1/css/index.css" afterPath="$PROJECT_DIR$/src/main/webapp/project1/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/project1/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/project1/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/project1/myhtml.html" afterPath="$PROJECT_DIR$/src/main/webapp/project1/myhtml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudyWebFront/src/main/resources/conf.xml" afterPath="$PROJECT_DIR$/../StudyWebFront/src/main/resources/conf.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudyWebFront/src/main/webapp/js/bootstrap.js" afterPath="$PROJECT_DIR$/../StudyWebFront/src/main/webapp/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudyWebFront/src/main/resources/conf.xml" afterPath="$PROJECT_DIR$/../StudyWebFront/src/main/resources/conf.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/project1/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/project1/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudyWebFront/src/main/webapp/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/../StudyWebFront/src/main/webapp/js/bootstrap.min.js" />
     </list>
     <ignored path="StudyAngularJS.iws" />
@@ -196,44 +196,14 @@
     <favorites_list name="StudyAngularJS" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -267,18 +237,18 @@
         <option value="$PROJECT_DIR$/src/main/webapp/project1/css/main.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/project1/css/base.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/project1/myangulajs.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/project1/main.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/project1/myhtml.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/project1/css/index.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/basejs/angular-ui-router.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/project1/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/main.html" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -298,8 +268,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-1393" />
+    <option name="y" value="194" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -328,7 +298,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -347,17 +317,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudyAngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudyAngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -880,6 +868,9 @@
       <workItem from="1469005808966" duration="221000" />
       <workItem from="1469060849980" duration="9802000" />
       <workItem from="1469087909545" duration="6277000" />
+      <workItem from="1469110175137" duration="118000" />
+      <workItem from="1469110295943" duration="2158000" />
+      <workItem from="1469113626107" duration="2483000" />
     </task>
     <task id="LOCAL-00001" summary="mini">
       <created>1468982757383</created>
@@ -920,10 +911,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30675000" />
+    <option name="totallyTimeSpent" value="35434000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-1393" y="194" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -933,27 +924,27 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59210527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843497" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4276316" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6299342" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3262519" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24776119" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6299342" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -981,10 +972,59 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo006.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo005.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo004.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo001.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/myhtml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="19" selection-start-line="18" selection-start-column="8" selection-end-line="21" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -992,9 +1032,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/basejs/jquery-1.11.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1013,20 +1079,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo004.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo005.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1058,27 +1110,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/fm/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/conf.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo006.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/fm/model/User.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/conf.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/basejs/angular-route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1093,21 +1126,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo001.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/demo002.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1182,15 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/myhtml.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1198,30 +1208,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
+        <state relative-caret-position="46">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sdyweb.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo005.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo004.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo001.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="51" column="68" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/basejs/angular-ui-router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="4541" column="27" selection-start-line="4541" selection-start-column="27" selection-end-line="4541" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo006.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/myhtml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="19" selection-start-line="18" selection-start-column="8" selection-end-line="21" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="133">
+          <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="340">
+          <caret line="35" column="7" selection-start-line="27" selection-start-column="5" selection-end-line="35" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1232,7 +1304,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>sdyanjs:war</last-edited>
+          <last-edited>sdyanjs:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1280,7 +1352,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>sdyanjs</last-edited>
+          <last-edited>sdyweb</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

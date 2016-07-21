@@ -1,0 +1,52 @@
+.login{
+    width: 500px;
+    height: 340px;
+    background: #0077ca;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin: -170px 0  0 -250px;
+}
+.lgoinmain{
+    padding: 15px;
+}
+.lgoinmain h4{
+    color: white;
+}
+
+.lgoinmain form{
+    margin-left: 60px;
+}
+
+.lgoinmain ul li{
+    margin-top: 20px;
+}
+
+.lgoinmain ul li span{
+    color: white;
+    width: 60px;
+    height: 20px;
+}
+
+.lgoinmain ul li input{
+    width: 250px;
+    height: 20px;
+}
+
+.verifyimg{
+    margin-left: 75px;
+}
+
+.verifyimg img{
+    width:260px ;
+}
+
+.lgoinmain ul li input[type="button"] {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background: #00497d;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 75px;
+}
