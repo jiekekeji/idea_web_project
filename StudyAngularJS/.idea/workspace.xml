@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33be8101-fb00-4631-b648-1d11d12042e7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/img/main_top_bg.jpg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/constant/PathConstant.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/constant/UserRoleConstant.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/controller/UserController.class" />
@@ -106,6 +107,23 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.ttf" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.woff" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/basejs/angular-route.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/demo007.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/demo008-1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/demo008-2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/demo008-3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/demo008.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/android.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/css/base.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/myangularjs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/mycss.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/myhtml.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/myjava.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/project1/myjavascript.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyJQuery/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/.idea/workspace.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/conf.xml" />
@@ -192,6 +210,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -213,6 +232,22 @@
         <option value="$PROJECT_DIR$/src/main/webapp/demo003.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/mx/fm/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/demo006.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/demo007.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/demo008-1.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/demo008-2.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/demo008-3.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/demo008.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/android.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/mycss.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/myhtml.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/myjava.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/myjavascript.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/css/main.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/css/base.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/myangulajs.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/main.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/css/index.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/project1/index.html" />
       </list>
     </option>
   </component>
@@ -271,7 +306,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,9 +314,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudyAngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StudyAngularJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,11 +338,15 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEAProjects\idea_web_project\StudyAngularJS\src\main\webapp\basejs" />
+      <recent name="D:\IDEAProjects\idea_web_project\StudyAngularJS\src\main\webapp\project1\css" />
+      <recent name="D:\IDEAProjects\idea_web_project\StudyAngularJS\src\main\webapp\project1" />
+      <recent name="D:\IDEAProjects\idea_web_project\StudyAngularJS\src\main\webapp\project1\img" />
       <recent name="D:\IDEAProjects\idea_web_project\StudyAngularJS\src\main\webapp" />
+      <recent name="D:\IDEAProjects\idea_web_project\StudyAngularJS\src\main\webapp\basejs" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat7">
@@ -805,7 +854,8 @@
       <workItem from="1468974658059" duration="7554000" />
       <workItem from="1468993312656" duration="5562000" />
       <workItem from="1468998999122" duration="1259000" />
-      <workItem from="1469005808966" duration="52000" />
+      <workItem from="1469005808966" duration="221000" />
+      <workItem from="1469060849980" duration="9738000" />
     </task>
     <task id="LOCAL-00001" summary="mini">
       <created>1468982757383</created>
@@ -828,11 +878,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468999055470</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mini">
+      <created>1469005911678</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1469005911678</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14427000" />
+    <option name="totallyTimeSpent" value="24334000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -851,7 +908,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22837633" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22610015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -921,20 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo002.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo001.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/demo003.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="443">
@@ -970,13 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo006.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mx/fm/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -1002,6 +1038,212 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo006.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/basejs/angular-route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1431404276000" expanded="true" signature="11432:12179" ph="..." />
+            <marker date="1431404276000" expanded="true" signature="12719:12872" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="12954:13063" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="13148:13260" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="13332:14090" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="13399:13796" ph="{&quot;templateUrl&quot;: 'book.html'...}" />
+            <marker date="1431404276000" expanded="true" signature="13511:13781" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="13610:13764" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="13848:13955" ph="{&quot;templateUrl&quot;: 'chapter.html'...}" />
+            <marker date="1431404276000" expanded="true" signature="14248:14835" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="27858:28572" ph="..." />
+            <marker date="1431404276000" expanded="true" signature="28183:28253" ph="..." />
+            <marker date="1431404276000" expanded="true" signature="28631:28736" ph="..." />
+            <marker date="1431404276000" expanded="true" signature="28798:28960" ph="..." />
+            <marker date="1431404276000" expanded="true" signature="29044:29230" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="29254:29289" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="29346:29724" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="29757:29789" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="29837:29866" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="29914:29947" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="30077:30660" ph="[...]" />
+            <marker date="1431404276000" expanded="true" signature="30173:30659" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="30243:30387" ph="{&quot;templateUrl&quot;: 'book.html'...}" />
+            <marker date="1431404276000" expanded="true" signature="30442:30595" ph="{&quot;templateUrl&quot;: 'chapter.html'...}" />
+            <marker date="1431404276000" expanded="true" signature="30696:30930" ph="[...]" />
+            <marker date="1431404276000" expanded="true" signature="30790:30929" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="30966:31096" ph="[...]" />
+            <marker date="1431404276000" expanded="true" signature="31006:31095" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="31135:31268" ph="[...]" />
+            <marker date="1431404276000" expanded="true" signature="31175:31267" ph="{...}" />
+            <marker date="1431404276000" expanded="true" signature="31405:31938" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo008-3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo001.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo002.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo007.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="16" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo008-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo008-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/android.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/myhtml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/myjava.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/myjavascript.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/mycss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo008.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="29" column="9" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/myangularjs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="65" column="8" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/project1/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo008</title>
+    <script src="basejs/angular.js"></script>
+    <script src="basejs/angular-route.js"></script>
+</head>
+<body ng-app='routingDemoApp'>
+
+<h2>AngularJS 路由应用</h2>
+<ul>
+    <li><a href="#/">首页</a></li>
+    <li><a href="#/computers">电脑</a></li>
+    <li><a href="#/printers">打印机</a></li>
+    <li><a href="#/blabla">其他</a></li>
+</ul>
+<!--视图挂载点-->
+<div ng-view></div>
+
+<script>
+    angular.module('routingDemoApp', ['ngRoute'])
+            .config(['$routeProvider', function ($routeProvider) {
+                $routeProvider
+                        .when('/', {templateUrl: "demo008-1.html"})
+                        .when('/computers', {templateUrl: "demo008-2.html"})
+                        .when('/printers', {templateUrl: "demo008-3.html"})
+                        .otherwise({redirectTo: '/'});
+            }]);
+</script>
+
+
+</body>
+</html>

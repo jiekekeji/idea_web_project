@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body ng-app="mainApp">
+<div class="content">
+    <!--最顶部的那一行-->
+    <div class="top_bar">
+        <div class="logo">
+            <h1>Project1</h1>
+        </div>
+    </div>
+    <!--顶部的导航条-->
+    <div class="top_nav_container">
+        <ul class="top_nav">
+            <li><a href="#/">首页</a></li>
+            <li><a href="#/android">安卓</a></li>
+            <li><a href="#/myhtml">HTML</a></li>
+            <li><a href="#/mycss">CSS</a></li>
+            <li><a href="#/myjavascript">JavaScript</a></li>
+            <li><a href="#/myjava">JAVA</a></li>
+            <li><a href="#/myangularjs">AngularJS</a></li>
+        </ul>
+    </div>
+    <!--视图挂载点-->
+    <div ng-view></div>
+</div>
+<!--**********************-->
+<script src="../basejs/angular.js"></script>
+<script src="../basejs/angular-route.js"></script>
+<script>
+    var mainApp = angular.module("mainApp", ["ngRoute"]);
+    mainApp.config(["$routeProvider", function ($routeProvider) {
+        $routeProvider
+                .when("/", {templateUrl: "index.html"})
+                .when("/android", {templateUrl: "android.html"})
+                .when("/myhtml", {templateUrl: "myhtml.html"})
+                .when("/mycss", {templateUrl: "mycss.html"})
+                .when("/myjavascript", {templateUrl: "myjavascript.html"})
+                .when("/myjava", {templateUrl: "myjava.html"})
+                .when("/myangularjs", {templateUrl: "myangularjs.html"})
+                .otherwise({redirectTo: "/"});
+    }]);
+</script>
+</body>
+</html>
