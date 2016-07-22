@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <!--如果需要禁用掉响应式的布局可去掉该行-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<!--导航栏-->
+<div class="navbar nav-pills"></div>
+<!--主体内容-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="panel">
+                <div class="panel-heading">
+                    用户信息
+                </div>
+                <div class="panel-body">
+                    <form id="registerform" onsubmit="false">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">用户名:</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">密码:</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入密码">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">密码:</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="请再次密码">
+                        </div>
+                    </form>
+                    <button type="submit" id="rigesterbtn" class="btn btn-default">注册</button>
+                    <span id="notice"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../js/jquery-1.11.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="js/z-register.js"></script>
+</body>
+</html>

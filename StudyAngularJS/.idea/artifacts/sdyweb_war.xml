@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="sdyweb:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="yueba.war">
-      <element id="artifact" artifact-name="sdyweb:war exploded" />
-    </root>
-  </artifact>
-</component>

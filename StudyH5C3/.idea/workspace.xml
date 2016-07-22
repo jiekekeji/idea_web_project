@@ -1,26 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="bfd08885-b66e-44a5-b594-6137f6e83c21" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyBootstrap/project4/img/verifyimg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyBootstrap/project4/css/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyBootstrap/project4/css/public.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyBootstrap/project4/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyBootstrap/project4/js/jquery-1.11.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyBootstrap/project4/js/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyBootstrap/project4/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo1.html" afterPath="$PROJECT_DIR$/demo1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/demo2.js" afterPath="$PROJECT_DIR$/js/demo2.js" />
-=======
-    <list default="true" id="842311bc-0ac8-43ae-a372-84b6a2f4499b" name="Default" comment="">
+    <list default="true" id="dd54692b-c621-41e1-9fcf-a5f55736f0b6" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/constant/PathConstant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/constant/UserRoleConstant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/controller/UserController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/controller/VideoClsController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/controller/VideoController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/AdminUserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/UserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/VideoClazzDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/dao/VideoDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/interceptor/LoginInterceptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/mapper/UserMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/mapper/VideoClazzMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/mapper/VideoMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/Collection.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/Comment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/CommentRepy.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/CommentUser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/UserRole.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/Video.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/VideoClazz.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/model/VideoImg.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/service/UserService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/service/VideoClazzService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/service/VideoService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/utils/TextUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/com/mx/fm/utils/TimeUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/constant/PathConstant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/constant/UserRoleConstant.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/controller/UserController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/controller/VideoClsController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/controller/VideoController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/AdminUserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/UserDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/VideoClazzDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/dao/VideoDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/interceptor/LoginInterceptor.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/mapper/UserMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/mapper/VideoClazzMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/mapper/VideoMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/Collection.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/Comment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/CommentRepy.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/CommentUser.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/UserRole.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/Video.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/VideoClazz.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/model/VideoImg.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/service/UserService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/service/VideoClazzService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/service/VideoService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/utils/TextUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/com/mx/fm/utils/TimeUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/antlr-2.7.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/aopalliance-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/aspectjrt-1.8.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/classmate-1.3.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/commons-fileupload-1.2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/commons-io-2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/commons-logging-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/dom4j-1.6.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/fastjson-1.1.15.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-core-5.1.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-entitymanager-5.1.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-jpa-2.0-api-1.0.1.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jackson-annotations-2.7.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jackson-core-2.7.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jackson-databind-2.7.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jandex-2.0.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/javassist-3.20.0-GA.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jcl-over-slf4j-1.7.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/json-20160212.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jsp-api-2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/jstl-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/log4j-1.2.17.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/mybatis-3.3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/mybatis-spring-1.2.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/mysql-connector-java-5.1.38.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/okhttp-2.7.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/okio-1.4.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/servlet-api-2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/slf4j-api-1.7.13.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-aop-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-beans-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-context-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-core-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-data-commons-1.11.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-data-jpa-1.9.4.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-expression-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-jdbc-4.1.9.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-orm-4.1.9.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-tx-4.1.9.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-web-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/spring-webmvc-4.2.5.RELEASE.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/lib/xml-apis-1.0.b2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyJQuery/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/conf.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/classes/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/META-INF/MANIFEST.MF" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/conf.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/classes/log4j.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/jsp/nice.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/jsp/user_register_result.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/myspring-servlet.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/WEB-INF/web.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-net-video.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-upload-video.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-user.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/add-video-class.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/css/m-index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/css/m-register.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/css/m-userlist.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/demo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/edit-user.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/edit-video-img.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/edit-video.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/base.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-add-net-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-adduser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-edit-img.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-edit-video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-edit_user.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-login.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-register.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-userlist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-videoclazz.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/js/z-videolist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/user-role-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/video-class-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/video-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/backstage/video-top-list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap-theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap-theme.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap-theme.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap.css.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/index.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/jquery-1.11.1.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../StudyWebFront/target/sdyweb/js/jquery.form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../idea_web_project.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudyAngularJS/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../StudyAngularJS/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudyWebFront/src/main/resources/conf.xml" afterPath="$PROJECT_DIR$/../StudyWebFront/src/main/resources/conf.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudyWebFront/src/main/webapp/js/bootstrap.js" afterPath="$PROJECT_DIR$/../StudyWebFront/src/main/webapp/js/bootstrap.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../StudyWebFront/src/main/webapp/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/../StudyWebFront/src/main/webapp/js/bootstrap.min.js" />
->>>>>>> Stashed changes
     </list>
-    <ignored path="StudyJQuery.iws" />
+    <ignored path="StudyH5C3.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -37,22 +182,19 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="StudyJQuery" />
+    <favorites_list name="StudyH5C3" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
-<<<<<<< Updated upstream
-=======
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
->>>>>>> Stashed changes
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -64,30 +206,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo1.html" />
-<<<<<<< Updated upstream
-        <option value="$PROJECT_DIR$/js/demo2.js" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" />
-  <component name="JsBuildToolPackageJson" detection-done="true" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1440" />
-    <option name="y" value="181" />
-    <option name="width" value="1440" />
-    <option name="height" value="813" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-=======
-        <option value="$PROJECT_DIR$/js/demo1.js" />
-        <option value="$PROJECT_DIR$/demo2.html" />
-        <option value="$PROJECT_DIR$/js/demo2.js" />
-        <option value="$PROJECT_DIR$/demo3.html" />
-        <option value="$PROJECT_DIR$/js/demo3.js" />
+        <option value="$PROJECT_DIR$/demo001.html" />
+        <option value="$PROJECT_DIR$/css/demo001.css" />
+        <option value="$PROJECT_DIR$/demo002.html" />
+        <option value="$PROJECT_DIR$/css/demo002.css" />
+        <option value="$PROJECT_DIR$/demo003.html" />
+        <option value="$PROJECT_DIR$/demo004.html" />
+        <option value="$PROJECT_DIR$/css/demo004.css" />
       </list>
     </option>
   </component>
@@ -104,7 +229,6 @@
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
->>>>>>> Stashed changes
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -133,53 +257,39 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="StudyJQuery" />
+              <option name="myItemId" value="StudyH5C3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-<<<<<<< Updated upstream
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="StudyJQuery" />
+              <option name="myItemId" value="StudyH5C3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="StudyJQuery" />
+              <option name="myItemId" value="StudyH5C3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-=======
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
->>>>>>> Stashed changes
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< Updated upstream
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-=======
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IDEAProjects\idea_web_project\StudyJQuery" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEAProjects\idea_web_project\StudyJQuery\js" />
-      <recent name="D:\IDEAProjects\idea_web_project\StudyJQuery" />
+      <recent name="D:\IDEAProjects\idea_web_project\StudyH5C3\css" />
+      <recent name="D:\IDEAProjects\idea_web_project\StudyH5C3" />
+      <recent name="D:\IDEAProjects\idea_web_project\StudyH5C3\images" />
     </key>
->>>>>>> Stashed changes
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -345,11 +455,7 @@
           <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
           <option name="launcherType" value="OSDefault" />
           <option name="newPlayerInstance" value="false" />
-<<<<<<< Updated upstream
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-=======
           <option name="playerPath" value="FlashPlayerDebugger.exe" />
->>>>>>> Stashed changes
         </LauncherParameters>
       </option>
       <option name="mobileRunTarget" value="Emulator" />
@@ -372,11 +478,7 @@
           <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
           <option name="launcherType" value="OSDefault" />
           <option name="newPlayerInstance" value="false" />
-<<<<<<< Updated upstream
-          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
-=======
           <option name="playerPath" value="FlashPlayerDebugger.exe" />
->>>>>>> Stashed changes
         </LauncherParameters>
       </option>
       <option name="moduleName" value="" />
@@ -404,10 +506,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
-<<<<<<< Updated upstream
-=======
       <setting name="depsClasspath" value="false" />
->>>>>>> Stashed changes
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -486,7 +585,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="StudyJQuery" />
+      <module name="StudyH5C3" />
       <envs />
       <method />
     </configuration>
@@ -573,15 +672,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-<<<<<<< Updated upstream
-=======
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
->>>>>>> Stashed changes
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -601,81 +697,53 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-<<<<<<< Updated upstream
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="bfd08885-b66e-44a5-b594-6137f6e83c21" name="Default" comment="" />
-      <created>1468596598455</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1468596598455</updated>
-      <workItem from="1468596599846" duration="897000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="897000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1440" y="181" width="1440" height="813" extended-state="6" />
-    <editor active="false" />
-    <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06025825" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20028612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-=======
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="842311bc-0ac8-43ae-a372-84b6a2f4499b" name="Default" comment="" />
-      <created>1468371178868</created>
+      <changelist id="dd54692b-c621-41e1-9fcf-a5f55736f0b6" name="Default" comment="" />
+      <created>1468983207402</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1468371178868</updated>
-      <workItem from="1468371180214" duration="799000" />
-      <workItem from="1468564998970" duration="9847000" />
-      <workItem from="1468629976421" duration="26000" />
+      <updated>1468983207402</updated>
+      <workItem from="1468983208579" duration="2440000" />
+      <workItem from="1468993260897" duration="39000" />
+      <workItem from="1469006074603" duration="1816000" />
     </task>
     <task id="LOCAL-00001" summary="init">
-      <created>1468576521392</created>
+      <created>1468983229874</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1468576521392</updated>
+      <updated>1468983229874</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="init">
+      <created>1468985423671</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1468985423671</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <created>1469007755444</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1469007755444</updated>
+    </task>
+    <task id="LOCAL-00004" summary="init">
+      <created>1469007779691</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1469007779691</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10672000" />
+    <option name="totallyTimeSpent" value="4295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -691,7 +759,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24506828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18361153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -722,101 +790,83 @@
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
->>>>>>> Stashed changes
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< Updated upstream
-    <entry file="file://$PROJECT_DIR$/demo1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/demo2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding />
-=======
-    <entry file="file://$PROJECT_DIR$/js/jquery-1.11.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StudyJQuery.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
->>>>>>> Stashed changes
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo2.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="230">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/demo3.js">
+    <entry file="file://$PROJECT_DIR$/demo003.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-=======
-        <state relative-caret-position="300">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/demo2.js">
+    <entry file="file://$PROJECT_DIR$/demo003.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
->>>>>>> Stashed changes
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo3.html">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< Updated upstream
-        <state relative-caret-position="230">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-=======
-        <state relative-caret-position="200">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/demo3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo1.html">
+    <entry file="file://$PROJECT_DIR$/css/demo001.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/demo1.js">
+    <entry file="file://$PROJECT_DIR$/css/demo002.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="23" />
->>>>>>> Stashed changes
+        <state relative-caret-position="243">
+          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo002.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/demo003.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo001.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo003.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/demo004.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo004.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑用户信息</title>
+    <!--如果需要禁用掉响应式的布局可去掉该行-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="" class="navbar-brand" id="page_title">编辑用户信息</a>
+        </div>
+    </div>
+</nav>
+<!--主体内容-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form id="adduser_form" method="post" onsubmit="return false" action="/sdyweb/user/updateUser">
+                <div class="form-group">
+                    <label for="username">用户名</label>
+                    <input type="text" class="form-control" name="username" id="username" placeholder="用户名">
+                </div>
+                <div class="form-group">
+                    <label for="nickname">昵称</label>
+                    <input type="text" class="form-control" name="nickname" id="nickname" placeholder="昵称">
+                </div>
+                <div class="form-group">
+                    <label for="phonenum">手机号</label>
+                    <input type="text" class="form-control" name="phonenum" id="phonenum" placeholder="手机号">
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="邮箱">
+                </div>
+                <div class="form-group">
+                    <label for="introduce">个性签名</label>
+                    <input type="text" class="form-control" name="introduce" id="introduce" placeholder="个性签名">
+                </div>
+                <!--隐藏表单-->
+                <input type="hidden" class="form-control" name="qq" id="qq">
+                <input type="hidden" class="form-control" name="headerurl" id="headerurl">
+                <input type="hidden" class="form-control" name="weixin" id="weixin">
+
+                <div id="userRoles" class="form-group">
+                </div>
+                <button id="submitbtn" type="submit" class="btn btn-default">提交</button>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../js/jquery-1.11.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.form.js"></script>
+<script src="js/base.js"></script>
+<script src="js/z-edit_user.js"></script>
+</body>
+</html>

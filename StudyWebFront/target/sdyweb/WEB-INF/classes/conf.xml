@@ -18,13 +18,8 @@
 
     <mappers>
         <mapper class="com.mx.fm.mapper.UserMapper"/>
-<<<<<<< Updated upstream
-        <mapper class="com.mx.fm.mapper.VideoClazzMapper"/>
-        <mapper class="com.mx.fm.mapper.VideoMapper"/>
-=======
         <mapper class="com.mx.fm.mapper.VideoMapper"/>
         <mapper class="com.mx.fm.mapper.VideoClazzMapper"/>
->>>>>>> Stashed changes
     </mappers>
 
 </configuration>

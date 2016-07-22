@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改视频</title>
+    <!--如果需要禁用掉响应式的布局可去掉该行-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="" class="navbar-brand">修改视频</a>
+        </div>
+    </div>
+</nav>
+<!--主体内容-->
+<div class="container">
+    <!--表单参数-->
+    <div class="row" style="margin-top: 10px">
+        <div class="col-md-12">
+            <form action="/sdyweb/video/updateVideoByID" method="post" enctype="multipart/form-data"
+                  onsubmit="return false" id="add_net_video_form">
+                <input type="hidden" class="form-control" name="id" id="id">
+                <input type="hidden" class="form-control" name="uploadtime" id="uploadtime">
+                <input type="hidden" class="form-control" name="outlineImgUrl" id="outlineImgUrl">
+                <div class="form-group">
+                    <label for="title">视频标题</label>
+                    <input type="text" class="form-control" name="title" id="title" placeholder="视频标题">
+                </div>
+                <div class="form-group">
+                    <label for="content">视频内容描述</label>
+                    <input type="text" class="form-control" name="content" id="content" placeholder="视频内容描述">
+                </div>
+                <div class="form-group">
+                    <label for="source">视频来源</label>
+                    <input type="text" class="form-control" name="source" id="source" placeholder="视频来源">
+                </div>
+                <div class="form-group">
+                    <label for="duration">视频时长</label>
+                    <input type="text" class="form-control" name="duration" id="duration" placeholder="视频时长 1:20:20">
+                </div>
+                <div class="form-group">
+                    <label for="language">语言</label>
+                    <input type="text" class="form-control" name="language" id="language" placeholder="语言 中文">
+                </div>
+                <div class="form-group">
+                    <label for="videourl">视频地址</label>
+                    <input type="url" class="form-control" name="videourl" id="videourl" placeholder="视频地址">
+                </div>
+                <div class="form-group">
+                    <label for="imgurl">图片说明:&nbsp;</label>
+                    <img src="" height="100" width="100" id="imgurl"/>
+                </div>
+                <div class="form-group">
+                    <label id="video_cls">视频分类:&nbsp;&nbsp;</label>
+                </div>
+                <div class="form-group">
+                    <label>视频状态:&nbsp;&nbsp;</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="status" checked="checked" value="0">
+                        立即发布
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="status" value="1">
+                        审核中
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>是否置于推荐:&nbsp;&nbsp;</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="istop" value="0">
+                        是
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" checked="checked" name="istop" value="1">
+                        否
+                    </label>
+                </div>
+                <button id="submitbtn" type="submit" class="btn btn-default">提交</button>
+                <span id="notice"><font size="5" face="arial" color="red"></font></span>
+            </form>
+
+        </div>
+    </div>
+</div>
+<!--底部导航--->
+<div style="background: lavenderblush;margin-top: 20px">
+    <div class="container">
+        <div class="row" style="height: 80px">
+            <div class="col-md-12" style="line-height:80px ">
+                <p align="center">
+                    Copyright&nbsp;©&nbsp;2012-2015&nbsp;&nbsp;www.shouxianzhuan.com&nbsp;&nbsp;蜀ICP备13014270号-4
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="../js/jquery-1.11.1.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.form.js"></script>
+<script src="js/base.js"></script>
+<script src="js/z-edit-video.js"></script>
+</body>
+</html>
