@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myhtml</title>
+</head>
+<body ng-app="myhtmlApp" ng-controller="myCtrl">
+<p>myhtml</p>
+
+<button ng-click="getData()">提交</button>
+
+
+<!--**********************-->
+<script src="basejs/angular.js"></script>
+<script src="basejs/angular-route.js"></script>
+<script>
+    var app = angular.module("myhtmlApp", []);
+    app.controller('myCtrl', function ($scope, $http) {
+        $http.jsonp("http://www.tngou.net/tnfs/api/classify?callback=JSON_CALLBACK")
+                .success(function (response) {
+                    console.log(response.status);
+                });
+
+    })
+
+</script>
+</body>
+</html>

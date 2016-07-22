@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo006-01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="basecss/bootstrap.min.css">
+    <script src="basejs/jquery-1.11.1.min.js"></script>
+    <script src="basejs/bootstrap.min.js"></script>
+    <script src="basejs/angular.js"></script>
+</head>
+<!--一个例子：提交表单后根据返回的参数更新页面-->
+<body ng-app="demo006">
+<div class="container">
+    <div class="row" ng-controller="formCtrl">
+        <div class="col-md-12">
+            <form ng-model="formData">
+                <div class="form-group">
+                    <label for="id">图片ID</label>
+                    <input type="number" class="form-control" ng-model="formData.id" name="id" id="id"
+                           placeholder="图片ID">
+                </div>
+                <div class="form-group">
+                    <label for="page">起始记录</label>
+                    <input type="number" class="form-control" ng-model="formData.page" name="page" id="page"
+                           placeholder="起始记录">
+                </div>
+                <div class="form-group">
+                    <label for="rows">返回条数</label>
+                    <input type="number" class="form-control" ng-model="formData.rows" name="rows"
+                           id="rows"
+                           placeholder="返回条数">
+                </div>
+                <button type="submit" class="btn btn-default" ng-click="submit()">Submit</button>
+            </form>
+        </div>
+        <!--数据请求成功后显示在这里--->
+        <div class="panel">
+            <div class="panel-heading"></div>
+            <div class="panel-body">
+                <ul ng-init="">
+                    <li ng-repeat="user in users">
+                        {{ user.username+":"+user.phonenum }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var app = angular.module("demo006", []);
+    app.controller("formCtrl", function ($scope, $http) {
+        $scope.submit = function () {
+            console.log("点击了提交按钮");
+            console.log("id=" + $scope.formData.id);
+            console.log("page=" + $scope.formData.page);
+            console.log("rows=" + $scope.formData.rows);
+            //提交表单,这方法不能跨域请求
+            $http({
+                method: 'GET',
+                url: '/sdyanjs/user/register',
+                data: $.param($scope.formData),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+            }).success(function (data) {
+                console.log(data);
+                console.log(data.code);
+                $scope.users = data.users;
+            });
+        };
+
+    });
+
+</script>
+
+</body>
+</html>
