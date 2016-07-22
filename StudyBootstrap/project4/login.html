@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+<div class="login">
+    <div class="lgoinmain">
+        <h4>登录管理系统</h4>
+        <form class="form" action="index.html" method="get">
+            <ul>
+                <li>
+                    <span>管理员账号：</span>
+                    <input class="account" type="text" value="">
+                </li>
+                <li>
+                    <span>管理员密码：</span>
+                    <input class="password" type="password" value="">
+                </li>
+                <li>
+                    <span>登录验证码：</span>
+                    <input class="verifycode" type="text" value="">
+                </li>
+                <li>
+                    <div class="verifyimg"><img src="img/verifyimg.png"></div>
+                </li>
+                <li>
+                    <input class="loginbtn" type="button" value="登陆">
+                    <span class="notice"></span>
+                </li>
+            </ul>
+        </form>
+    </div>
+
+</div>
+
+
+<!-- ————————————————————jQuery文件———————————————————— -->
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

@@ -6,63 +6,15 @@
     <link href="css/base.css" rel="stylesheet" type="text/css"/>
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
 </head>
-<body ng-app="indexApp">
+<body ng-controller="indexCtrl" class="column">
 <!--图片行-->
-<ul class="column">
+<ul>
     <!--一行中的列-->
-    <li>
+    <li ng-repeat="imgInfo in imgInfos">
         <a href="#">
             <div>
-                <img src="#" width="154px" height="154px">
-                <p class="imgTitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <div>
-                <img src="#" width="154px" height="154px">
-                <p class="imgTitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <div>
-                <img src="#" width="154px" height="154px">
-                <p class="imgTitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <div>
-                <img src="#" width="154px" height="154px">
-                <p class="imgTitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <div>
-                <img src="#" width="154px" height="154px">
-                <p class="imgTitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <div>
-                <img src="#" width="154px" height="154px">
-                <p class="imgTitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
-            </div>
-        </a>
-    </li>
-    <li>
-        <a href="#">
-            <div>
-                <img src="#" width="154px" height="154px">
-                <p class="imgTitle">标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</p>
+                <img src={{"http://tnfs.tngou.net/img"+imgInfo.img}} width="154px" height="154px">
+                <p class="imgTitle">{{imgInfo.title}}</p>
             </div>
         </a>
     </li>
@@ -71,7 +23,17 @@
 <script src="../basejs/angular.js"></script>
 <script src="../basejs/angular-route.js"></script>
 <script>
+    console.log("load end");
+    var indexApp = angular.module("indexApp", []);
+    indexApp.controller('imgCtrl', function ($scope, $http) {
 
+        $http.jsonp("http://www.tngou.net/tnfs/api/list?page=1&rows=10&callback=JSON_CALLBACK")
+                .success(function (response) {
+                    console.log(response.status);
+                    $scope.imgInfos = response.tngou;
+                });
+
+    });
 
 </script>
 </body>
