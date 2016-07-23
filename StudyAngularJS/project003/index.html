@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>懒加载实例</title>
+</head>
+<body ng-app="indexApp">
+
+<div>
+    <a href="#/page1">第一页</a>
+    <a href="#/page2">第二页</a>
+</div>
+<div ui-view></div>
+
+<!--引入必要js-->
+<script src="commonjs/angular.js"></script>
+<script src="commonjs/angular-ui-router.min.js"></script>
+<script src="commonjs/ocLazyLoad.min.js"></script>
+
+<!--配置js-->
+<script src="configjs/appConfig.js"></script>
+<script src="configjs/routeConfig.js"></script>
+
+
+</body>
+</html>

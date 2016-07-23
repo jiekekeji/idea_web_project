@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="indexApp">
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
@@ -25,14 +25,12 @@
 <script>
     console.log("load end");
     var indexApp = angular.module("indexApp", []);
-    indexApp.controller('imgCtrl', function ($scope, $http) {
-
+    indexApp.controller('indexCtrl', function ($scope, $http) {
         $http.jsonp("http://www.tngou.net/tnfs/api/list?page=1&rows=10&callback=JSON_CALLBACK")
                 .success(function (response) {
                     console.log(response.status);
                     $scope.imgInfos = response.tngou;
                 });
-
     });
 
 </script>

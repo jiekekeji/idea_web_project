@@ -16,7 +16,7 @@
     <!--顶部的导航条-->
     <div class="top_nav_container">
         <ul class="top_nav">
-            <li><a href="#/">首页</a></li>
+            <li><a href="#/index">首页</a></li>
             <li><a href="#/android">安卓</a></li>
             <li><a href="#/myhtml">HTML</a></li>
             <li><a href="#/mycss">CSS</a></li>
@@ -26,11 +26,17 @@
         </ul>
     </div>
     <!--视图挂载点-->
-    <div ng-view></div>
+    <div ui-view></div>
 </div>
 <!--**********************-->
+<!--引入必要js-->
 <script src="basejs/angular.js"></script>
-<script src="basejs/angular-route.js"></script>
+<script src="basejs/angular-ui-router.min.js"></script>
+<script src="basejs/ocLazyLoad.min.js"></script>
+
+<!--配置js-->
+<script src="js/appConfig.js"></script>
+<script src="js/routeConfig.js"></script>
 <script>
     var mainApp = angular.module("mainApp", ["ngRoute"]);
     mainApp.config(["$routeProvider", function ($routeProvider) {
