@@ -1,8 +1,8 @@
 /**
  * Created by jack on 16/7/23.
  */
-//初始配置
-var app = angular.module('indexApp', ["ui.router", "oc.lazyLoad"]);
+//初始配置,主页的ng-app="mainApp"
+var app = angular.module('mainApp', ["ui.router", "oc.lazyLoad"]);
 
 app.config(["$provide", "$compileProvider", "$controllerProvider", "$filterProvider",
     function ($provide, $compileProvider, $controllerProvider, $filterProvider) {

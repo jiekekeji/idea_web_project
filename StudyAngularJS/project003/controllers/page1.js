@@ -10,4 +10,4 @@ console.log("page1 loaded");
         this.username = "Hello World";
         this.value="jack";
     }
-}())
+}());

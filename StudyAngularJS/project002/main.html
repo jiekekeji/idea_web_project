@@ -34,32 +34,9 @@
 <script src="basejs/angular-ui-router.min.js"></script>
 <script src="basejs/ocLazyLoad.min.js"></script>
 
-<!--配置js-->
-<script src="js/appConfig.js"></script>
-<script src="js/routeConfig.js"></script>
-<script>
-    var mainApp = angular.module("mainApp", ["ngRoute"]);
-    mainApp.config(["$routeProvider", function ($routeProvider) {
-        $routeProvider
-                .when("/", {templateUrl: "index.html",controller: 'indexCtrl'})
-                .when("/android", {templateUrl: "android.html"})
-                .when("/myhtml", {templateUrl: "myhtml.html"})
-                .when("/mycss", {templateUrl: "mycss.html"})
-                .when("/myjavascript", {templateUrl: "myjavascript.html"})
-                .when("/myjava", {templateUrl: "myjava.html"})
-                .when("/myangularjs", {templateUrl: "myangularjs.html"})
-                .otherwise({redirectTo: "/"});
-    }]);
+<!--配置路由js-->
+<script src="appconfigjs/appConfig.js"></script>
+<script src="appconfigjs/routeConfig.js"></script>
 
-    mainApp.controller('imgCtrl', function ($scope, $http) {
-
-        $http.jsonp("http://www.tngou.net/tnfs/api/list?page=1&rows=10&callback=JSON_CALLBACK")
-                .success(function (response) {
-                    console.log(response.status);
-                    $scope.imgInfos = response.tngou;
-                });
-
-    });
-</script>
 </body>
 </html>

@@ -6,11 +6,10 @@
     <link href="css/base.css" rel="stylesheet" type="text/css"/>
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
 </head>
-<body ng-controller="indexCtrl" class="column">
 <!--图片行-->
 <ul>
     <!--一行中的列-->
-    <li ng-repeat="imgInfo in imgInfos">
+    <li ng-repeat="imgInfo in index.imgInfos">
         <a href="#">
             <div>
                 <img src={{"http://tnfs.tngou.net/img"+imgInfo.img}} width="154px" height="154px">
@@ -19,20 +18,5 @@
         </a>
     </li>
 </ul>
-<!--**********************-->
-<script src="basejs/angular.js"></script>
-<script src="basejs/angular-route.js"></script>
-<script>
-    console.log("load end");
-    var indexApp = angular.module("indexApp", []);
-    indexApp.controller('indexCtrl', function ($scope, $http) {
-        $http.jsonp("http://www.tngou.net/tnfs/api/list?page=1&rows=10&callback=JSON_CALLBACK")
-                .success(function (response) {
-                    console.log(response.status);
-                    $scope.imgInfos = response.tngou;
-                });
-    });
-
-</script>
 </body>
 </html>
