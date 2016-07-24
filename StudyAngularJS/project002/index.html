@@ -7,9 +7,9 @@
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
 </head>
 <!--图片行-->
-<ul>
+<ul class="column">
     <!--一行中的列-->
-    <li ng-repeat="imgInfo in index.imgInfos">
+    <li class="imgListStyle" ng-repeat="imgInfo in index.imgInfos">
         <a href="#">
             <div>
                 <img src={{"http://tnfs.tngou.net/img"+imgInfo.img}} width="154px" height="154px">
@@ -18,5 +18,17 @@
         </a>
     </li>
 </ul>
+<!--分页导航-->
+<div class="page-nav-container">
+    <div class="page-nav">
+        <button ng-click="index.prePage()">上一页</button>
+        <span>当前页</span>
+        <input type="number" ng-model="index.currentPage">
+        <button ng-click="index.skipPage()">跳转</button>
+        <span>总页数</span>
+        <span>{{index.totalPage}}</span>
+        <button ng-click="index.nextPage()">下一页</button>
+    </div>
+</div>
 </body>
 </html>

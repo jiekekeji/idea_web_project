@@ -20,6 +20,19 @@
     white-space: nowrap;
 }
 
+/*分页导航*/
+.page-nav-container{
+    clear: both;
+    background: lavender;
+    width: 100%;
+    height: 50px;;
+}
+.page-nav{
+    width: 600px;
+    height: 30px;
+    margin:auto auto;
+    line-height: 50px;
+}
 
 
 

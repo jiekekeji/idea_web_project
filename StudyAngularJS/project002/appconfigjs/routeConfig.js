@@ -84,4 +84,15 @@ function routeFn($stateProvider, $urlRouterProvider) {
                 }]
             }
         })
+        .state("mypython", {//mypython页
+            url: "/mypython",
+            templateUrl: "mypython.html",
+            controller: "mypythonCtrl",
+            controllerAs: "mypython",
+            resolve: {
+                deps: ["$ocLazyLoad", function ($ocLazyLoad) {
+                    return $ocLazyLoad.load("appcontrollers/mypython.js");
+                }]
+            }
+        })
 };
