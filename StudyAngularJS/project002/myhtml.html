@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>myhtml</title>
+    <title>韩日美女</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
 </head>
-<body ng-app="myhtmlApp" ng-controller="myCtrl">
-<p>myhtml</p>
-
-<button ng-click="getData()">提交</button>
-
-
-<!--**********************-->
-<script src="basejs/angular.js"></script>
-<script src="basejs/angular-route.js"></script>
-<script>
-    var app = angular.module("myhtmlApp", []);
-    app.controller('myCtrl', function ($scope, $http) {
-        $http.jsonp("http://www.tngou.net/tnfs/api/classify?callback=JSON_CALLBACK")
-                .success(function (response) {
-                    console.log(response.status);
-                });
-
-    })
-
-</script>
+<body>
+<!--图片行-->
+<ul class="column">
+    <!--一行中的列-->
+    <li class="imgListStyle" ng-repeat="imgInfo in myhtml.imgInfos">
+        <a href="#">
+            <div>
+                <img src={{"http://tnfs.tngou.net/img"+imgInfo.img}} width="154px" height="154px">
+                <p class="imgTitle">{{imgInfo.title}}</p>
+            </div>
+        </a>
+    </li>
+</ul>
+<!--分页导航-->
+<div class="page-nav-container">
+    <div class="page-nav">
+        <button ng-click="myhtml.prePage()">上一页</button>
+        <span>当前页</span>
+        <input type="number" ng-model="myhtml.currentPage">
+        <button ng-click="myhtml.skipPage()">跳转</button>
+        <span>总页数</span>
+        <span>{{myhtml.totalPage}}</span>
+        <button ng-click="myhtml.nextPage()">下一页</button>
+    </div>
+</div>
 </body>
 </html>

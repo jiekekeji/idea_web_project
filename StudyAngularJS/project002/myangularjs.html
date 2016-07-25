@@ -2,9 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>angularjs</title>
+    <title>清纯美女</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css"/>
+    <link href="css/index.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<p>myangularjs</p>
+<!--图片行-->
+<ul class="column">
+    <!--一行中的列-->
+    <li class="imgListStyle" ng-repeat="imgInfo in myangularjs.imgInfos">
+        <a href="#">
+            <div>
+                <img src={{"http://tnfs.tngou.net/img"+imgInfo.img}} width="154px" height="154px">
+                <p class="imgTitle">{{imgInfo.title}}</p>
+            </div>
+        </a>
+    </li>
+</ul>
+<!--分页导航-->
+<div class="page-nav-container">
+    <div class="page-nav">
+        <button ng-click="myangularjs.prePage()">上一页</button>
+        <span>当前页</span>
+        <input type="number" ng-model="myangularjs.currentPage">
+        <button ng-click="myangularjs.skipPage()">跳转</button>
+        <span>总页数</span>
+        <span>{{myangularjs.totalPage}}</span>
+        <button ng-click="myangularjs.nextPage()">下一页</button>
+    </div>
+</div>
 </body>
 </html>

@@ -12,11 +12,12 @@ var http;
     //和路由配置的controller: "indexCtrl"一致
     app.controller("indexCtrl", indexCtrlFn);
     function indexCtrlFn($http) {
+        console.log("indexCtrlFn");
         //初始化数据
         self = this;
         http = $http;
 
-        getData(page, rows);
+        getIndexData(page, rows);
         //绑定数据和事件
         //上一页
         self.prePage = function () {
@@ -25,7 +26,7 @@ var http;
                 return;
             }
             self.currentPage = self.currentPage - 1;
-            getData(self.currentPage, rows);
+            getIndexData(self.currentPage, rows);
         };
         //下一页
         self.nextPage = function () {
@@ -34,7 +35,7 @@ var http;
                 return;
             }
             self.currentPage = self.currentPage + 1;
-            getData(self.currentPage, rows);
+            getIndexData(self.currentPage, rows);
         };
         //跳转
         self.skipPage = function () {
@@ -42,16 +43,17 @@ var http;
                 alert("没有该页");
                 return;
             }
-            getData(self.currentPage, rows);
+            getIndexData(self.currentPage, rows);
         };
     };
 }());
 
 // 请求数据填充表单
-function getData(page, rows) {
+function getIndexData(page, rows) {
     http.jsonp(baseURL + "?page=" + page + "&rows=" + rows + "&callback=JSON_CALLBACK")
         .success(function (response) {
-            console.log(response.status);
+            console.log("index.js load data result");
+            console.log("index ="+response.status);
             self.imgInfos = null;//先置为空
             self.currentPage = page;//设置当前页
             self.imgInfos = response.tngou;//刷新列表
