@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 实例 - 轮播（Carousel）插件的标题</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/themes/default/default.css" type="text/css" media="screen"/>
+    <link href="css/demo001.css" rel="stylesheet" type="text/css"/>
+    <script src="basejs/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div >
+    <div id="slider" >
+        <img src="http://tnfs.tngou.net/image/ext/160726/41d08dc903ec99564380c5ffbf0720e7.jpg_100×100"
+             alt="Pulpit rock"
+             title=""/>
+        <img src="http://tnfs.tngou.net/image/ext/160725/6db46cd2140e27498d518586197a43fd.jpg_320×450"
+             alt="Pulpit rock"
+             title=""/>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $('#slider').nivoSlider({
+        animSpeed: 100,          //图片过渡时间
+        pauseTime: 2000,         //图片显示时间
+        pauseOnHover: false,
+        manualAdvance: false,
+    });
+</script>
+</html>
