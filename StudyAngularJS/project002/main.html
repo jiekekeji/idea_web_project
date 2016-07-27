@@ -4,14 +4,45 @@
     <meta charset="UTF-8">
     <title>主页</title>
     <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/datouwang.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="basejs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="apppagerjs/koala.min.1.5.js"></script>
 </head>
+<!--真个app 包含路由那些东西-->
 <body ng-app="mainApp">
-<div class="content">
+<div class="content" ng-controller="mainCtrl">
     <!--最顶部的那一行-->
     <div class="top_bar">
         <div class="logo">
             <h1>Project1</h1>
         </div>
+    </div>
+    <!-- 图片轮训 开始 -->
+    <div id="fsD1" class="focus">
+        <!--图片区域--->
+        <div id="D1pic1" class="fPic">
+            <div class="fcon" style="display: none;" ng-repeat="imgInfo in imgInfos">
+                <a href={{"http://tnfs.tngou.net/img"+imgInfo.img}}>
+                    <img src={{"http://tnfs.tngou.net/img"+imgInfo.img}} style="opacity: 1; ">
+                </a>
+                <span class="shadow">
+                    <a href="#">
+                        {{imgInfo.title}}
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="fbg">
+            <div class="D1fBt" id="D1fBt">
+                <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>
+                <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>
+                <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>
+                <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a>
+            </div>
+        </div>
+        <!--箭头按钮-->
+        <span class="prev"></span>
+        <span class="next"></span>
     </div>
     <!--顶部的导航条-->
     <div class="top_nav_container">
@@ -34,6 +65,7 @@
     </div>
 </div>
 <!--**********************-->
+<!--配置angular路由-->
 <!--引入必要js-->
 <script src="basejs/angular.js"></script>
 <script src="basejs/angular-ui-router.min.js"></script>
@@ -42,6 +74,43 @@
 <!--配置路由js-->
 <script src="appconfigjs/appConfig.js"></script>
 <script src="appconfigjs/routeConfig.js"></script>
+<!--**********************-->
 
+<!--加载轮训图片  加载前六张图片为轮训图片-->
+<script>
+    var baseURL = "http://www.tngou.net/tnfs/api/list";
+    //这个app在appConfig已经给new出来
+    app.controller('mainCtrl', function ($scope, $http) {
+        console.log("mainCtrl")
+        $http.jsonp(baseURL + "?page=" + 1 + "&rows=" + 4 + "&callback=JSON_CALLBACK")
+                .success(function (response) {
+                    console.log("mainCtrl.js load data result");
+                    console.log("mainCtrl =" + response.status);
+                    $scope.imgInfos = response.tngou;
+                    //加载完成配置轮训
+                    configApic();
+                });
+    });
+
+    <!--图片轮训配置-->
+    function configApic() {
+        Qfast.add('widgets', {path: "apppagerjs/terminator2.2.min.js", type: "js", requires: ['fx']});
+        Qfast(false, 'widgets', function () {
+            K.tabs({
+                id: 'fsD1',   //焦点图包裹id
+                conId: "D1pic1",  //** 大图域包裹id
+                tabId: "D1fBt",
+                tabTn: "a",
+                conCn: '.fcon', //** 大图域配置class
+                auto: 1,   //自动播放 1或0
+                effect: 'fade',   //效果配置
+                eType: 'click', //** 鼠标事件
+                pageBt: true,//是否有按钮切换页码
+                bns: ['.prev', '.next'],//** 前后按钮配置class
+                interval: 3000  //** 停顿时间
+            })
+        })
+    }
+</script>
 </body>
 </html>
