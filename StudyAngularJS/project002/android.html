@@ -5,18 +5,17 @@
     <title>性感美女</title>
     <link href="css/base.css" rel="stylesheet" type="text/css"/>
     <link href="css/index.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/viewer.min.css">
 </head>
 <body>
 <!--图片行-->
-<ul class="column">
+<ul id="dowebok" class="column">
     <!--一行中的列-->
     <li class="imgListStyle" ng-repeat="imgInfo in android.imgInfos">
-        <a href="#">
-            <div>
-                <img src={{"http://tnfs.tngou.net/img"+imgInfo.img}} width="220px" height="220px">
-                <p class="imgTitle">{{imgInfo.title}}</p>
-            </div>
-        </a>
+        <div>
+            <img src={{"http://tnfs.tngou.net/img"+imgInfo.img}} width="220px" height="220px">
+            <p class="imgTitle">{{imgInfo.title}}</p>
+        </div>
     </li>
 </ul>
 <!--分页导航-->

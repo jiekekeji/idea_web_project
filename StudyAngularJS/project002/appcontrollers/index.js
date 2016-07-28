@@ -45,6 +45,11 @@ var http;
             }
             getIndexData(self.currentPage, rows);
         };
+
+        //设置图片放大
+        $('#dowebok').viewer({
+            url: 'data-original',
+        });
     };
 }());
 
@@ -53,7 +58,7 @@ function getIndexData(page, rows) {
     http.jsonp(baseURL + "?page=" + page + "&rows=" + rows + "&callback=JSON_CALLBACK")
         .success(function (response) {
             console.log("index.js load data result");
-            console.log("index ="+response.status);
+            console.log("index =" + response.status);
             self.imgInfos = null;//先置为空
             self.currentPage = page;//设置当前页
             self.imgInfos = response.tngou;//刷新列表

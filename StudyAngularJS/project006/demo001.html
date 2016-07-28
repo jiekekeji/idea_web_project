@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="utf-8">
+    <title>JS/jQuery图片查看器viewer.js演示-jQuery版本_dowebok</title>
+    <link rel="stylesheet" href="css/viewer.min.css">
+
+</head>
+
+<body>
+<h1>jQuery版本</h1>
+
+<ul id="dowebok">
+    <li><img data-original="img/tibet-1.jpg" src="img/thumbnails/tibet-1.jpg" alt="图片1"></li>
+    <li><img data-original="img/tibet-2.jpg" src="img/thumbnails/tibet-2.jpg" alt="图片2"></li>
+    <li><img data-original="img/tibet-3.jpg" src="img/thumbnails/tibet-3.jpg" alt="图片3"></li>
+    <li><img data-original="img/tibet-4.jpg" src="img/thumbnails/tibet-4.jpg" alt="图片4"></li>
+    <li><img data-original="img/tibet-5.jpg" src="img/thumbnails/tibet-5.jpg" alt="图片5"></li>
+    <li><img data-original="img/tibet-6.jpg" src="img/thumbnails/tibet-6.jpg" alt="图片6"></li>
+</ul>
+
+<script src="../basejs/jquery-1.11.1.min.js"></script>
+<script src="js/viewer-jquery.min.js"></script>
+<script>
+    $(function () {
+        $('#dowebok').viewer({
+            url: 'data-original',
+        });
+    });
+</script>
+</body>
+</html>
