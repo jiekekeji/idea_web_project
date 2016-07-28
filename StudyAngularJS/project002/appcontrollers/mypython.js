@@ -7,7 +7,7 @@
 console.log("mypython.js load end");
 var baseURL = "http://www.tngou.net/tnfs/api/list";
 var page = 1;//起始记录
-var rows = 30;//请求的记录数
+var rows = 32;//请求的记录数
 var self;//当前页的controller
 var http;
 (function () {
@@ -56,7 +56,7 @@ function getMypythonCtrlData(page, rows) {
     http.jsonp(baseURL + "?page=" + page + "&rows=" + rows + "&id=7&callback=JSON_CALLBACK")
         .success(function (response) {
             console.log("mypython.js load data result");
-            console.log("mypython ="+response.status);
+            console.log("mypython =" + response.status);
             self.imgInfos = null;//先置为空
             self.currentPage = page;//设置当前页
             self.imgInfos = response.tngou;//刷新列表

@@ -4,7 +4,7 @@
 console.log("myjavascript.js load end");
 var baseURL = "http://www.tngou.net/tnfs/api/list";
 var page = 1;//起始记录
-var rows = 30;//请求的记录数
+var rows = 32;//请求的记录数
 var self;//当前页的controller
 var http;
 (function () {
