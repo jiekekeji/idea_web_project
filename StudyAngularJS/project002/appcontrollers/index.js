@@ -1,6 +1,7 @@
 /**
  * Created by jack on 16/7/24.
  */
+//开始处理
 console.log("index.js load end");
 var baseURL = "http://www.tngou.net/tnfs/api/list";
 var page = 1;//起始记录
@@ -46,10 +47,7 @@ var http;
             getIndexData(self.currentPage, rows);
         };
 
-        //设置图片放大
-        $('#dowebok').viewer({
-            url: 'data-original',
-        });
+
     };
 }());
 
@@ -65,4 +63,6 @@ function getIndexData(page, rows) {
             self.totalPage = Math.ceil(response.total / rows);//总页数,向上取整
         });
 }
+
+
 
