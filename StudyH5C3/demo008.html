@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图像</title>
+</head>
+<body>
+<p><img src="images/huahua.png"></p>
+
+<!--如果图片无法显示时  显示alt="花"的文字-->
+<p><img src="images/1.png" alt="花"></p>
+
+<!--只指定宽度的时候,高度会等比例放大-->
+<p><img src="images/huahua.png" width="300px"></p>
+
+<!--高度和宽度同时指定-->
+<p><img src="images/huahua.png" width="300px" height="100px"></p>
+
+<!--给图片的不同区域设置超链接,点击图片的不同区域跳转到不同的页面-->
+<p style="background: rosybrown">
+    <img src="images/huahua.png" width="300px" height="300px" usemap="#planetmap">
+    <!--注意img的usemap属性和map的name属性要设置-->
+    <map name="planetmap">
+        <!--以图片的左上角为坐标原点设置区域-->
+        <area shape="rect" coords="0,0,100,100" alt="百度" href="http://baidu.com">
+        <area shape="circle" coords="100,100,200,200" alt="Google" href="http://google.com.nk">
+        <area shape="circle" coords="200,200,100,0" alt="淘宝" href="http://taobao.com">
+    </map>
+</p>
+</body>
+</html>
