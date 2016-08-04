@@ -1,0 +1,87 @@
+.top_nav {
+    background-color: #f3f3f3;
+    height: 30px;
+}
+
+.top_nav_content {
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #666e89;
+}
+
+/*顶部左侧导航*/
+.top_left_nav {
+    float: left;
+    /*width: 320px;*/
+    line-height: 30px;
+    padding-left: 20px;
+}
+
+.top_left_nav li {
+    float: left;
+    width: 80px;
+}
+
+.top_left_nav li a:link {
+    text-decoration: none;
+    color: #666e89;
+}
+
+.top_left_nav li a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.top_left_nav li span {
+    color: blue;
+}
+
+.switch_city a {
+    background-color: cornflowerblue;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+}
+
+.switch_city a:hover {
+    background-color: cornflowerblue;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+}
+
+/*顶部右侧导航*/
+.top_right_nav {
+    float: right;
+}
+
+.top_right_nav li {
+    float: left;
+    line-height: 30px;
+}
+
+.top_right_nav li span {
+    width: 120px;
+    margin-right: 10px;
+}
+
+.login {
+    width: 40px;
+}
+
+.login a{
+    width: 40px;
+    text-decoration: none;
+}
+
+/*logo展示部分*/
+.logo-display{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-img{
+    background-image: url("../images/logo.png");
+}
