@@ -16,12 +16,15 @@
     float: left;
     /*width: 320px;*/
     line-height: 30px;
-    padding-left: 20px;
 }
 
 .top_left_nav li {
     float: left;
     width: 80px;
+}
+
+.collect {
+    text-align: left;
 }
 
 .top_left_nav li a:link {
@@ -71,17 +74,44 @@
     width: 40px;
 }
 
-.login a{
+.login a {
     width: 40px;
     text-decoration: none;
 }
 
 /*logo展示部分*/
-.logo-display{
+.logo-display {
     width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
+
 }
 
-.logo-img{
-    background-image: url("../images/logo.png");
+.logo-display li {
+    float: left;
+}
+
+.subscribt {
+    text-align: center;
+    margin-top: 27px;
+    margin-left: 20px;
+}
+
+.search{
+    margin-top: 34px;
+    margin-left: 60px;
+}
+.keyword{
+    border-radius:6px 0px 0px 6px;
+    border:1px solid #ccc;
+    height: 25px;
+    width: 200px;
+}
+.searchbtn{
+    margin-left: -10px;
+    border-radius:0px 6px 6px 0px;
+    border:1px solid #ccc;
+    height: 30px;
+}
+.phonenum{
+    line-height: 90px;
 }
