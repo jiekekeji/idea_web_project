@@ -5,7 +5,7 @@
 
 .top_nav_content {
     width: 1200px;
-    height: 30px;
+    height: 50px;
     margin: 0 auto;
     font-size: 14px;
     color: #666e89;
@@ -83,7 +83,7 @@
 .logo-display {
     width: 1200px;
     margin: 20px auto;
-
+    height: 100px;
 }
 
 .logo-display li {
@@ -96,22 +96,119 @@
     margin-left: 20px;
 }
 
-.search{
+.search {
     margin-top: 34px;
     margin-left: 60px;
 }
-.keyword{
-    border-radius:6px 0px 0px 6px;
-    border:1px solid #ccc;
+
+.keyword {
+    border-radius: 6px 0px 0px 6px;
+    border: 1px solid #ccc;
     height: 25px;
     width: 200px;
 }
-.searchbtn{
+
+.searchbtn {
     margin-left: -10px;
-    border-radius:0px 6px 6px 0px;
-    border:1px solid #ccc;
+    border-radius: 0px 6px 6px 0px;
+    border: 1px solid #ccc;
     height: 30px;
 }
-.phonenum{
-    line-height: 90px;
+
+.phonenum {
+    margin-left: 160px;
+    height: 92px;
+
 }
+
+.phonenum img {
+    margin-top: 20px;
+}
+
+/*主体导航*/
+.mainnav {
+    clear: both;
+    width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.leftnav {
+    width: 230px;
+    height: 40px;
+    background: #15659b;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.leftnav div {
+    height: 420px;
+}
+
+.leftnav li {
+    margin-left: 20px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+}
+.leftnav_tab{
+    width: 1200px;
+    height: 40px;
+}
+/*左侧菜单tab*/
+.leftnav_tab li {
+    float: left;
+    width: 115px;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+}
+
+.leftnav_tab .activity {
+    background: white;
+    color: blue;
+}
+
+.leftnav_tab .inactive {
+    background: #33adff;
+    color: white;
+}
+
+/*菜单*/
+.leftnav_main {
+    background: aqua;
+    /*width: 230px;*/
+    height: 420px;
+    float: left;
+}
+
+.leftnav_main li span{
+    /*width: 230px;*/
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    border-bottom: 1px solid;
+    border-bottom-color: white;
+    background-image: url("../images/nav_icon.png");
+    background-position: 200px 5px;
+    background-repeat: no-repeat, repeat;
+}
+.leftnav_child {
+    background: aqua;
+    float: left;
+}
+
+.leftnav_child li {
+    float: left;
+    width: 40px;
+    height: 40px;
+
+}
+
+
+
+
+
+
+
+
