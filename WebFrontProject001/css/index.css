@@ -134,6 +134,7 @@
 }
 
 .leftnav {
+    float: left;
     width: 230px;
     height: 40px;
     background: #15659b;
@@ -151,10 +152,41 @@
     line-height: 40px;
     color: white;
 }
-.leftnav_tab{
+
+.center_nav {
+    float: left;
+    height: 40px;
+    width: 772px;
+}
+
+.center_nav li {
+    float: left;
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.onlinexd {
+    height: 40px;
+}
+
+.onlinexd img {
+    margin-top: 6px;
+    margin-left: 30px;
+}
+
+.menuAD {
+    float: left;
+    width: 1002px;
+    height: 495px;
+}
+
+.leftnav_tab {
     width: 1200px;
     height: 40px;
 }
+
 /*左侧菜单tab*/
 .leftnav_tab li {
     float: left;
@@ -174,16 +206,34 @@
     color: white;
 }
 
-/*菜单*/
-.leftnav_main {
-    background: aqua;
-    /*width: 230px;*/
-    height: 420px;
-    float: left;
+.menuADlogin {
+    height: 495px;
+    width: 1200px;
 }
 
-.leftnav_main li span{
-    /*width: 230px;*/
+.nemu_left {
+    float: left;
+    width: 230px;
+    height: 495px;
+    background: coral;
+}
+
+.ad {
+    float: left;
+    width: 772px;
+    height: 495px;
+    background: lightgrey;
+}
+
+/*!*菜单*!*/
+.leftnav_main {
+    background: aqua;
+    width: 230px;
+    height: 455px;
+}
+
+.leftnav_main li {
+    width: 230px;
     height: 40px;
     line-height: 40px;
     padding-left: 20px;
@@ -193,17 +243,96 @@
     background-position: 200px 5px;
     background-repeat: no-repeat, repeat;
 }
-.leftnav_child {
-    background: aqua;
-    float: left;
-}
 
-.leftnav_child li {
+/*子菜单*/
+.menu_right {
     float: left;
-    width: 40px;
+    width: 772px;
     height: 40px;
-
 }
+
+.rightnav_main {
+    visibility: hidden;
+    background: deepskyblue;
+    width: 772px;
+    height: 455px;
+}
+
+.rightnav_mainActivity {
+    visibility: visible;
+    background: deepskyblue;
+    width: 772px;
+    height: 455px;
+}
+
+.rightnav_main li {
+    visibility: hidden;
+    float: left;
+    width: 770px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid;
+    border-bottom-color: white;
+}
+
+.childMenu {
+    visibility: hidden;
+    width: 770px;
+    height: 40px;
+}
+
+.childMenu li {
+    float: left;
+    width: 60px;
+    height: 40px;
+    background: rebeccapurple;
+}
+
+.rightnav_ChildActivity {
+    visibility: visible;
+    float: left;
+    width: 770px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid;
+    border-bottom-color: white;
+}
+
+.menuother {
+    float: left;
+    width: 198px;
+    height: 455px;
+    background: rebeccapurple;
+}
+.logindiv{
+    width: 198px;
+    height: 200px;
+    background: green;
+}
+.liucheng{
+    width: 198px;
+    height: 200px;
+    background: aquamarine;
+}
+.scanpic{
+    width: 198px;
+    height: 200px;
+    background: rebeccapurple;
+}
+.logindivLogon .wxlogo{
+    margin: 0 0 0 60px;
+}
+
+.logindivLogon .wxdl{
+    margin: 0 0 0 40px;
+}
+
+/*.leftnav_child li {*/
+/*float: left;*/
+/*width: 40px;*/
+/*height: 40px;*/
+
+/*}*/
 
 
 
