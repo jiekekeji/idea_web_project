@@ -285,7 +285,6 @@
     float: left;
     width: 60px;
     height: 40px;
-    background: rebeccapurple;
 }
 
 .rightnav_ChildActivity {
@@ -302,29 +301,61 @@
     float: left;
     width: 198px;
     height: 455px;
-    background: rebeccapurple;
 }
-.logindiv{
+
+.logindiv {
     width: 198px;
     height: 200px;
-    background: green;
 }
-.liucheng{
+
+.liucheng {
     width: 198px;
     height: 200px;
     background: aquamarine;
 }
-.scanpic{
+
+.scanpic {
     width: 198px;
     height: 200px;
     background: rebeccapurple;
 }
-.logindivLogon .wxlogo{
+
+.logindivLogon .wxlogo {
     margin: 0 0 0 60px;
 }
 
-.logindivLogon .wxdl{
+.logindivLogon .wxdl {
     margin: 0 0 0 40px;
+}
+
+.loginFrom {
+    margin-top: 8px;
+}
+
+.loginFrom p label {
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.loginFrom p label img {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.loginFrom p input {
+    float: left;
+    height: 30px;
+    width: 150px;
+}
+
+.loginFrom input[type="submit"] {
+    width: 150px;
+    height: 30px;
+    background: #00BFFF;
+    color: white;
+
 }
 
 /*.leftnav_child li {*/
