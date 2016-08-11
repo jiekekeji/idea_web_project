@@ -1,0 +1,63 @@
+.logo {
+    margin-top: 30px;
+    height: 70px;
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tabs {
+    height: 20px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tabs ul {
+    float: right;
+    height: 20px;
+    width: 200px;
+}
+
+.tabs ul li {
+    font-size: 12px;
+    float: left;
+    height: 20px;
+    width: 60px;
+}
+
+.divider {
+    width: 1200px;
+    margin: 0 auto;
+    background: blue;
+    height: 2px;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    height: 360px;
+}
+
+.content form {
+    float: right;
+    height: 360px;
+    width: 600px;
+    font-family: 新宋体;
+}
+
+.content form ul {
+    width: 400px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+
+.content form ul li {
+    margin-top: 10px;
+}
+.content form ul li label{
+}
+.content form ul li input {
+    width: 200px;
+    height: 30px;
+}
