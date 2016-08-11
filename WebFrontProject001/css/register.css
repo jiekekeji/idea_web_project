@@ -1,0 +1,88 @@
+.toplogo {
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.toplogo div {
+    float: left;
+    padding-top: 29px;
+    height: 92px;
+    width: 230px;
+}
+
+.toplogo ul {
+    float: left;
+    width: 300px;
+    height: 110px;
+    margin-left: 250px;
+    padding-top: 40px;
+}
+
+.topnav {
+    clear: inherit;
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.topnav div {
+    float: left;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    clear: both;
+    margin-left: 200px;
+}
+
+.topnav ul {
+    float: right;
+    width: 300px;
+    height: 40px;
+}
+
+.topnav ul li {
+    float: left;
+    width: 60px;
+    line-height: 60px;
+}
+
+.diver {
+    width: 1200px;
+    height: 5px;
+    margin: 0 auto;
+    background: blue;
+}
+
+.liucheng {
+    height: 100px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.liucheng img {
+    margin-left: 121px;
+    margin-top: 31px;
+}
+
+.registerType {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.registerType ul li {
+    float: left;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    background: deepskyblue;
+}
+
+.diver1 {
+    width: 1200px;
+    height: 1px;
+    margin: 0 auto;
+    background: blue;
+}
