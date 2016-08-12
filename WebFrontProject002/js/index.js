@@ -6,8 +6,9 @@ $(document).ready(function () {
     //当鼠标进入tab导航时显示子导航
     $(".toptab li").mouseenter(function () {
         console.log("鼠标进入" + $(this).attr("id"));
-        $("#topchild1").removeClass("topchildHide");
-        $("#topchild1").addClass("topchild");
+        var topchildId = $(this).attr("id").split("#")[1];
+        $("#" + topchildId).removeClass("topchildHide");
+        $("#" + topchildId).addClass("topchild");
     });
     //当鼠标离开tab导航时隐藏子导航
     $(".toptab li").mouseleave(function (event) {
@@ -29,13 +30,13 @@ $(document).ready(function () {
         //判断鼠标是否移入子菜单中
         if (x < left || x > right || y < top || y > bottom) {
             //如果离开，则执行。。
-            $("#topchild1").removeClass("topchild");
-            $("#topchild1").addClass("topchildHide");
+            $(".basetab").removeClass("topchild");
+            $(".basetab").addClass("topchildHide");
         }
     });
 
     //子菜单的移入移出
-    $("#topchild1").mouseleave(function () {
+    $(".basetab").mouseleave(function () {
         $(this).removeClass("topchild");
         $(this).addClass("topchildHide");
     });

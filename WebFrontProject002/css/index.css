@@ -63,11 +63,35 @@
     height: 280px;
 }
 
+/*左侧导航*/
 .leftnav {
     float: left;
     height: 280px;
     width: 200px;
-    background: bisque;
+
+}
+
+.leftnavTab {
+    height: 280px;
+    width: 200px;
+}
+
+.leftnavTab li {
+    line-height: 35px;
+    text-align: center;
+    height: 35px;
+    width: 200px;
+    background: grey;
+}
+
+.leftnavTab li:hover {
+    background: orange;
+}
+
+.leftnavTab li p {
+    float: left;
+    height: 35px;
+    width: 160px;
 }
 
 .leftnavchild {
@@ -89,3 +113,11 @@
 }
 
 /*end 左侧导航和轮播图片*/
+@keyframes drive {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(400px);
+    }
+}
