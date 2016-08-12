@@ -1,0 +1,91 @@
+/*长度为1200px在页面中左右居中*/
+.inpagecenter {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*start 顶部导航*/
+.topnav {
+    height: 80px;
+    background: darkgrey;
+}
+
+.topnav ul {
+    margin: 0 auto;
+    width: 300px;
+    height: 80px;
+}
+
+.topnav ul li {
+    float: left;
+    height: 80px;
+    width: 75px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.toptab li a {
+    display: block;
+    height: 80px;
+    width: 75px;
+    font-size: 18px;
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+}
+
+.toptab li a:hover {
+    color: orange;
+}
+
+.topchild {
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    height: 150px;
+    background: rebeccapurple;
+    z-index: 20;
+    visibility: visible;
+}
+
+.topchildHide {
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    height: 150px;
+    background: rebeccapurple;
+    z-index: 20;
+    visibility: hidden;
+}
+
+/*end 顶部导航*/
+/*start 左侧导航和轮播图片*/
+.adnav {
+    height: 280px;
+}
+
+.leftnav {
+    float: left;
+    height: 280px;
+    width: 200px;
+    background: bisque;
+}
+
+.leftnavchild {
+    position: absolute;
+    float: left;
+    height: 280px;
+    width: 1000px;
+    background: royalblue;
+    z-index: 20;
+    margin-left: 200px;
+    visibility: hidden;
+}
+
+.adpage {
+    float: left;
+    height: 280px;
+    width: 1000px;
+    background: #b2dba1;
+}
+
+/*end 左侧导航和轮播图片*/
