@@ -11,4 +11,5 @@ public interface IUserService {
     User findUserById(int id);
     void addUser(User user);
     List<User> getAllUsers();
+
 }
