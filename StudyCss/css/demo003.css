@@ -1,0 +1,10 @@
+.p1{
+    background: silver;
+    color: blue;
+    /*左右居中*/
+    /*text-align: center;*/
+    /*//右对齐*/
+    /*text-align: right;*/
+    /*//两端对齐*/
+    text-align: justify;
+}

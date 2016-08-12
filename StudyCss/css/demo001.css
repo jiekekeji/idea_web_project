@@ -1,0 +1,28 @@
+#navbar {
+    width: 100%;
+    height: 260px;
+    border: 1px solid;
+}
+
+.abcd {
+    margin-top: 10px;
+    width: 100%;
+    height: 260px;
+    border: 1px solid;
+}
+
+/*.abcd 下的所有h4*/
+.abcd h4 {
+    color: orangered;
+}
+
+/*.abcd 第一个子元素为h4的*/
+.abcd > h4 {
+    color: orangered;
+}
+
+/*选取属性值为type="text"*/
+.efgh input[type="text"] {
+    height: 20px;
+    background: antiquewhite;
+}

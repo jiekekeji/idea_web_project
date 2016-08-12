@@ -5,6 +5,10 @@
     <title>菜单实例1</title>
     <link rel="stylesheet" type="text/css" href="./basecss/base.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link href="css/datouwang.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="./js/koala.min.1.5.js"></script>
+    <script src="./basejs/jquery-1.11.1.min.js" rel="script"></script>
+    <script src="./js/index.js" rel="script"></script>
 </head>
 <body>
 <!--顶部导航主菜单-->
@@ -36,27 +40,112 @@
     <!--左侧导航主菜单-->
     <div class="leftnav">
         <ul class="leftnavTab">
-            <li><p>耳机</p><img src="images/nav_icon.png"></li>
-            <li><p>蓝牙</p><img src="images/nav_icon.png"></li>
-            <li><p>导弹</p><img src="images/nav_icon.png"></li>
-            <li><p>原子弹</p><img src="images/nav_icon.png"></li>
-            <li><p>鸡蛋</p><img src="images/nav_icon.png"></li>
-            <li><p>音箱</p><img src="images/nav_icon.png"></li>
-            <li><p>Mac air</p><img src="images/nav_icon.png"></li>
-            <li><p>MBP</p><img src="images/nav_icon.png"></li>
+            <li id="left1#leftchild1"><p>耳机</p><img src="images/nav_icon.png"></li>
+            <li id="left2#leftchild2"><p>蓝牙</p><img src="images/nav_icon.png"></li>
+            <li id="left3#leftchild3"><p>导弹</p><img src="images/nav_icon.png"></li>
+            <li id="left4#leftchild4"><p>原子弹</p><img src="images/nav_icon.png"></li>
+            <li id="left5#leftchild5"><p>鸡蛋</p><img src="images/nav_icon.png"></li>
+            <li id="left6#leftchild6"><p>音箱</p><img src="images/nav_icon.png"></li>
+            <li id="left7#leftchild7"><p>Mac air</p><img src="images/nav_icon.png"></li>
+            <li id="left8#leftchild8"><p>MBP</p><img src="images/nav_icon.png"></li>
         </ul>
     </div>
-    <!--左侧的子菜单-->
-    <div class="leftnavchild">
-
+    <!--start 左侧的子菜单-->
+    <div id="leftchild1" class="leftnavchildHidden leftBase">
+        leftchild1
     </div>
-    <!--右侧轮播图片-->
-    <div class="adpage">
-
+    <div id="leftchild2" class="leftnavchildHidden leftBase">
+        leftchild2
     </div>
+    <div id="leftchild3" class="leftnavchildHidden leftBase">
+        leftchild3
+    </div>
+    <div id="leftchild4" class="leftnavchildHidden leftBase">
+        leftchild4
+    </div>
+    <div id="leftchild5" class="leftnavchildHidden leftBase">
+        leftchild5
+    </div>
+    <div id="leftchild6" class="leftnavchildHidden leftBase">
+        leftchild6
+    </div>
+    <div id="leftchild7" class="leftnavchildHidden leftBase">
+        leftchild7
+    </div>
+    <div id="leftchild8" class="leftnavchildHidden leftBase">
+        leftchild8
+    </div>
+    <!--end 左侧的子菜单-->
+    <!--开始 右侧轮播图片-->
+    <div id="fsD1" class="adpage focus">
+        <div id="D1pic1" class="fPic">
+            <div class="fcon" style="display: none;">
+                <a href="http://sc.chinaz.com/">
+                    <img src="images/01.jpg" style="opacity: 1;">
+                </a>
+                <span class="shadow">
+                    <a href="#">
+                        红三代叶明子太庙办盛典 白色羽毛装高贵动人
+                    </a>
+                </span>
+            </div>
+            <div class="fcon" style="display: none;">
+                <a href="http://sc.chinaz.com/">
+                    <img src="images/02.jpg" style="opacity: 1;">
+                </a>
+                <span class="shadow">
+                    <a href="#">
+                        佟大为登封面表情搞怪 成熟男人也是天真男孩
+                    </a>
+                </span>
+            </div>
+
+            <div class="fcon" style="display: none;">
+                <a href="http://sc.chinaz.com/">
+                    <img src="images/03.jpg" style="opacity: 1;">
+                </a>
+                <span class="shadow">
+                    <a href="#">
+                        21岁出柜超模巴厘自曝搞笑全裸照
+                    </a>
+                </span>
+            </div>
+        </div>
+        <!--小红点-->
+        <div class="fbg">
+            <div class="D1fBt" id="D1fBt">
+                <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>1</i></a>
+                <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a>
+                <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>3</i></a>
+            </div>
+        </div>
+        <!--上下页-->
+        <span class="prev"></span>
+        <span class="next"></span>
+    </div>
+    <!--结束 右侧轮播图片-->
 </div>
 
-<script src="./basejs/jquery-1.11.1.min.js" rel="script"></script>
-<script src="./js/index.js" rel="script"></script>
+
+<!--开始 配置轮播图片--->
+<script type="text/javascript">
+    Qfast.add('widgets', {path: "js/terminator2.2.min.js", type: "js", requires: ['fx']});
+    Qfast(false, 'widgets', function () {
+        K.tabs({
+            id: 'fsD1',   //焦点图包裹id
+            conId: "D1pic1",  //** 大图域包裹id
+            tabId: "D1fBt",
+            tabTn: "a",
+            conCn: '.fcon', //** 大图域配置class
+            auto: 1,   //自动播放 1或0
+            effect: 'fade',   //效果配置
+            eType: 'click', //** 鼠标事件
+            pageBt: true,//是否有按钮切换页码
+            bns: ['.prev', '.next'],//** 前后按钮配置class
+            interval: 3000  //** 停顿时间
+        })
+    })
+</script>
+<!--结束 配置轮播图片--->
 </body>
 </html>

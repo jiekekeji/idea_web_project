@@ -102,6 +102,16 @@
     background: royalblue;
     z-index: 20;
     margin-left: 200px;
+    visibility: visible;
+}
+.leftnavchildHidden {
+    position: absolute;
+    float: left;
+    height: 280px;
+    width: 1000px;
+    background: royalblue;
+    z-index: 20;
+    margin-left: 200px;
     visibility: hidden;
 }
 
