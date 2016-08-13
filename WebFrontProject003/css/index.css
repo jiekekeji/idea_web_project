@@ -1,0 +1,55 @@
+/*长度为1200px在页面中左右居中*/
+.pagecenter {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.topnav {
+    height: 100px;
+    background: darkslategrey;
+}
+
+.typeList {
+    height: 500px;
+}
+
+.typeTitle {
+    clear: both;
+    margin-top: 10px;
+    height: 40px;
+    background: rosybrown;
+}
+
+.tuijian {
+    float: left;
+    width: 250px;
+    height: 500px;
+    background: darkolivegreen;
+}
+
+.tuijianDesc {
+    position: relative;
+    left: 0;
+    top: 450px;
+    width: 250px;
+    height: 100px;
+    background: rebeccapurple;
+    z-index: 20;
+}
+
+.typeDetail {
+    float: left;
+    width: 950px;
+    height: 500px;
+    background: cornflowerblue;
+
+}
+
+.typeDetail li {
+    width: 180px;
+    height: 240px;
+    margin-left: 8.5px;
+    margin-top: 6.6px;
+    float: left;
+    background: palevioletred;
+}
