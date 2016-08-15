@@ -30,7 +30,7 @@
 .tuijianDesc {
     position: relative;
     left: 0;
-    top: 450px;
+    top: -104px;
     width: 250px;
     height: 100px;
     background: rebeccapurple;
@@ -52,4 +52,14 @@
     margin-top: 6.6px;
     float: left;
     background: palevioletred;
+}
+
+.typeDesc {
+    position: relative;
+    width: 180px;
+    height: 80px;
+    background: darkolivegreen;
+    z-index: 200;
+    left: 0;
+    top: 160px;
 }
