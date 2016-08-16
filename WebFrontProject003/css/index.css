@@ -30,11 +30,15 @@
 .tuijianDesc {
     position: relative;
     left: 0;
-    top: 450px;
+    top: -104px;
     width: 250px;
     height: 100px;
     background: rebeccapurple;
     z-index: 20;
+}
+
+.tuijianDescHidden {
+    visibility: hidden;
 }
 
 .typeDetail {
@@ -52,4 +56,33 @@
     margin-top: 6.6px;
     float: left;
     background: palevioletred;
+}
+
+.typeDesc {
+    position: relative;
+    width: 180px;
+    height: 80px;
+    background: darkolivegreen;
+    z-index: 200;
+    left: 0;
+    top: 160px;
+}
+
+.typeDescHidden {
+    visibility: hidden;
+}
+
+/*回到顶部*/
+.backTop {
+    position: fixed;
+    left: 95%;
+    top: 80%;
+    width: 50px;
+    height: 50px;
+    background: brown;
+    z-index: 100;
+}
+
+.backTopHidden {
+    visibility: hidden;
 }
