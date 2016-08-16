@@ -87,3 +87,13 @@ for(var i=0;i<obj3.tngou.length;i++){
     console.log(i+"obj name="+obj.name);
     console.log(i+"obj title="+obj.title);
 }
+
+/***
+js对象和jQuery对象:
+    DOM对象是我们用传统的方法（javascript）获得的对象，jQuery对象就是用jQuery的类库选择器获得的对象。
+    JQuery对象就是通过jQuery包装DOM对象后产生的对象。
+    JQuery对象是jQuery独有的，其可以使用jQuery里的方法，但是不能使用DOM的方法.
+    ******
+    DOM对象就是javascript固有的一些对象。DOM对象能使用javascript固有的方法，但是不能使用jQuery里面的方法。
+*****/
+
