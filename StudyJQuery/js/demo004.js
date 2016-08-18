@@ -96,4 +96,12 @@ js对象和jQuery对象:
     ******
     DOM对象就是javascript固有的一些对象。DOM对象能使用javascript固有的方法，但是不能使用jQuery里面的方法。
 *****/
+var jsObj=document.getElementById("loginForm");
+console.log("js对象="+jsObj);
+var $obj=$(jsObj);//转为jQuery对象
+//调用jquery对象的方法
+console.log("通过jquery对象方法:action="+$obj.attr("method"));
 
+
+var jQueryObj=$("#loginForm");
+console.log("jQuery对象="+jQueryObj);
