@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.div01{
+    width: 10px;
+    height: 10px;
+    background: rosybrown;
+}
+.nav{
+    background: darkgrey;
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin-left: 20px;
+}
+/*.nav li{*/
+    /*padding: 0px;*/
+    /*margin: 0px;*/
+    /*list-style: none;*/
+    /*!*margin-left: 20px;*!*/
+    /*background: darkgrey;*/
+    /*float: left;*/
+    /*width: 55px;*/
+    /*height: 55px;*/
+/*}*/
+

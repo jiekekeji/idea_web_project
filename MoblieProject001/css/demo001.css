@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*title在320的设计图的高度为40px*/
+.title {
+    height: 0.4rem;
+    width: 100%;
+    background: cornflowerblue;
+    text-align: center;
+    line-height: 0.4rem;
+    font-size: 16px;
+}
+
+/*图片轮播区域在设计图的的高度160px*/
+.ad {
+    height: 1.6rem;
+    width: 100%;
+}
+
+.ad img {
+    height: 1.6rem;
+    width: 100%;
+}
+
+/*推荐列表*/
+.recommendTitle {
+    height: 0.4rem;
+    width: 100%;
+    background: antiquewhite;
+    font-size: 16px;
+    line-height: 0.4rem;
+    padding-left: 0.1rem;
+    border-bottom: silver 0.01rem solid;
+}
+
+.recommendList ul li {
+    list-style: none;
+    height: 0.8rem;
+    width: 100%;
+    border-bottom: silver 0.01rem solid;
+    background: papayawhip;
+}
+
+/*类别一*/
+.category001Title {
+    height: 0.4rem;
+    width: 100%;
+    background: powderblue;
+    font-size: 16px;
+    line-height: 0.4rem;
+    padding-left: 0.1rem;
+    border-bottom: silver 0.01rem solid;
+}
+
+.category001List ul li {
+    list-style: none;
+    width: 0.7rem;
+    height: 0.7rem;
+    float: left;
+    background: rebeccapurple;
+    margin-left: 0.08rem;
+    margin-top: 0.1rem;
+}
+
+/*底部*/
+.footer {
+    clear: both;
+    height: 0.7rem;
+    width: 100%;
+}
