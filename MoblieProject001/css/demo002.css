@@ -1,27 +1,72 @@
-body{
-    margin: 0px;
-    padding: 0px;
+* {
+    padding: 0;
+    margin: 0;
 }
-.div01{
-    width: 10px;
-    height: 10px;
-    background: rosybrown;
-}
-.nav{
-    background: darkgrey;
-    float: left;
-    width: 55px;
-    height: 55px;
-    margin-left: 20px;
-}
-/*.nav li{*/
-    /*padding: 0px;*/
-    /*margin: 0px;*/
-    /*list-style: none;*/
-    /*!*margin-left: 20px;*!*/
-    /*background: darkgrey;*/
-    /*float: left;*/
-    /*width: 55px;*/
-    /*height: 55px;*/
-/*}*/
 
+/*title在320的设计图的高度为40px*/
+.title {
+    height: 40px;
+    width: 100%;
+    background: cornflowerblue;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+/*图片轮播区域在设计图的的高度160px*/
+.ad {
+    height: 160px;
+    width: 100%;
+}
+
+.ad img {
+    height: 160px;
+    width: 100%;
+}
+
+/*推荐列表*/
+.recommendTitle {
+    height: 40px;
+    width: 100%;
+    background: antiquewhite;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-bottom: silver 1px solid;
+}
+
+.recommendList ul li {
+    list-style: none;
+    height: 80px;
+    width: 100%;
+    border-bottom: silver 1px solid;
+    background: papayawhip;
+}
+
+/*类别一*/
+.category001Title {
+    height: 40px;
+    width: 100%;
+    background: powderblue;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 10px;
+    border-bottom: silver 1px solid;
+}
+
+.category001List ul li {
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    float: left;
+    background: rebeccapurple;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+/*底部*/
+.footer {
+    clear: both;
+    height: 70px;
+    width: 100%;
+}
