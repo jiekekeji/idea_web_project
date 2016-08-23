@@ -18,9 +18,17 @@
     left: 0rem;
     top: 0rem;
 }
+
 .logo {
-    width: 0.1rem;
+    float: left;
+    width: 1.0rem;
     height: 0.44rem;
-    background-image: url("../images/logo.png");
-    background-repeat: no-repeat;
+    background: transparent url("../images/jd-sprites.png") no-repeat scroll;
+    background-position: -0rem -1.8rem;
+}
+.search input{
+    margin-top: auto;
+    float: left;
+    width: 1.0rem;
+    height: 0.22rem;
 }
