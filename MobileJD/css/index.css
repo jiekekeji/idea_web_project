@@ -4,31 +4,82 @@
     height: 1.77rem;
 }
 
+/*轮播图片*/
 .imgshow {
     width: 100%;
     height: 1.77rem;
-    background: darkgrey;
+}
+
+.imgshow img {
+    width: 100%;
+    height: 1.77rem;
 }
 
 .titleBar {
     width: 100%;
     height: 0.44rem;
-    background: lightgreen;
     position: absolute;
     left: 0rem;
     top: 0rem;
+    z-index: 10;
 }
 
+/*logo部分*/
 .logo {
     float: left;
-    width: 1.0rem;
+    display: block;
+    width: 0.6rem;
     height: 0.44rem;
-    background: transparent url("../images/jd-sprites.png") no-repeat scroll;
-    background-position: -0rem -1.8rem;
 }
-.search input{
-    margin-top: auto;
+
+.logo img {
+    margin-left: 0.1rem;
+    display: block;
+    width: 0.5rem;
+    height: 0.44rem;
+}
+
+/*搜索部分*/
+.search {
     float: left;
-    width: 1.0rem;
+    width: 2.1rem;
+    height: 0.44rem;
+}
+
+.search input {
+    margin-left: 0.1rem;
+    margin-top: 0.08rem;
+    border-radius: 0.1rem 0.1rem;
+    float: left;
+    width: 2rem;
     height: 0.22rem;
+}
+
+/*登陆按钮*/
+.login {
+    margin-right: 0.05rem;
+    color: white;
+    line-height: 0.44rem;
+    text-align: center;
+    float: right;
+    font-size: 0.16rem;
+    height: 0.44rem;
+    width: 0.4rem;
+}
+
+/*8个菜单导航项*/
+.mainnav {
+    width: 100%;
+    height: 1.6rem;
+    background: wheat;
+}
+
+.mainnav li {
+    width: 0.75rem;
+    height: 0.8rem;
+    float: left;
+}
+.mainnav li img{
+    width: 0.6rem;
+    height: 0.6rem;
 }
