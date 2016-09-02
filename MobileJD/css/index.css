@@ -75,11 +75,15 @@
 }
 
 .mainnav li {
-    width: 0.75rem;
+    width: 0.8rem;
     height: 0.8rem;
     float: left;
 }
 .mainnav li img{
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    display: block;
+    background: chartreuse;
     width: 0.6rem;
     height: 0.6rem;
 }
