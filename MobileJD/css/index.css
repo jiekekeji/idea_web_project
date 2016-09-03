@@ -155,21 +155,39 @@
 /*秒杀的商品列表*/
 .seckill_content {
     background: rosybrown;
-    height: 1rem;
+    height: 1.4rem;
     width: 100%;
 }
 
 .seckill_content ul {
-    height: 1rem;
+    height: 1.4rem;
     width: 100%;
     white-space: nowrap;
+    overflow:hidden;
 }
 
 .seckill_content ul li {
-    height: 1rem;
+    height: 1.4rem;
     width: 1rem;
     margin-left: 0.01rem;
     background: burlywood;
     float: left;
     display: inline;
+    font-size: 0.1rem;
+    display: inline;
+}
+.seckill_content ul li img{
+    height: 1rem;
+    width: 1rem;
+}
+.seckill_content ul li span{
+    line-height: 0.2rem;
+    text-align: center;
+    display: block;
+    height: 0.2rem;
+    width: 100%;
+
+}
+.seckill_content ul li .oriPrice{
+    text-decoration:line-through;
 }
