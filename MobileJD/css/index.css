@@ -71,7 +71,6 @@
 .mainnav {
     width: 100%;
     height: 1.6rem;
-    background: wheat;
 }
 
 .mainnav li {
@@ -154,7 +153,6 @@
 
 /*秒杀的商品列表*/
 .seckill_content {
-    background: rosybrown;
     height: 1.4rem;
     width: 100%;
 }
@@ -163,24 +161,31 @@
     height: 1.4rem;
     width: 100%;
     white-space: nowrap;
-    overflow:hidden;
+    overflow: auto;
 }
 
+/*
+横向滚动不换行
+不使用: /*float: left;*/
+/*display: inline;
+直接使用:display: inline-block;
+*/
 .seckill_content ul li {
     height: 1.4rem;
     width: 1rem;
-    margin-left: 0.01rem;
-    background: burlywood;
-    float: left;
-    display: inline;
+    margin-left: -0.22rem;
+    /*float: left;*/
+    /*display: inline;*/
     font-size: 0.1rem;
-    display: inline;
+    display: inline-block;
 }
-.seckill_content ul li img{
+
+.seckill_content ul li img {
     height: 1rem;
     width: 1rem;
 }
-.seckill_content ul li span{
+
+.seckill_content ul li span {
     line-height: 0.2rem;
     text-align: center;
     display: block;
@@ -188,6 +193,120 @@
     width: 100%;
 
 }
-.seckill_content ul li .oriPrice{
-    text-decoration:line-through;
+
+.seckill_content ul li .oriPrice {
+    text-decoration: line-through;
+}
+
+/*排行榜和闪购*/
+.sortMillis {
+    width: 100%;
+    height: 1rem;
+}
+
+.sortList {
+    width: 50%;
+    height: 1rem;
+    float: left;
+}
+
+.sortList ul {
+    width: 0.8rem;
+    height: 1rem;
+    float: left;
+}
+
+.sortList ul li {
+    margin-top: 0.01rem;
+    font-size: 0.1rem;
+}
+
+.sortList ul .li1 {
+    font-size: 0.2rem;
+    font-family: "Bernard MT Condensed";
+    color: black;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+}
+
+.sortList ul .li2 {
+    font-size: 0.1rem;
+    color: olive;
+    margin-top: 0.1rem;
+    margin-left: 0.05rem;
+}
+
+.sortList ul .li3 {
+    font-size: 0.1rem;
+    color: red;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+}
+
+.sortList img {
+    margin-top: 0.1rem;
+    float: left;
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+/*爱生活部分*/
+.aiLiftTittle {
+    height: 0.4rem;
+    width: 100%;
+}
+
+.aiLiftTittle img {
+    height: 0.3rem;
+    width: 0.6rem;
+    display: block;
+    margin: 0px auto;
+    padding-top: 0.1rem;
+}
+.sortList2{
+
+    width: 25%;
+    height: 1rem;
+    float: left;
+}
+.sortList2 ul {
+
+    width: 100%;
+    height: 1rem;
+}
+
+.sortList2 ul li {
+    width: 100%;
+    margin-top: 0.01rem;
+    font-size: 0.1rem;
+}
+
+.sortList2 ul .li1 {
+    font-size: 0.1rem;
+    font-family: "Bernard MT Condensed";
+    color: black;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+}
+
+.sortList2 ul .li2 {
+    font-size: 0.1rem;
+    color: olive;
+    margin-top: 0.1rem;
+    margin-left: 0.05rem;
+}
+
+.sortList2 ul .li3 {
+    font-size: 0.1rem;
+    color: red;
+    margin-left: 0.1rem;
+    margin-top: 0.1rem;
+}
+
+.sortList2 img {
+    margin-top: 0.1rem;
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
 }
