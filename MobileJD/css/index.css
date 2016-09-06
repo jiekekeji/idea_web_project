@@ -264,16 +264,16 @@
     margin: 0px auto;
     padding-top: 0.1rem;
 }
-.sortList2{
 
+.sortList2 {
     width: 25%;
-    height: 1rem;
+    height: 1.2rem;
     float: left;
 }
-.sortList2 ul {
 
+.sortList2 ul {
     width: 100%;
-    height: 1rem;
+    height: 0.6rem;
 }
 
 .sortList2 ul li {
@@ -309,4 +309,78 @@
     display: block;
     width: 0.4rem;
     height: 0.4rem;
+}
+
+/*爱生活轮训滚动条*/
+.liftad {
+    margin-top: 0.1rem;
+    height: 1rem;
+    width: 100%;
+    clear: both;
+}
+
+.liftad img {
+    height: 0.8rem;
+    width: 100%;
+}
+
+/*商品列表*/
+.gdList {
+    clear: both;
+}
+
+.gdList ul {
+    width: 100%;
+}
+
+.gdList ul li {
+    height: 2rem;
+    width: 50%;
+    float: left;
+}
+
+.gdList ul li a {
+    display: block;
+    height: 2rem;
+    width: 100%;
+    text-decoration: none;
+}
+
+.gdList ul li img {
+    display: block;
+    width: 100%;
+    height: 1.4rem;
+}
+
+.gdList ul li p {
+    font-size: 0.1rem;
+    width: 100%;
+    height: 0.3rem;
+    overflow: visible;
+    text-align: center;
+}
+
+.gdList ul li .price {
+    line-height: 0.3rem;
+}
+
+/*点击加载更多*/
+.loadMore {
+    clear: both;
+    width: 100%;
+    height: 0.3rem;
+    border-top: 0.01rem solid silver;
+    border-bottom: 0.01rem solid silver;
+}
+
+.loadMore a {
+    margin: 0rem auto;
+    width: 1.5rem;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    text-align: center;
+    display: block;
+    font-size: 0.2rem;
+    text-decoration: none;
+    color: #5e5e5e;
 }
