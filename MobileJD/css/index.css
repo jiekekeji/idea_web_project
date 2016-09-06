@@ -358,6 +358,7 @@
     height: 0.3rem;
     overflow: visible;
     text-align: center;
+    overflow: auto;
 }
 
 .gdList ul li .price {
