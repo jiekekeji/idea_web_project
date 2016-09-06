@@ -31,7 +31,9 @@
     width: 0.6rem;
     height: 0.44rem;
 }
-
+.login a{
+    color: white;
+}
 .logo img {
     margin-left: 0.1rem;
     display: block;

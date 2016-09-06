@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>京东登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="./js/web-app-utils.js" rel="script"></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+<div class="titleBar">
+    <a href="index.html">
+        <img src="images/ic_back.png">
+    </a>
+    <p>
+        京东登录
+    </p>
+</div>
+<!--登录表单-->
+<div class="loginData">
+    <form method="get" action="#">
+        <ul>
+            <li>
+                <input type="text" placeholder="用户名/邮箱/已验证邮箱" class="username">
+            </li>
+            <li>
+                <input type="password" placeholder="请输入密码">
+            </li>
+            <li>
+                <di class="vertifyCode">
+                    <input type="text" placeholder="请输入验证码">
+                    <img src="images/ic_pv.jpg">
+                </di>
+            </li>
+        </ul>
+        <input type="button" value="登录">
+        <div class="remindPwd">
+            <input type="checkbox">
+            <span>一个月免登陆</span>
+        </div>
+    </form>
+    <!--注册与找回密码-->
+    <div class="pwsrgt">
+        <a href="#">找回密码</a>
+        <a href="#">快速注册</a>
+    </div>
+    <!--其他登录方式-->
+    <div class="otherLogin">
+        <div></div>
+        <h4>其他登录方式</h4>
+        <div></div>
+    </div>
+    <div class="qqwx">
+        <a href="#">
+            <img src="images/ic_qq.png">
+        </a>
+        <a href="#">
+            <img src="images/ic_wx.png">
+        </a>
+    </div>
+</div>
+</body>
+</html>
