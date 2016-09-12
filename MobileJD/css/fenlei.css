@@ -55,23 +55,22 @@ body{
     width: 100%;
     height: 100%;
 }
+/*分类最外层*/
 .clzName{
     border-right: 0.01rem solid gainsboro;
     background: white;
     width: 0.8rem;
     float: left;
+    height: 5.4rem;
+    overflow: hidden;
+    background-color: rebeccapurple;
 }
-.clzDetail{
-    float: right;
-    width: 2.3rem;
-    height: 200px;
-    background: white;
-    border-left: 0.01rem solid gainsboro;
-}
+/*分类里层列表*/
 .clzName ul{
     height: 100%;
-    height-space: nowrap;
-    overflow: auto;
+    width: 0.9rem;
+    overflow-y: scroll;
+
 }
 .clzName ul li{
     background: white;
@@ -81,4 +80,49 @@ body{
     border-bottom: 0.01rem solid lightgray;
     text-align: center;
     line-height: 0.4rem;
+}
+
+/*分类对应的详情*/
+.clzDetail_wrap{
+    float: right;
+    width: 2.3rem;
+    height: 5.4rem;
+    overflow: hidden;
+}
+.clzDetail_wrap ul{
+    height: 100%;
+    width: 2.4rem;
+    overflow-y: scroll;
+
+}
+.clzDetail_wrap ul li{
+    background: white;
+    font-size: 0.01rem;
+    width: 2.3rem;
+    border-bottom: 0.01rem solid lightgray;
+    line-height: 0.4rem;
+}
+/*分类详情*/
+/*头部图片*/
+.fenlei_title img{
+    width: 2.3rem;
+    height: 0.8rem;
+    display: block;
+}
+/*热门选购商品列表*/
+.hotGood{
+    width: 2.3rem;
+}
+.hotGood li{
+    display: block;
+    background: rebeccapurple;
+    width: 0.2rem;
+    height: 1rem;
+}
+
+.hotGood li a{
+    display: block;
+    background: rebeccapurple;
+    width: 0.2rem;
+    height: 1rem;
 }
