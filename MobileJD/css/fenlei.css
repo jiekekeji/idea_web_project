@@ -1,6 +1,7 @@
-body{
+body {
     background: #f3f5f7;
 }
+
 /*顶部导航栏*/
 .titleBar {
     background: white;
@@ -12,19 +13,22 @@ body{
     z-index: 10;
     border-bottom: 0.01rem solid silver;
 }
-.titleBar a{
+
+.titleBar a {
     height: 0.44rem;
     width: 0.44rem;
     display: block;
     float: left;
 }
-.titleBar a img{
+
+.titleBar a img {
     height: 0.3rem;
     width: 0.3rem;
     display: block;
     margin: 0.07rem auto;
 }
-.titleBar input{
+
+.titleBar input {
     width: 2.1rem;
     height: 0.3rem;
     display: block;
@@ -37,26 +41,29 @@ body{
     padding-left: 0.1rem;
 }
 
-.titleBar .menu{
+.titleBar .menu {
     height: 0.44rem;
     width: 0.44rem;
     display: block;
     float: right;
 }
-.titleBar .menu img{
+
+.titleBar .menu img {
     height: 0.3rem;
     width: 0.3rem;
     display: block;
     margin: 0.07rem auto;
 }
+
 /*商品分类和对应的分类*/
-.clz{
+.clz {
     margin-top: 0.44rem;
     width: 100%;
     height: 100%;
 }
+
 /*分类最外层*/
-.clzName{
+.clzName {
     border-right: 0.01rem solid gainsboro;
     background: white;
     width: 0.8rem;
@@ -65,14 +72,16 @@ body{
     overflow: hidden;
     background-color: rebeccapurple;
 }
+
 /*分类里层列表*/
-.clzName ul{
+.clzName ul {
     height: 100%;
     width: 0.9rem;
     overflow-y: scroll;
 
 }
-.clzName ul li{
+
+.clzName ul li {
     background: white;
     font-size: 0.01rem;
     width: 0.8rem;
@@ -83,46 +92,64 @@ body{
 }
 
 /*分类对应的详情*/
-.clzDetail_wrap{
+.clzDetail_wrap {
     float: right;
     width: 2.3rem;
     height: 5.4rem;
     overflow: hidden;
 }
-.clzDetail_wrap ul{
+
+.clzDetail_wrap ul {
     height: 100%;
     width: 2.4rem;
     overflow-y: scroll;
 
 }
-.clzDetail_wrap ul li{
+
+.clzDetail_wrap > ul > li {
     background: white;
     font-size: 0.01rem;
     width: 2.3rem;
     border-bottom: 0.01rem solid lightgray;
     line-height: 0.4rem;
 }
+
 /*分类详情*/
 /*头部图片*/
-.fenlei_title img{
+.fenlei_title img {
     width: 2.3rem;
     height: 0.8rem;
     display: block;
 }
+
 /*热门选购商品列表*/
-.hotGood{
+.hotGood {
     width: 2.3rem;
 }
-.hotGood li{
+
+.hotGood li {
+    width: 0.7rem;
+    height: 1rem;
+    margin-right: 0.06rem;
+    float: left;
+}
+
+.hotGood li a {
     display: block;
-    background: rebeccapurple;
-    width: 0.2rem;
+    width: 0.7rem;
     height: 1rem;
 }
 
-.hotGood li a{
+.hotGood li a img {
     display: block;
-    background: rebeccapurple;
-    width: 0.2rem;
-    height: 1rem;
+    width: 0.5rem;
+    height: 0.7rem;
+    margin-left: 0.1rem;
+}
+
+.hotGood li a p {
+    text-align: center;
+    display: block;
+    width: 0.7rem;
+    height: 0.3rem;
 }
