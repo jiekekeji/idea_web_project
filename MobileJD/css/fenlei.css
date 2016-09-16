@@ -62,6 +62,10 @@ body {
     height: 100%;
 }
 
+.clz-nomrtop{
+    margin-top: 0;
+}
+
 /*分类最外层*/
 .clzName {
     border-right: 0.01rem solid gainsboro;
@@ -117,6 +121,7 @@ body {
 /*分类详情*/
 /*头部图片*/
 .fenlei_title img {
+    margin-top: 0.01rem;
     width: 2.3rem;
     height: 0.8rem;
     display: block;
@@ -153,3 +158,49 @@ body {
     width: 0.7rem;
     height: 0.3rem;
 }
+
+/*头部更多菜单*/
+.more_fl {
+    background: black;
+    height: 0.6rem;
+    width: 100%;
+    margin-top: 0.44rem;
+    display: none;
+}
+
+.more_fl-show {
+    display: block;
+}
+
+.more_fl ul li {
+    float: left;
+    height: 0.6rem;
+    width: 25%;
+}
+
+.more_fl ul li a {
+    display: block;
+    height: 0.6rem;
+    width: 100%;
+}
+
+.more_fl ul li a img {
+    display: block;
+    height: 0.3rem;
+    width: 0.3rem;
+    margin: 0.05rem auto;
+}
+
+.more_fl ul li a p {
+    display: block;
+    height: 0.3rem;
+    width: 100%;
+    font-size: 0.1rem;
+    text-align: center;
+    line-height: 0.1rem;
+    color: white;
+}
+
+
+
+

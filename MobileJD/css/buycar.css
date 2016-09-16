@@ -1,0 +1,154 @@
+body {
+    background: #f0f2f5;
+}
+
+/*顶部导航栏*/
+.titleBar {
+    background: white;
+    width: 100%;
+    height: 0.44rem;
+    position: fixed;
+    left: 0rem;
+    top: 0rem;
+    z-index: 10;
+    border-bottom: 0.01rem solid silver;
+}
+
+.titleBar a {
+    height: 0.44rem;
+    width: 0.44rem;
+    display: block;
+    float: left;
+}
+
+.titleBar a img {
+    height: 0.3rem;
+    width: 0.3rem;
+    display: block;
+    margin: 0.07rem auto;
+}
+
+.titleBar span {
+    font-size: 0.2rem;
+    width: 2.1rem;
+    height: 0.3rem;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 0.3rem;
+    margin: 0.05rem auto;
+    padding-left: 0.1rem;
+}
+
+.titleBar .menu {
+    height: 0.44rem;
+    width: 0.44rem;
+    display: block;
+    float: right;
+}
+
+.titleBar .menu img {
+    height: 0.3rem;
+    width: 0.3rem;
+    display: block;
+    margin: 0.07rem auto;
+}
+
+/*头部更多菜单*/
+.more_fl {
+    background: black;
+    height: 0.6rem;
+    width: 100%;
+    margin-top: 0.44rem;
+    display: none;
+}
+
+.more_fl-show {
+    display: block;
+}
+
+.more_fl ul li {
+    float: left;
+    height: 0.6rem;
+    width: 25%;
+}
+
+.more_fl ul li a {
+    display: block;
+    height: 0.6rem;
+    width: 100%;
+}
+
+.more_fl ul li a img {
+    display: block;
+    height: 0.3rem;
+    width: 0.3rem;
+    margin: 0.05rem auto;
+}
+
+.more_fl ul li a p {
+    display: block;
+    height: 0.3rem;
+    width: 100%;
+    font-size: 0.1rem;
+    text-align: center;
+    line-height: 0.1rem;
+    color: white;
+}
+
+/*购物车商品列表*/
+.goodsList {
+    margin-top: 0.44rem;
+    width: 100%;
+}
+
+.goodsList ul .store {
+    width: 100%;
+    height: 0.4rem;
+    background: white;
+}
+
+.goodsList ul .store input {
+    float: left;
+    width: 0.2rem;
+    height: 0.2rem;
+    display: block;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+}
+
+.goodsList ul .store img {
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+    float: left;
+    width: 0.2rem;
+    height: 0.2rem;
+    display: block;
+}
+
+.goodsList ul .store .storeName {
+    float: left;
+    width: 1rem;
+    height: 0.4rem;
+    display: block;
+    font-size: 0.15rem;
+    text-align: center;
+    line-height: 0.4rem;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.goodsList ul .store .other {
+    float: right;
+    width: 0.6rem;
+    height: 0.4rem;
+    display: block;
+    font-size: 0.15rem;
+    text-align: center;
+    line-height: 0.4rem;
+    text-overflow: ellipsis;
+}
+
+
