@@ -151,4 +151,113 @@ body {
     text-overflow: ellipsis;
 }
 
+/*店铺内的商品列表详情*/
+.goodsList ul .storeGoods {
 
+}
+
+/*左边checkbox*/
+.goodsList ul .storeGoods .goodsDetailLeft {
+    height: 1.4rem;
+    width: 0.4rem;
+    float: left;
+    background: white;
+}
+
+.goodsList ul .storeGoods .goodsDetailLeft input {
+    height: 0.2rem;
+    width: 0.2rem;
+    margin-left: 0.1rem;
+    display: block;
+    margin-top: 0.6rem;
+}
+
+/*右边详情*/
+.goodsList ul .storeGoods .goodsDetail {
+    float: left;
+    height: 1.4rem;
+    width: 2.8rem;
+    background: white;
+}
+
+.goodsList ul .storeGoods .goodsDetail img {
+    width: 1rem;
+    height: 1rem;
+    display: block;
+    float: left;
+}
+
+.goodsList ul .storeGoods .goodsDetail .goodsInfo {
+    float: left;
+    width: 1.8rem;
+}
+
+.goodsList ul .storeGoods .goodsDetail .goodsInfo a {
+    width: 1.8rem;
+    height: 0.4rem;
+    display: block;
+    font-size: 0.15rem;
+    overflow: hidden;
+    word-break: keep-all;
+    text-overflow: ellipsis;
+
+}
+
+.goodsList ul .storeGoods .goodsDetail .goodsInfo .pro1 {
+    width: 1.8rem;
+    height: 0.2rem;
+    display: block;
+    float: left;
+}
+
+.goodsList ul .storeGoods .goodsDetail .goodsInfo .pro1 span {
+    width: 0.9rem;
+    height: 0.2rem;
+    display: block;
+    float: left;
+    font-size: 0.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price {
+    width: 1.8rem;
+    height: 0.2rem;
+    display: block;
+    font-size: 0.1rem;
+    clear: both;
+    color: red;
+}
+
+.goodsList ul .storeGoods .goodsDetail .goodsInfo .pro2 {
+    width: 1.8rem;
+    height: 0.2rem;
+    display: block;
+}
+
+.goodsList ul .storeGoods .goodsDetail .goodsInfo .pro2 span {
+    width: 0.9rem;
+    height: 0.2rem;
+    display: block;
+    float: left;
+    font-size: 0.1rem;
+    line-height: 0.2rem;
+}
+
+.goodsList ul .storeGoods .goodsDetail .goodsInfo .pro2 .edit {
+    width: 0.4rem;
+    height: 0.2rem;
+    display: block;
+    float: right;
+    border-left: 0.01rem solid gray;
+    line-height: 0.2rem;
+    text-align: center;
+}
+/*其他信息*/
+.goodsOther{
+    height: 0.4rem;
+    width: 2.8rem;
+    clear: both;
+    font-size: 0.14rem;
+    line-height: 0.4rem;
+}
