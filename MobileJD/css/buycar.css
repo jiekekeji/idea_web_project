@@ -275,4 +275,17 @@ body {
     background: darkgreen;
     position: fixed;
     bottom: 0rem;
+    font-size: 0.1rem;
+}
+.botm input[type="checkbox"]{
+    height: 0.2rem;
+    width: 0.2rem;
+    display: block;
+    float: left;
+}
+.botm>div{
+    height: 0.4rem;
+    width: 2rem;
+    background: rebeccapurple;
+    float: left;
 }
