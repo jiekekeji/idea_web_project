@@ -164,12 +164,17 @@ body {
     background: white;
 }
 
-.goodsList ul .storeGoods .goodsDetailLeft input {
+.goodsList ul .storeGoods .goodsDetailLeft input[type="checkbox"] {
     height: 0.2rem;
     width: 0.2rem;
     margin-left: 0.1rem;
     display: block;
     margin-top: 0.6rem;
+    background-image: url("../images/icon_checked.png");
+}
+
+.goodsList ul .storeGoods .goodsDetailLeft input[type="checkbox"]:checked {
+    background-image: url("../images/icon_checkno.png");
 }
 
 /*右边详情*/
@@ -253,11 +258,21 @@ body {
     line-height: 0.2rem;
     text-align: center;
 }
+
 /*其他信息*/
-.goodsOther{
+.goodsOther {
     height: 0.4rem;
     width: 2.8rem;
     clear: both;
     font-size: 0.14rem;
     line-height: 0.4rem;
+}
+
+/*底部的部分*/
+.botm{
+    width: 100%;
+    height: 0.4rem;
+    background: darkgreen;
+    position: fixed;
+    bottom: 0rem;
 }
