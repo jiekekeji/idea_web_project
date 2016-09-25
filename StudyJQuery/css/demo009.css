@@ -1,0 +1,17 @@
+.list {
+    width: 100%;
+}
+
+.list li {
+    width: 100%;
+    height: 50px;
+    background: dodgerblue;
+    border-bottom: solid 1px white;
+    float: left;
+}
+.loading img {
+    width: 32px;
+    height: 32px;
+    margin-top: 9px;
+    margin-left: 50%;
+}
