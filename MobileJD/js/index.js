@@ -13,5 +13,11 @@ $(window).scroll(function () {
         console.log("移除属性");
         $(".titleBar").removeAttr("style");
     }
-
 })
+//页面加载完成
+$(document).ready(function () {
+    //搜索部分添加点击事件
+    $("#searbtn").click(function () {
+        location.href = "search.html";
+    });
+});

@@ -96,188 +96,120 @@ body {
     color: white;
 }
 
-/*购物车商品列表*/
-.goodsList {
+/*红色导航区域*/
+.nav {
     margin-top: 0.44rem;
+    height: 1.2rem;
     width: 100%;
+    background: crimson;
 }
-
-.goodsList ul .store {
+.clz-nomrtop{
+    margin-top: 0;
+}
+.nav .nav_top {
+    width: 100%;
+    height: 0.8rem;
+}
+.nav .nav_botm {
     width: 100%;
     height: 0.4rem;
-    background: white;
+    background: black;
+    opacity: 0.4;
 }
 
-.goodsList ul .store input {
+/*头像和用户名区域*/
+.nav .nav_top > div {
+    height: 0.8rem;
+    width: 50%;
     float: left;
-    width: 0.2rem;
-    height: 0.2rem;
-    display: block;
-    margin-top: 0.1rem;
-    margin-left: 0.1rem;
 }
 
-.goodsList ul .store img {
-    margin-top: 0.1rem;
-    margin-left: 0.1rem;
+.nav .nav_top .userTitle img {
     float: left;
-    width: 0.2rem;
-    height: 0.2rem;
-    display: block;
-}
-
-.goodsList ul .store .storeName {
-    float: left;
-    width: 1rem;
-    height: 0.4rem;
-    display: block;
-    font-size: 0.15rem;
-    text-align: center;
-    line-height: 0.4rem;
-    overflow: hidden;
-    word-break: keep-all;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.goodsList ul .store .other {
-    float: right;
+    height: 0.6rem;
     width: 0.6rem;
-    height: 0.4rem;
     display: block;
-    font-size: 0.15rem;
-    text-align: center;
-    line-height: 0.4rem;
-    text-overflow: ellipsis;
-}
-
-/*店铺内的商品列表详情*/
-.goodsList ul .storeGoods {
-
-}
-
-/*左边checkbox*/
-.goodsList ul .storeGoods .goodsDetailLeft {
-    height: 1.4rem;
-    width: 0.4rem;
-    float: left;
-    background: white;
-}
-
-.goodsList ul .storeGoods .goodsDetailLeft input[type="checkbox"] {
-    height: 0.2rem;
-    width: 0.2rem;
+    margin-top: 0.1rem;
     margin-left: 0.1rem;
-    display: block;
-    margin-top: 0.6rem;
-    background-image: url("../images/icon_checked.png");
+    border-radius: 0.2rem 0.2rem;
 }
 
-.goodsList ul .storeGoods .goodsDetailLeft input[type="checkbox"]:checked {
-    background-image: url("../images/icon_checkno.png");
-}
-
-/*右边详情*/
-.goodsList ul .storeGoods .goodsDetail {
-    float: left;
-    height: 1.4rem;
-    width: 2.8rem;
-    background: white;
-}
-
-.goodsList ul .storeGoods .goodsDetail img {
-    width: 1rem;
-    height: 1rem;
-    display: block;
-    float: left;
-}
-
-.goodsList ul .storeGoods .goodsDetail .goodsInfo {
-    float: left;
-    width: 1.8rem;
-}
-
-.goodsList ul .storeGoods .goodsDetail .goodsInfo a {
-    width: 1.8rem;
+.nav .nav_top .userTitle div {
     height: 0.4rem;
-    display: block;
+    width: 0.8rem;
+    float: left;
+    margin-top: 0.2rem;
+}
+
+.nav .nav_top .userTitle div p {
+    padding-left: 0.01rem;
+    font-size: 0.1rem;
+    height: 0.2rem;
+    color: white;
+    width: 0.8rem;
+    line-height: 0.3rem;
+}
+
+.nav .nav_top .userTitle div .useract {
     font-size: 0.15rem;
-    overflow: hidden;
-    word-break: keep-all;
-    text-overflow: ellipsis;
-
+    font-family: 黑体;
 }
 
-.goodsList ul .storeGoods .goodsDetail .goodsInfo .pro1 {
-    width: 1.8rem;
-    height: 0.2rem;
-    display: block;
-    float: left;
-}
-
-.goodsList ul .storeGoods .goodsDetail .goodsInfo .pro1 span {
-    width: 0.9rem;
-    height: 0.2rem;
-    display: block;
-    float: left;
+.actAddress p {
+    height: 0.3rem;
+    width: 100%;
     font-size: 0.1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin-top: 0.5rem;
+    color: white;
+    text-align: right;
 }
 
-.price {
-    width: 1.8rem;
-    height: 0.2rem;
-    display: block;
-    font-size: 0.1rem;
-    clear: both;
-    color: red;
+.actAddress p img {
+    height: 0.1rem;
+    width: 0.1rem;
 }
 
-.goodsList ul .storeGoods .goodsDetail .goodsInfo .pro2 {
-    width: 1.8rem;
-    height: 0.2rem;
-    display: block;
-}
-
-.goodsList ul .storeGoods .goodsDetail .goodsInfo .pro2 span {
-    width: 0.9rem;
-    height: 0.2rem;
-    display: block;
-    float: left;
-    font-size: 0.1rem;
-    line-height: 0.2rem;
-}
-
-.goodsList ul .storeGoods .goodsDetail .goodsInfo .pro2 .edit {
-    width: 0.4rem;
-    height: 0.2rem;
-    display: block;
-    float: right;
-    line-height: 0.2rem;
-    text-align: center;
-}
-
-/*其他信息*/
-.goodsOther {
+/*三个选项卡*/
+.nav_botm ul {
     height: 0.4rem;
-    width: 2.8rem;
-    clear: both;
-    font-size: 0.14rem;
-    line-height: 0.4rem;
+    width: 100%;
 }
 
-/*底部的部分*/
-.botm {
+.nav_botm ul li {
+    height: 0.4rem;
+    width: 33%;
+    float: left;
+    border-left: 0.01rem solid white;
+}
+
+.nav_botm ul li a {
+    font-size: 0.1rem;
+    display: block;
+    height: 0.4rem;
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 0.2rem;
+}
+
+/*我的订单*/
+.order {
+    width: 100%;
+    height: 1rem;
+}
+
+.order .myOrder {
     width: 100%;
     height: 0.4rem;
-    position: fixed;
-    bottom: 0rem;
-    font-size: 0.1rem;
-    background: white;
 }
 
-.botm input[type="checkbox"] {
+.order .myOrder .leftdiv {
+    height: 0.4rem;
+    width: 1rem;
+    float: left;
+}
+
+.order .myOrder .leftdiv img {
     height: 0.2rem;
     width: 0.2rem;
     display: block;
@@ -285,33 +217,164 @@ body {
     margin-top: 0.1rem;
 }
 
-.botm > div {
+.order .myOrder .leftdiv span {
     height: 0.4rem;
-    width: 2rem;
-    float: left;
-}
-
-.botm > div span {
-    height: 0.2rem;
-    width: 2rem;
+    width: 0.8rem;
     display: block;
-    line-height: 0.2rem;
+    float: left;
+    font-size: 0.1rem;
+    line-height: 0.4rem;
 }
 
-.botm span {
+/*右边*/
+.order .myOrder .rightdiv {
+    height: 0.4rem;
+    width: 0.6rem;
+    float: right;
+}
+
+.order .myOrder .rightdiv img {
+    height: 0.2rem;
+    width: 0.2rem;
+    display: block;
+    float: left;
+    margin-top: 0.1rem;
+}
+
+.order .myOrder .rightdiv span {
     height: 0.4rem;
     width: 0.4rem;
     display: block;
     float: left;
+    font-size: 0.1rem;
     line-height: 0.4rem;
 }
 
-.botm a {
-    height: 0.4rem;
-    width: 0.5rem;
+/*我的订单分类*/
+.order .orderType {
+    height: 0.6rem;
+    width: 100%;
+}
+
+.order .orderType ul {
+    height: 0.6rem;
+    width: 100%;
+}
+
+.order .orderType ul li {
+    height: 0.6rem;
+    width: 33%;
+    float: left;
+}
+
+.order .orderType ul li img {
+    height: 0.3rem;
+    width: 0.3rem;
     display: block;
-    background: red;
-    float: right;
+    margin: 0 auto;
+}
+
+.order .orderType ul li span {
+    height: 0.2rem;
+    width: 100%;
     text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 0.1rem;
+}
+
+/*其他的一些列表*/
+.otherList li {
+    width: 100%;
+    height: 0.4rem;
+
+}
+
+.otherList li img {
+    width: 0.3rem;
+    height: 0.3rem;
+    display: block;
+    margin-top: 0.05rem;
+    float: left;
+    margin-left: 0.01rem;
+}
+
+.otherList li span {
+    height: 0.4rem;
+    font-size: 0.1rem;
     line-height: 0.4rem;
+    display: block;
+    float: left;
+}
+
+.otherList li .more {
+    width: 0.2rem;
+    height: 0.2rem;
+    display: block;
+    float: right;
+    margin-top: 0.1rem;
+}
+
+.otherLogin {
+    width: 80%;
+    height: 0.3rem;
+    margin: 0rem auto;
+    margin-top: 0.4rem;
+}
+/*推荐头部*/
+.otherLogin div {
+    height: 0.01rem;
+    width: 20%;
+    background: #B0B0B0;
+    float: left;
+    margin-top: 0.08rem;
+}
+
+.otherLogin h4 {
+    height: 0.01rem;
+    width: 60%;
+    float: left;
+    font-size: 0.02rem;
+    text-align: center;
+}
+
+/*推荐列表*/
+.gdList {
+    clear: both;
+}
+
+.gdList ul {
+    width: 100%;
+}
+
+.gdList ul li {
+    height: 2rem;
+    width: 50%;
+    float: left;
+}
+
+.gdList ul li a {
+    display: block;
+    height: 2rem;
+    width: 100%;
+    text-decoration: none;
+}
+
+.gdList ul li img {
+    display: block;
+    width: 100%;
+    height: 1.4rem;
+}
+
+.gdList ul li p {
+    font-size: 0.1rem;
+    width: 100%;
+    height: 0.3rem;
+    overflow: visible;
+    text-align: center;
+    overflow: auto;
+}
+
+.gdList ul li .price {
+    line-height: 0.3rem;
 }
