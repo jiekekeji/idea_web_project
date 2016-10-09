@@ -1,0 +1,21 @@
+.content {
+    height: 200px;
+    width: 120px;
+    /*将超出的滚动条隐藏*/
+    overflow: hidden;
+}
+
+.content ul {
+    width: 140px;
+    height: 200px;
+    border-bottom: solid grey 1px;
+    overflow-y: scroll;
+}
+
+.content ul li {
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: solid 1px grey;
+}

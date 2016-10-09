@@ -1,0 +1,26 @@
+.content {
+    height: 100px;
+    width: 300px;
+    /*将超出的滚动条隐藏*/
+    overflow: hidden;
+}
+/**
+ul li不换行的原理：
+ul 设置样式: white-space: nowrap;  width: 100%;
+li 设置为内联样式通过padding设定宽高:padding: 50px;display: inline;
+**/
+.content ul {
+    height: 130px;
+    /*border-bottom: solid grey 1px;*/
+    white-space: nowrap;
+    width: 300px;
+    overflow-x: scroll;
+}
+
+.content ul li {
+    padding: 50px;
+    text-align: center;
+    line-height: 100px;
+    border: solid 1px grey;
+    display: inline;
+}
