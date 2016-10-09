@@ -1,0 +1,39 @@
+.content1 {
+    height: 100px;
+    width: 100px;
+    background-color: #5e5e5e;
+}
+
+.content2 {
+    border: solid 1px blue;
+    height: 100px;
+    width: 100px;
+    background-image: url("../images/img1.png");
+    /*设置背景图片大小*/
+    background-size: 50px 50px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.content3 {
+    border: solid 1px blue;
+    height: 100px;
+    width: 100px;
+    background-image: url("../images/img1.png");
+    /*设置背景图片大小*/
+    background-size: 50px 50px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.content4 {
+    border: solid 1px blue;
+    height: 100px;
+    width: 100px;
+    background-image: url("../images/img1.png");
+    /*设置背景图片大小*/
+    background-size: 50px 50px;
+    /*使用像素来定位，左 上*/
+    background-position: 10px 0px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,20 @@
+.linkStatus a:link{
+    /*正常情况下的样式*/
+    color: #2aabd2;
+    font-size: 14px;
+}
+.linkStatus a:visited{
+    /*用户已访问过的链接*/
+    color: green;
+    font-size: 14px;
+}
+.linkStatus a:hover{
+    /*当用户鼠标放在链接上时*/
+    color: blueviolet;
+    font-size: 14px;
+}
+.linkStatus a:active{
+    /*链接被点击的那一刻*/
+    color: #bce8f1;
+    font-size: 14px;
+}
