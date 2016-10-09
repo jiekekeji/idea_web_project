@@ -1,0 +1,29 @@
+/*元素的显示和隐藏:visibility: hidden;或者display:none;*/
+/*visibility: hidden;只是隐藏了元素但是元素还占据着页面的空间*/
+/*display:none;隐藏了元素，并且元素不占据页面元素*/
+.div1{
+    border: dashed 1px;
+    width: 100px;
+    height: 100px;
+    background-color: #3e8f3e;
+}
+.div2{
+    visibility: hidden;
+    border: dashed 1px;
+    width: 100px;
+    height: 100px;
+    background-color: #3e8f3e;
+}
+.div3{
+    display:none;
+    border: dashed 1px;
+    width: 100px;
+    height: 100px;
+    background-color: #3e8f3e;
+}
+.div4{
+    border: dashed 1px;
+    width: 100px;
+    height: 100px;
+    background-color: #3e8f3e;
+}
