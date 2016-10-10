@@ -1,0 +1,21 @@
+.main {
+    width: 100px;
+    height: 400px;
+    background: darkolivegreen;
+}
+
+.main>li{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid gray;
+}
+.subMenu{
+    display: none;
+}
+.main>li:hover {
+    width: 100px;
+    height: 100px;
+    display: block;
+}
