@@ -1,0 +1,34 @@
+/*这里动画可以理解为在一定的时间内，不断的更改元素的css样式*/
+.div1 {
+    width: 30px;
+    height: 30px;
+    background-color: #2b542c;
+    /*应用动画并设置动画的时间*/
+    position: relative;
+    animation: mymove 5s infinite;
+    -webkit-animation: mymove 5s infinite;
+    /*动画播放的次数*/
+    animation-iteration-count: 1;
+    /*规定动画何时开始。默认是 0 马上开始*/
+    animation-delay: 5s;
+}
+
+/*定义动画从0px 的位置移动到200px的位置*/
+@keyframes mymove {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+    }
+}
+
+@-webkit-keyframes mymove /* Safari and Chrome */
+{
+    from {
+        top: 0px;
+    }
+    to {
+        top: 200px;
+    }
+}
