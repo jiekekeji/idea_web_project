@@ -1,0 +1,31 @@
+.content{
+    width: 100%;
+    height: 100%;
+}
+/*选择所有选中的表单元素*/
+.content input:checked{
+    background-color: #00BFFF;
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+/*选择所有禁用的表单元素*/
+.content input:disabled{
+    background-color: #00BFFF;
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+/*选择所有启用的表单元素*/
+.content input:enabled{
+    display: block;
+    width: 64px;
+    height: 64px;
+
+}
+/*选择所有没有子元素的p元素*/
+.content001 p:empty{
+    height: 10px;
+    width: 30px;
+    background-color: #2b542c;
+}
