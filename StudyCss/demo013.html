@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3动画案例</title>
+    <link rel="stylesheet" href="css/demo013.css" type="text/css"/>
+    <link rel="stylesheet" href="css/base.css" type="text/css"/>
+</head>
+<body>
+<div class="adBar">
+
+</div>
+<div class="navBar">
+    <ul class="mainMenu">
+        <li>
+            <p>菜单1</p>
+            <ul class="subMenu">
+                <li class="subMenuLiAnim">子菜单1-1</li>
+                <li class="subMenuLiAnim">子菜单1-2</li>
+                <li class="subMenuLiAnim">子菜单1-3</li>
+                <li class="subMenuLiAnim">子菜单1-4</li>
+            </ul>
+        </li>
+        <li>
+            <p>菜单2</p>
+            <ul class="subMenu">
+                <li class="subMenuLiAnim">子菜单1-1</li>
+                <li class="subMenuLiAnim">子菜单1-2</li>
+                <li class="subMenuLiAnim">子菜单1-3</li>
+                <li class="subMenuLiAnim">子菜单1-4</li>
+            </ul>
+        </li>
+        <li>
+            <p>菜单3</p>
+            <ul class="subMenu">
+                <li class="subMenuLiAnim">子菜单1-1</li>
+                <li class="subMenuLiAnim">子菜单1-2</li>
+                <li class="subMenuLiAnim">子菜单1-3</li>
+                <li class="subMenuLiAnim">子菜单1-4</li>
+            </ul>
+        </li>
+        <li>
+            <p>菜单4</p>
+            <ul class="subMenu">
+                <li class="subMenuLiAnim">子菜单1-1</li>
+                <li class="subMenuLiAnim">子菜单1-2</li>
+                <li class="subMenuLiAnim">子菜单1-3</li>
+                <li class="subMenuLiAnim">子菜单1-4</li>
+            </ul>
+        </li>
+        <li>
+            <p>菜单5</p>
+            <ul class="subMenu">
+                <li class="subMenuLiAnim">子菜单1-1</li>
+                <li class="subMenuLiAnim">子菜单1-2</li>
+                <li class="subMenuLiAnim">子菜单1-3</li>
+                <li class="subMenuLiAnim">子菜单1-4</li>
+            </ul>
+        </li>
+        <li>
+            <p>菜单6</p>
+            <ul class="subMenu">
+                <li class="subMenuLiAnim">子菜单1-1</li>
+                <li class="subMenuLiAnim">子菜单1-2</li>
+                <li class="subMenuLiAnim">子菜单1-3</li>
+                <li class="subMenuLiAnim">子菜单1-4</li>
+            </ul>
+        </li>
+        <li>
+            <p>菜单7</p>
+            <ul class="subMenu">
+                <li class="subMenuLiAnim">子菜单1-1</li>
+                <li class="subMenuLiAnim">子菜单1-2</li>
+                <li class="subMenuLiAnim">子菜单1-3</li>
+                <li class="subMenuLiAnim">子菜单1-4</li>
+            </ul>
+        </li>
+        <li>
+            <p>菜单8</p>
+            <ul class="subMenu">
+                <li class="subMenuLiAnim">子菜单1-1</li>
+                <li class="subMenuLiAnim">子菜单1-2</li>
+                <li class="subMenuLiAnim">子菜单1-3</li>
+                <li class="subMenuLiAnim">子菜单1-4</li>
+            </ul>
+        </li>
+        <li>
+            <p>菜单9</p>
+            <ul class="subMenu">
+                <li class="subMenuLiAnim">子菜单1-1</li>
+                <li class="subMenuLiAnim">子菜单1-2</li>
+                <li class="subMenuLiAnim">子菜单1-3</li>
+                <li class="subMenuLiAnim">子菜单1-4</li>
+            </ul>
+        </li>
+        <li>
+            <p>菜单10</p>
+            <ul class="subMenu">
+                <li class="subMenuLiAnim">子菜单1-1</li>
+                <li class="subMenuLiAnim">子菜单1-2</li>
+                <li class="subMenuLiAnim">子菜单1-3</li>
+                <li class="subMenuLiAnim">子菜单1-4</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<script src="./js/jquery-1.11.1.min.js" rel="script"></script>
+<script>
+    $(document).ready(function () {
+        //主菜单添加hower事件
+        $(".mainMenu>li").hover(function () {
+            //进入
+            $(this).find(".subMenu").addClass("subMenuAnim");
+        }, function () {
+            //移出
+            $(this).find(".subMenu").removeClass("subMenuAnim");
+        });
+    });
+</script>
+</body>
+</html>
