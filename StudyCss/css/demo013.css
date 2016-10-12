@@ -65,7 +65,13 @@
     /*播放完成后停止在动画播放完成的地方*/
     animation-fill-mode: forwards;
 }
-
+/*主体内容*/
+.content{
+    width: 1080px;
+    height: 500px;
+    margin: 0 auto;
+    background: #b2dba1;
+}
 @keyframes mysubheight {
     from {
         height: 0px;
