@@ -107,6 +107,16 @@
 </div>
 <!--主体内容-->
 <div class="content"></div>
+
+<!--侧边导航栏-->
+<div class="leftMenu">
+
+</div>
+<!--侧边导航栏菜单-->
+<div class="leftMenu_content ">
+
+</div>
+
 <!--js-->
 <script src="./js/jquery-1.11.1.min.js" rel="script"></script>
 <script>
@@ -118,6 +128,10 @@
         }, function () {
             //移出
             $(this).find(".subMenu").removeClass("subMenuAnim");
+        });
+        //左侧菜单的点击事件
+        $(".leftMenu").click(function () {
+            $(".leftMenu_content").addClass("leftMenu_contentAnim");
         });
     });
 </script>

@@ -56,6 +56,7 @@
     text-align: center;
     line-height: 50px;
 }
+
 /*子菜单li的动画*/
 .subMenuLiAnim {
     display: block;
@@ -65,13 +66,48 @@
     /*播放完成后停止在动画播放完成的地方*/
     animation-fill-mode: forwards;
 }
+
 /*主体内容*/
-.content{
+.content {
     width: 1080px;
-    height: 500px;
+    height: 1000px;
     margin: 0 auto;
     background: #b2dba1;
 }
+
+/*侧边导航栏*/
+.leftMenu {
+    height: 100px;
+    width: 20px;
+    position: fixed;
+    top: 50%;
+    margin-top: -80px;
+    background-color: darkslateblue;
+}
+
+/*左侧菜单*/
+.leftMenu_content {
+    height: 400px;
+    width: 100px;
+    position: fixed;
+    top: 50%;
+    margin-top: -200px;
+    background-color: burlywood;
+    overflow: hidden;
+    display: none;
+}
+
+/*左侧菜单动画*/
+.leftMenu_contentAnim {
+    display: block;
+    animation: myLeft 1s infinite;
+    /*动画播放的次数*/
+    animation-iteration-count: 1;
+    /*播放完成后停止在动画播放完成的地方*/
+    animation-fill-mode: forwards;
+}
+
+/*动画定义*/
 @keyframes mysubheight {
     from {
         height: 0px;
@@ -80,7 +116,7 @@
         height: 50px;
     }
 }
-/*动画定义*/
+
 /*动画改变元素的高度*/
 @keyframes myheight {
     from {
@@ -88,5 +124,14 @@
     }
     to {
         height: 200px;
+    }
+}
+
+@keyframes myLeft {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 100px;
     }
 }
