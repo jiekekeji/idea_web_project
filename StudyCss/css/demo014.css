@@ -1,0 +1,8 @@
+.div1{
+    height: 50px;
+    width: 50px;
+    background-color:burlywood;
+    border-radius: 10px 5px 5px 20px;
+    /*阴影偏移多少*/
+    box-shadow: 10px 10px #A7C0DC;
+}
