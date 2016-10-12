@@ -8,11 +8,37 @@
     animation: mymove 5s infinite;
     -webkit-animation: mymove 5s infinite;
     /*动画播放的次数*/
-    animation-iteration-count: 1;
+    animation-iteration-count: 2;
     /*规定动画何时开始。默认是 0 马上开始*/
-    animation-delay: 5s;
+    animation-delay: 2s;
+    /*先执行一遍动画，然后再反向执行一遍动画*/
+    animation-direction:alternate;
+    -webkit-animation-direction:alternate;
 }
 
+.div2 {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    float: right;
+    animation: mymove 5s infinite;
+    /*动画播放的次数*/
+    animation-iteration-count: 1;
+    position: relative;
+    /*停止在动画播放完成的地方*/
+    top: 200px;
+}
+
+.div3 {
+    width: 30px;
+    height: 50px;
+    background-color: rebeccapurple;
+    animation: myheight 5s infinite;
+    /*动画播放的次数*/
+    animation-iteration-count: 1;
+    /*播放完成后停止在动画播放完成的地方*/
+    animation-fill-mode:forwards;
+}
 /*定义动画从0px 的位置移动到200px的位置*/
 @keyframes mymove {
     from {
@@ -22,13 +48,12 @@
         top: 200px;
     }
 }
-
-@-webkit-keyframes mymove /* Safari and Chrome */
-{
+/*动画改变元素的高度*/
+@keyframes myheight {
     from {
-        top: 0px;
+        height: 50px;
     }
     to {
-        top: 200px;
+        height: 200px;
     }
 }
