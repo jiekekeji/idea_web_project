@@ -8,7 +8,7 @@ $(document).ready(function () {
     var interval;//定时任务
 
     function initMainAD(count, width) {
-        $(".mainAD>ul").css("width", width * count + 50 + "px");
+        $(".mainAD>ul").css("width", width * count+ "px");
         $(".mainAD>ul").hover(function () {
             console.log("停止播放");
                 clearInterval(interval);
