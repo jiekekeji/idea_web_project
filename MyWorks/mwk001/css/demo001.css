@@ -1,6 +1,29 @@
+.mainADContainer{
+    /*最外层这个东西小点,盖住滚动条*/
+    width: 1060px;
+    height: 180px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 .mainAD{
     width: 1080px;
     height: 200px;
     background-color: #f2dede;
-    margin: 0 auto;
+    overflow: auto;
+    position: relative;
+}
+.mainAD>ul{
+    height: 200px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    position: absolute;
+    left: -1080px;
+}
+
+.mainAD>ul li{
+    width: 1080px;
+    height: 200px;
+    float: left;
+    margin-left: 10px;
+    background-color: #3e8f3e;
 }
