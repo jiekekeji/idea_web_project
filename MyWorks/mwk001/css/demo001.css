@@ -11,6 +11,7 @@
     background-color: #f2dede;
     overflow: auto;
     position: relative;
+    margin: 0 auto;//不加这行IE9有问题
 }
 .mainAD>ul{
     height: 200px;
@@ -25,4 +26,14 @@
     height: 200px;
     float: left;
     background-color: #3e8f3e;
+}
+.mainAD>ul li a{
+    width: 1080px;
+    height: 200px;
+    display: block;
+}
+.mainAD>ul li a img{
+    width: 1080px;
+    height: 200px;
+    display: block;
 }

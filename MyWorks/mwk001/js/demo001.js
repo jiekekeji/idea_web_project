@@ -8,14 +8,14 @@ $(document).ready(function () {
     var interval;//定时任务
 
     function initMainAD(count, width) {
-        $(".mainAD>ul").css("width", width * count+ "px");
+        $(".mainAD>ul").css("width", width * count + 20 + "px");
         $(".mainAD>ul").hover(function () {
-            console.log("停止播放");
+                console.log("停止播放");
                 clearInterval(interval);
             },
             function () {
                 console.log("再次播放");
-                interval = setInterval(playAmin, 1000);
+                interval = setInterval(playAmin, 1000 * 3);
             });
     }
 
@@ -26,12 +26,12 @@ $(document).ready(function () {
         }
         $(".mainAD>ul").animate({
             left: -i * 1080 + "px"
-        });
+        }, 2 * 1000);
         i++;
     }
 
     initMainAD(3, 1080);
-    interval = setInterval(playAmin, 1000);
+    interval = setInterval(playAmin, 1000 * 3);
 
 
 });
