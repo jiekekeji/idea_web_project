@@ -20,14 +20,6 @@ $(document).ready(function () {
             function () {
                 interval = setInterval(playAmin, 1000 * 3);
             });
-        $(".mainAD>ul").swipe({
-            //Generic swipe handler for all directions
-            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-                console.log("direction:"+direction);
-            },
-            //Default is 75px, set to 0 for demo so any distance triggers swipe
-            threshold: 0
-        });
     }
 
     /**
@@ -40,7 +32,9 @@ $(document).ready(function () {
         if (i == 0) {
             l2r = true;//从左向右滚动
         }
-
+        //更改指示点的样式
+        $(".indicateDot > ul li").css({"background-color": "red"});
+        $(".indicateDot > ul li:eq(" + i + ")").css({"background-color": "yellow"});
         $(".mainAD>ul").animate({
             left: -i * 1080 + "px"
         }, 2 * 1000);
@@ -51,11 +45,12 @@ $(document).ready(function () {
             i--;
         }
 
+
     }
 
     initMainAD(3, 1080);
     interval = setInterval(playAmin, 1000 * 3);
-
+    $(".indicateDot > ul li:eq(" + i + ")").css({"background-color": "yellow"});
     //var scrollbarWidth = $(".mainAD>ul").offsetWidth - $(".mainAD>ul").scrollWidth;
     //console.log("滚动条的宽度:"+scrollbarWidth);
 
