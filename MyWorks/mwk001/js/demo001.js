@@ -20,8 +20,13 @@ $(document).ready(function () {
             function () {
                 interval = setInterval(playAmin, 1000 * 3);
             });
-        $(".mainAD>ul").scroll(function(event){
-            console.log("event="+event.width);
+        $(".mainAD>ul").swipe({
+            //Generic swipe handler for all directions
+            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                console.log("direction:"+direction);
+            },
+            //Default is 75px, set to 0 for demo so any distance triggers swipe
+            threshold: 0
         });
     }
 
