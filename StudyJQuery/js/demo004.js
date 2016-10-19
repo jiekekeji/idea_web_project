@@ -105,3 +105,6 @@ console.log("通过jquery对象方法:action="+$obj.attr("method"));
 
 var jQueryObj=$("#loginForm");
 console.log("jQuery对象="+jQueryObj);
+//jQuery对象转为js对象
+var docObj=jQueryObj.get(0);
+docObj.innerHTML="123";
