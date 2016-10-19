@@ -1,38 +1,66 @@
-.mainADContainer{
+.mainADContainer {
     /*最外层这个东西小点,盖住滚动条*/
     width: 1060px;
-    height: 180px;
+    height: 500px;
     margin: 0 auto;
     overflow: hidden;
 }
-.mainAD{
+
+.mainAD {
     width: 1080px;
-    height: 200px;
+    height: 520px;
     background-color: #f2dede;
     overflow: auto;
     position: relative;
-    margin: 0 auto;//不加这行IE9有问题
+    margin: 0 auto;
+/ / 不加这行IE9有问题
 }
-.mainAD>ul{
-    height: 200px;
+
+.mainAD > ul {
+    height: 520px;
     white-space: nowrap;
     overflow-x: scroll;
     position: absolute;
 }
 
-.mainAD>ul li{
+.mainAD > ul li {
     width: 1080px;
-    height: 200px;
+    height: 520px;
     float: left;
     background-color: #3e8f3e;
 }
-.mainAD>ul li a{
+
+.mainAD > ul li a {
     width: 1080px;
-    height: 200px;
+    height: 400px;
     display: block;
 }
-.mainAD>ul li a img{
+
+.mainAD > ul li a img {
     width: 1080px;
-    height: 200px;
+    height: 520px;
     display: block;
+}
+
+/*指示点*/
+.mainAD .indicateDot {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: #4a4a4a;
+}
+
+.mainAD .indicateDot > ul {
+    margin: 0 auto;
+    width: 200px;
+    margin-top: 12px;
+}
+
+.mainAD .indicateDot > ul li {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    background-color: red;
+    float: left;
 }

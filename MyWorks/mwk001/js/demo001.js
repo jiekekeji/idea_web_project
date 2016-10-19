@@ -8,6 +8,8 @@ $(document).ready(function () {
     var l2r = true;//从左向右滑动
     var liCount = 0;//滚动图片的数量
     var slideWidth = 0;//每次滚动的距离
+    var aminLength = 1 * 1000;//默认为2s
+    var aminInterval = 3 * 1000;//动画播放的间隔默认为3s
 
     function initMainAD(count, width, Interval) {
         liCount = count;
@@ -20,14 +22,6 @@ $(document).ready(function () {
             function () {
                 interval = setInterval(playAmin, 1000 * 3);
             });
-        $(".mainAD>ul").swipe({
-            //Generic swipe handler for all directions
-            swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-                console.log("direction:"+direction);
-            },
-            //Default is 75px, set to 0 for demo so any distance triggers swipe
-            threshold: 0
-        });
     }
 
     /**
@@ -40,10 +34,9 @@ $(document).ready(function () {
         if (i == 0) {
             l2r = true;//从左向右滚动
         }
-
-        $(".mainAD>ul").animate({
-            left: -i * 1080 + "px"
-        }, 2 * 1000);
+        //更改指示点的样式
+        setindicateDotStyle(i);
+        setDisPlayLi(i);
 
         if (l2r) {
             i++;
@@ -51,13 +44,45 @@ $(document).ready(function () {
             i--;
         }
 
+
+    }
+
+    /**
+     * 设置显示的li
+     * @param i
+     */
+    function setDisPlayLi(i) {
+        $(".mainAD>ul").animate({
+            left: -i * slideWidth + "px"
+        }, aminLength);
+    }
+
+    /**
+     * 设置当前展示的图片指示点的样式
+     * @param i
+     */
+    function setindicateDotStyle(i) {
+        $(".indicateDot > ul li").css({"background-color": "red"});
+        $(".indicateDot > ul li:eq(" + i + ")").css({"background-color": "yellow"});
+    }
+
+    /**
+     * 给指示点设置监听函数
+     */
+    function setindicateDotOnclick() {
+        $(".indicateDot > ul li").click(function () {
+            //获取被点击的li在ul中的位置
+            var liAtUl = $(this).index();
+            i=liAtUl;
+            setDisPlayLi(i);
+            setindicateDotStyle(liAtUl);
+        });
     }
 
     initMainAD(3, 1080);
-    interval = setInterval(playAmin, 1000 * 3);
-
-    //var scrollbarWidth = $(".mainAD>ul").offsetWidth - $(".mainAD>ul").scrollWidth;
-    //console.log("滚动条的宽度:"+scrollbarWidth);
+    interval = setInterval(playAmin, aminInterval);
+    setindicateDotStyle(0);
+    setindicateDotOnclick();
 
 
 });
