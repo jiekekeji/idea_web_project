@@ -3,7 +3,7 @@ $(document).ready(function () {
     //获取服务端传回的剩余时间毫秒数之后开始倒计时
     var nowTime=91858000;
     setInterval(function () {
-        console.log(getLeftTime(nowTime));
+        $(".content").text(getLeftTime(nowTime))
         nowTime=nowTime-1000*1;
     },1000*1);
 
