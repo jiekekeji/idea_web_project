@@ -41,8 +41,10 @@ $(document).ready(function () {
     /**
      * 加载数据的方法
      */
-    function reFreshData(){
-
+    function reFreshData() {
+        setTimeout(function () {
+            reSetOrig();
+        },3*1000)
     }
 
     /**
