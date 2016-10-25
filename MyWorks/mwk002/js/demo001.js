@@ -18,13 +18,12 @@ $(document).ready(function () {
         })
         //向下拖动
         list.on("pandown", function (ev) {
-            var distance = ev.deltaY - startY - parseInt(defaultMrTop);
+            var distance = ev.deltaY - startY + parseInt(defaultMrTop);
             $(".list").css("margin-top", (distance) + "px");
         })
         //拖动结束
         list.on("panend", function (ev) {
             reSet2Loading();
-            console.log("拖动结束:" + "x=" + ev.deltaX + " y=" + ev.deltaY);
         })
     }
 
@@ -41,8 +40,10 @@ $(document).ready(function () {
     /**
      * 加载数据的方法
      */
-    function reFreshData(){
-
+    function reFreshData() {
+        setTimeout(function(){
+            reSetOrig();
+        },1000*5);
     }
 
     /**
