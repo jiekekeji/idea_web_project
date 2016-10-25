@@ -7,6 +7,8 @@ $(document).ready(function () {
     var startY = 0;
     var defaultMrTop = getOrgiListMrTop();
     initDragDownListener();
+    var loading = false;
+
     /**
      * 初始化下拉事件
      */
@@ -18,11 +20,15 @@ $(document).ready(function () {
         })
         //向下拖动
         list.on("pandown", function (ev) {
+            if (loading) {
+                return;
+            }
             var distance = ev.deltaY - startY + parseInt(defaultMrTop);
             $(".list").css("margin-top", (distance) + "px");
         })
         //拖动结束
         list.on("panend", function (ev) {
+            loading = true;
             reSet2Loading();
         })
     }
@@ -41,9 +47,10 @@ $(document).ready(function () {
      * 加载数据的方法
      */
     function reFreshData() {
-        setTimeout(function(){
+        setTimeout(function () {
             reSetOrig();
-        },1000*5);
+            loading = false;
+        }, 1000 * 5);
     }
 
     /**
