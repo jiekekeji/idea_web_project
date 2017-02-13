@@ -19,38 +19,38 @@ import java.util.Map;
  * Created by jack on 16/5/27.
  */
 @Controller
-@RequestMapping(value ="/user")
+@RequestMapping(value = "/user")
 public class UserController {
 
     private static Logger logger = Logger.getLogger(UserController.class);
     private IUserService service = new UserServiceImpl();
 
-    @RequestMapping(value = "index",method = RequestMethod.GET)
-    public String  index(){
+    @RequestMapping(value = "index", method = RequestMethod.GET)
+    public String index() {
 
         return "index";
     }
 
-    @RequestMapping(value="nice",method = RequestMethod.GET)
-    public  String nice(Model model){
-        model.addAttribute("result","hahaha 第一个参数");
+    @RequestMapping(value = "nice", method = RequestMethod.GET)
+    public String nice(Model model) {
+        model.addAttribute("result", "hahaha 第一个参数");
         return "nice";
     }
 
-    @RequestMapping(value="/register",method = RequestMethod.POST)
+    @RequestMapping(value = "/register", method = RequestMethod.POST)
     @ResponseBody
-    public Map register(User user){
+    public Map register(User user) {
         logger.debug("register");
-        Map map=new HashMap();
-        map.put("key","123");
+        Map map = new HashMap();
+        map.put("key", "123");
 
-        User user1=new User();
+        User user1 = new User();
         user.setNickname("nickname");
-        map.put("nickname",user1);
-        List list=new ArrayList();
+        map.put("nickname", user1);
+        List list = new ArrayList();
         list.add(user1);
 
-        map.put("list",list);
+        map.put("list", list);
 
         return map;
     }

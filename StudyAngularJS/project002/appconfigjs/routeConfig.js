@@ -15,7 +15,7 @@ function routeFn($stateProvider, $urlRouterProvider) {
                 deps: ["$ocLazyLoad", function ($ocLazyLoad) {
                     //该controller的依赖文件
                     console.log("resolve="+"index");
-                    return $ocLazyLoad.load("appcontrollers/index.js");
+                    return $ocLazyLoad.load("/appcontrollers/index.js");
                 }]
             }
         })
