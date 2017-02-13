@@ -18,7 +18,7 @@
     <!--start 分类菜单-->
     <div class="clz-menu">
       <ul>
-        <li>1</li>
+        <li v-on:click="openDetail(1)">1</li>
         <li>1</li>
         <li>1</li>
         <li>1</li>
@@ -80,7 +80,7 @@
     methods: {
       //打开详情页
       openDetail(index) {
-        this.$router.push({path: 'ImgDetail', query: {userId: 123456}});
+        this.$router.push({path: 'HongBaoObtain', query: {userId: 123456}});
       },
       //请求列表数据
       loadMore() {
@@ -166,7 +166,7 @@
     computer: {},
     components: {},
     created () {
-      this.loadSwiperList();
+//      this.loadSwiperList();
 //      this.loadClzList();
     },
     mounted: function () {

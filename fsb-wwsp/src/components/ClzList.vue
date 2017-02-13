@@ -71,7 +71,6 @@
       console.log('activated');
       var tempThis = this;
 
-      setDocumentTitle('分类列表');
 
       //滚回到之前的地方
       var scrollTop = sessionStorage.getItem('ClzList');

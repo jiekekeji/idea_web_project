@@ -20,7 +20,8 @@ const MainMe = resolve => require(['../components/MainMe.vue'], resolve)
 const ImgDetail = resolve => require(['../components/ClzList.vue'], resolve)
 const Page3 = resolve => require(['../components/Page3.vue'], resolve)
 
-
+//红包组件
+const HongBaoObtain = resolve => require(['../components/HongBaoObtain.vue'], resolve)
 Vue.use(VueRouter);
 
 //路由映射配置
@@ -73,6 +74,11 @@ const routes = [
   {
     path: '/Page3',
     component: Page3
+  },
+  {
+    name: 'HongBaoObtain',
+    path: '/HongBaoObtain',
+    component: HongBaoObtain
   }
 ];
 
