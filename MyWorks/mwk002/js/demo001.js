@@ -7,6 +7,8 @@ $(document).ready(function () {
     var startY = 0;
     var defaultMrTop = getOrgiListMrTop();
     initDragDownListener();
+    var loading = false;
+
     /**
      * 初始化下拉事件
      */
@@ -18,13 +20,16 @@ $(document).ready(function () {
         })
         //向下拖动
         list.on("pandown", function (ev) {
-            var distance = ev.deltaY - startY - parseInt(defaultMrTop);
+            if (loading) {
+                return;
+            }
+            var distance = ev.deltaY - startY + parseInt(defaultMrTop);
             $(".list").css("margin-top", (distance) + "px");
         })
         //拖动结束
         list.on("panend", function (ev) {
+            loading = true;
             reSet2Loading();
-            console.log("拖动结束:" + "x=" + ev.deltaX + " y=" + ev.deltaY);
         })
     }
 
@@ -44,7 +49,8 @@ $(document).ready(function () {
     function reFreshData() {
         setTimeout(function () {
             reSetOrig();
-        },3*1000)
+            loading = false;
+        }, 1000 * 5);
     }
 
     /**
